@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="9cdabd8b31645510a456a524c3f43301" sys_domain="global" table="sysapproval_approver" version="3" view="4_custom_portal_approval_x_852034_wfh">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>comments</element>
+            <position>0</position>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2022-07-12 05:04:01</sys_created_on>
+            <sys_id>d0dabd8b1d6455106ed969e852d93a02</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sysapproval_approver" sys_domain="global" view="50dabd8b18645510ca85be41bbe49102">9cdabd8b31645510a456a524c3f43301</sys_ui_section>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2022-07-12 05:04:01</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>sysapproval</element>
+            <position>1</position>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2022-07-12 05:04:01</sys_created_on>
+            <sys_id>54dabd8b3864551008cb3a9663936e02</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sysapproval_approver" sys_domain="global" view="50dabd8b18645510ca85be41bbe49102">9cdabd8b31645510a456a524c3f43301</sys_ui_section>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2022-07-12 05:04:01</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>sysapproval_approver</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2022-07-12 05:04:01</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9cdabd8b31645510a456a524c3f43301</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>sysapproval_approver</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope>
+            <sys_update_name>sys_ui_section_9cdabd8b31645510a456a524c3f43301</sys_update_name>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2022-07-12 05:04:01</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="4_custom_portal_approval_x_852034_wfh" name="4_custom_portal_approval_x_852034_wfh">50dabd8b18645510ca85be41bbe49102</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

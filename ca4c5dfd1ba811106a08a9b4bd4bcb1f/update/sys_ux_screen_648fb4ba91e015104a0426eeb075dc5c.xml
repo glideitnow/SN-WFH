@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_screen">
+    <sys_ux_screen action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <app_config display_value="Working From Home (WFH) Config">948fb4ba1be015106a08a9b4bd4bcb27</app_config>
+        <description/>
+        <event_mappings>[ ]</event_mappings>
+        <macroponent display_value="Attachment">e08fb4baffe01510e91611c8be69715e</macroponent>
+        <macroponent_config>{
+  "sysId" : "@context.props.sysId",
+  "table" : "@context.props.table",
+  "label" : "",
+  "bare" : true,
+  "scrollable" : "none",
+  "headerLevel" : "1",
+  "interceptNotifications" : false,
+  "propagateNotifications" : false
+}</macroponent_config>
+        <name>Attachment Default</name>
+        <order>0</order>
+        <parent_macroponent display_value="Record Page(request)">6c8fb4baa8e01510c78cc7b152e15f67</parent_macroponent>
+        <required_translations>[]</required_translations>
+        <rollback_screen/>
+        <screen_condition/>
+        <screen_type display_value="Attachments">a08fb4bad5e015100876421b56238268</screen_type>
+        <sys_class_name>sys_ux_screen</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2022-07-11 06:06:26</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>648fb4ba91e015104a0426eeb075dc5c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Attachment Default</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope>
+        <sys_update_name>sys_ux_screen_648fb4ba91e015104a0426eeb075dc5c</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2022-07-11 06:06:26</sys_updated_on>
+    </sys_ux_screen>
+    <sys_translated_text action="delete_multiple" query="documentkey=648fb4ba91e015104a0426eeb075dc5c"/>
+</record_update>

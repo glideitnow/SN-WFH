@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_composite_data_template_predicate">
+    <sys_ux_composite_data_template_predicate action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="sc_req_item">active=true^assigned_toDYNAMIC90d1921e5f510100a9ad2572f2b477fe^EQ<item endquery="false" field="active" goto="false" newquery="false" operator="=" or="false" value="true"/>
+            <item endquery="false" field="assigned_to" goto="false" newquery="false" operator="DYNAMIC" or="false" value="90d1921e5f510100a9ad2572f2b477fe"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <custom_condition/>
+        <custom_field_list/>
+        <field_list>due_date,cat_item.picture,short_description,price,recurring_price,recurring_frequency,requested_for,quantity,number</field_list>
+        <name>My tasks requested item</name>
+        <order/>
+        <predicate_bundle display_value="My Tasks - Requested item bundle">a88fb4baade01510c763b252e8d3aa60</predicate_bundle>
+        <required_roles/>
+        <sys_class_name>sys_ux_composite_data_template_predicate</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2022-07-11 06:06:26</sys_created_on>
+        <sys_id>a48fb4bae8e0151029c9c22cb1395d60</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>My tasks requested item</sys_name>
+        <sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope>
+        <sys_update_name>sys_ux_composite_data_template_predicate_a48fb4bae8e0151029c9c22cb1395d60</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2022-07-11 06:06:26</sys_updated_on>
+        <table>sc_req_item</table>
+        <ux_template display_value="My Tasks - requested item template">a48fb4bae1e01510270a1df8fe395261</ux_template>
+    </sys_ux_composite_data_template_predicate>
+</record_update>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_route">
+    <sys_ux_app_route action="INSERT_OR_UPDATE">
+        <app_config display_value="Working From Home (WFH) Config">948fb4ba1be015106a08a9b4bd4bcb27</app_config>
+        <description/>
+        <fields/>
+        <icon/>
+        <name>Indicate your decision</name>
+        <optional_parameters/>
+        <order>100</order>
+        <parent_macroponent display_value="Record Page(task)">6c8fb4baa7e0151064686a5475a83e68</parent_macroponent>
+        <parent_macroponent_composition_element_id>tab_set_1</parent_macroponent_composition_element_id>
+        <route_type>rec_tasks</route_type>
+        <screen_type display_value="Indicate your decision">e48fb4ba3ae01510f6fa749b3d8adb66</screen_type>
+        <sys_class_name>sys_ux_app_route</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2022-07-11 06:06:29</sys_created_on>
+        <sys_id>a88fb4ba9fe01510a7e698ca134c4666</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Indicate your decision</sys_name>
+        <sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope>
+        <sys_update_name>sys_ux_app_route_a88fb4ba9fe01510a7e698ca134c4666</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2022-07-11 06:06:29</sys_updated_on>
+    </sys_ux_app_route>
+    <sys_translated_text action="delete_multiple" query="documentkey=a88fb4ba9fe01510a7e698ca134c4666"/>
+</record_update>

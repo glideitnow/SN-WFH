@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property">
+    <sys_ux_page_property action="DELETE">
+        <choices/>
+        <description>Main Configuration</description>
+        <name>chrome_main</name>
+        <page display_value="">0ef63d87ab645510661dff8187d5eb31</page>
+        <required_translations/>
+        <route/>
+        <suffix/>
+        <sys_class_name>sys_ux_page_property</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-12 04:47:12</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>global</sys_domain_path>
+        <sys_id>c6f63d87e46455101411bb08b97a402f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>chrome_main</sys_name>
+        <sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope>
+        <sys_update_name>sys_ux_page_property_c6f63d87e46455101411bb08b97a402f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-12 04:47:12</sys_updated_on>
+        <type>json</type>
+        <unique_name>x_852034_wfh.0ef63d87ab645510661dff8187d5eb31.root.chrome_main</unique_name>
+        <value>{&#13;
+  "maxCachedPageCount": 5,&#13;
+  "maxActivePageCount": 3,&#13;
+  "timeLeftWarning": 15&#13;
+}</value>
+    </sys_ux_page_property>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</application>
+        <file_path/>
+        <instance_id>835dfff4db24b340387021c4059619f4</instance_id>
+        <instance_name>dev77946</instance_name>
+        <name>sys_ux_page_property_c6f63d87e46455101411bb08b97a402f</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property"><sys_ux_page_property action="INSERT_OR_UPDATE"><choices/><description>Main Configuration</description><name>chrome_main</name><page display_value="">0ef63d87ab645510661dff8187d5eb31</page><required_translations/><route/><suffix/><sys_class_name>sys_ux_page_property</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-07-12 04:47:12</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>global</sys_domain_path><sys_id>c6f63d87e46455101411bb08b97a402f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>chrome_main</sys_name><sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package><sys_policy/><sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope><sys_update_name>sys_ux_page_property_c6f63d87e46455101411bb08b97a402f</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-07-12 04:47:12</sys_updated_on><type>json</type><unique_name>x_852034_wfh.0ef63d87ab645510661dff8187d5eb31.root.chrome_main</unique_name><value>{&#13;
+  "maxCachedPageCount": 5,&#13;
+  "maxActivePageCount": 3,&#13;
+  "timeLeftWarning": 15&#13;
+}</value></sys_ux_page_property></record_update>]]></payload>
+        <payload_hash>630490530</payload_hash>
+        <record_name>chrome_main</record_name>
+        <reverted_from/>
+        <source>8bd017e11b2011106a08a9b4bd4bcb1a</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by/>
+        <sys_created_on>2022-07-07 19:29:02</sys_created_on>
+        <sys_id>8f2342871ba455106a08a9b4bd4bcbd4</sys_id>
+        <sys_mod_count/>
+        <sys_recorded_at>181da2318300000000</sys_recorded_at>
+        <sys_updated_by/>
+        <sys_updated_on/>
+        <type>UX Page Property</type>
+        <update_guid>4f2342874ca45510ab657c1fb5b257d4</update_guid>
+        <update_guid_history>4f2342874ca45510ab657c1fb5b257d4:630490530</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-12 05:40:29</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_page_property">sys_ux_page_property</sys_db_object>
+        <sys_id>e4645c7131ab4cb8935b821175c83104</sys_id>
+        <sys_metadata>c6f63d87e46455101411bb08b97a402f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>chrome_main</sys_name>
+        <sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope>
+        <sys_scope_delete display_value="">4c6c017a72da4588a43d0b2e3ce46da4</sys_scope_delete>
+        <sys_update_name>sys_ux_page_property_c6f63d87e46455101411bb08b97a402f</sys_update_name>
+        <sys_update_version display_value="sys_ux_page_property_c6f63d87e46455101411bb08b97a402f">8f2342871ba455106a08a9b4bd4bcbd4</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-12 05:40:29</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

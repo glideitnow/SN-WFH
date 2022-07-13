@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_predicate_m2m_action_assignment">
+    <sys_ux_predicate_m2m_action_assignment action="INSERT_OR_UPDATE">
+        <declarative_action_assignment display_value="approve">ec8fb4baeee015108eddbe5a09b7aa6d</declarative_action_assignment>
+        <predicate display_value="My Tasks">6c8fb4ba15e015103c4820c0dfb99a60</predicate>
+        <sys_class_name>sys_ux_predicate_m2m_action_assignment</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2022-07-11 06:06:27</sys_created_on>
+        <sys_id>e08fb4ba06e01510cf9a33f6f85d255d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope>
+        <sys_update_name>sys_ux_predicate_m2m_action_assignment_e08fb4ba06e01510cf9a33f6f85d255d</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2022-07-11 06:06:27</sys_updated_on>
+    </sys_ux_predicate_m2m_action_assignment>
+</record_update>

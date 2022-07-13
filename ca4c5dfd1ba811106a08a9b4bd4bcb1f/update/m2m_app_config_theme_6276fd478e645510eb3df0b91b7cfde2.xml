@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="m2m_app_config_theme">
+    <m2m_app_config_theme action="INSERT_OR_UPDATE">
+        <applicability display_value="Public">6a76fd477d6455109382b3dd508dc7e1</applicability>
+        <order>0</order>
+        <sys_class_name>m2m_app_config_theme</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2022-07-12 04:45:05</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6276fd478e645510eb3df0b91b7cfde2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope>
+        <sys_update_name>m2m_app_config_theme_6276fd478e645510eb3df0b91b7cfde2</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2022-07-12 04:45:05</sys_updated_on>
+        <theme display_value="Light Theme">ea76fd470b645510586e8a1b77aa50e1</theme>
+        <ux_app_configuration display_value="Working From Home (WFH) Config">0e76fd471b6455106a08a9b4bd4bcbb3</ux_app_configuration>
+    </m2m_app_config_theme>
+</record_update>

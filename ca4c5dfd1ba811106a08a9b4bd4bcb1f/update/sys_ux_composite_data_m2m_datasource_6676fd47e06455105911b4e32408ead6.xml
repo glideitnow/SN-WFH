@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_composite_data_m2m_datasource">
+    <sys_ux_composite_data_m2m_datasource action="INSERT_OR_UPDATE">
+        <dataset display_value="Custom Portal Catalog Item page - Related Items dataset">aa76fd47146455103be124cd32a7d0d6</dataset>
+        <datasource display_value="Custom Portal Catalog Item page - Related Items Datasource">ee76fd47d9645510812be1ac34bbc8d5</datasource>
+        <sys_class_name>sys_ux_composite_data_m2m_datasource</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2022-07-12 04:45:09</sys_created_on>
+        <sys_id>6676fd47e06455105911b4e32408ead6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope>
+        <sys_update_name>sys_ux_composite_data_m2m_datasource_6676fd47e06455105911b4e32408ead6</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2022-07-12 04:45:09</sys_updated_on>
+    </sys_ux_composite_data_m2m_datasource>
+</record_update>

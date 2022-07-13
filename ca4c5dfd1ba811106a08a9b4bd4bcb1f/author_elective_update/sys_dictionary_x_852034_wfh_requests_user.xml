@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_dictionary action="DELETE" element="user" table="x_852034_wfh_requests">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>encode_utf8=false</attributes>
+        <audit>false</audit>
+        <calculation/>
+        <choice>0</choice>
+        <choice_field/>
+        <choice_table/>
+        <column_label>User</column_label>
+        <comments/>
+        <create_roles/>
+        <default_value>javascript:gs.getUserID();</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value display_value="Me">bdcb83a85f220100a9ad2572f2b4773d</dynamic_default_value>
+        <dynamic_ref_qual/>
+        <element>user</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <internal_type display_value="Reference">reference</internal_type>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <name>x_852034_wfh_requests</name>
+        <next_element/>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sys_user">sys_user</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual>active=true^managerISNOTEMPTY</reference_qual>
+        <reference_qual_condition table="sys_user">active=true^managerISNOTEMPTY<item endquery="false" field="active" goto="false" newquery="false" operator="=" or="false" value="true"/>
+            <item endquery="false" field="manager" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
+        </reference_qual_condition>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_dictionary</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-08 05:40:47</sys_created_on>
+        <sys_id>18ec99311be811106a08a9b4bd4bcbc1</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>User</sys_name>
+        <sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope>
+        <sys_update_name>sys_dictionary_x_852034_wfh_requests_user</sys_update_name>
+        <sys_updated_by>David.Admin</sys_updated_by>
+        <sys_updated_on>2022-07-11 04:39:25</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>true</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_dictionary>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</application>
+        <file_path/>
+        <instance_id>835dfff4db24b340387021c4059619f4</instance_id>
+        <instance_name>dev77946</instance_name>
+        <name>sys_dictionary_x_852034_wfh_requests_user</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_dictionary action="INSERT_OR_UPDATE" element="user" table="x_852034_wfh_requests"><active>true</active><array>false</array><array_denormalized>false</array_denormalized><attributes>encode_utf8=false</attributes><audit>false</audit><calculation/><choice>0</choice><choice_field/><choice_table/><column_label>User</column_label><comments/><create_roles/><default_value>javascript:gs.getUserID();</default_value><defaultsort/><delete_roles/><dependent/><dependent_on_field/><display>false</display><dynamic_creation>false</dynamic_creation><dynamic_creation_script/><dynamic_default_value display_value="Me">bdcb83a85f220100a9ad2572f2b4773d</dynamic_default_value><dynamic_ref_qual/><element>user</element><element_reference>false</element_reference><foreign_database/><function_definition/><function_field>false</function_field><internal_type display_value="Reference">reference</internal_type><mandatory>true</mandatory><max_length>32</max_length><name>x_852034_wfh_requests</name><next_element/><primary>false</primary><read_only>false</read_only><read_roles/><reference display_value="" name="sys_user">sys_user</reference><reference_cascade_rule/><reference_floats>false</reference_floats><reference_key/><reference_qual>active=true^managerISNOTEMPTY</reference_qual><reference_qual_condition table="sys_user">active=true^managerISNOTEMPTY<item endquery="false" field="active" goto="false" newquery="false" operator="=" or="false" value="true"/><item endquery="false" field="manager" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/></reference_qual_condition><reference_type/><sizeclass/><spell_check>false</spell_check><staged>false</staged><sys_class_name>sys_dictionary</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-07-08 05:40:47</sys_created_on><sys_id>18ec99311be811106a08a9b4bd4bcbc1</sys_id><sys_mod_count>3</sys_mod_count><sys_name>User</sys_name><sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package><sys_policy/><sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope><sys_update_name>sys_dictionary_x_852034_wfh_requests_user</sys_update_name><sys_updated_by>David.Admin</sys_updated_by><sys_updated_on>2022-07-11 04:39:25</sys_updated_on><table_reference>false</table_reference><text_index>false</text_index><unique>false</unique><use_dependent_field>false</use_dependent_field><use_dynamic_default>true</use_dynamic_default><use_reference_qualifier>simple</use_reference_qualifier><virtual>false</virtual><widget/><write_roles/><xml_view>false</xml_view></sys_dictionary></record_update>]]></payload>
+        <payload_hash>-1787673281</payload_hash>
+        <record_name>Requests.User</record_name>
+        <reverted_from/>
+        <source>c64c5dfd1ba811106a08a9b4bd4bcb21</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>David.Admin</sys_created_by>
+        <sys_created_on>2022-07-11 04:39:25</sys_created_on>
+        <sys_id>be9b2cb61ba015106a08a9b4bd4bcbd4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>181eb8e12e10000001</sys_recorded_at>
+        <sys_updated_by>David.Admin</sys_updated_by>
+        <sys_updated_on>2022-07-11 04:39:25</sys_updated_on>
+        <type>Dictionary</type>
+        <update_guid>f69b2cb606a01510adf4bc17ffa3e4d4</update_guid>
+        <update_guid_history>f69b2cb606a01510adf4bc17ffa3e4d4:-1787673281,acd820362ca01510a016c7b0ebb2fb3f:389580367,06de9db184e8111049eeaed6d144e07d:153324823,d1ecd931cae81110574947d67d489935:-1726240160</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-12 01:21:59</sys_created_on>
+        <sys_db_object display_value="" name="sys_dictionary">sys_dictionary</sys_db_object>
+        <sys_id>041f618802aa47c880a240d8590ab040</sys_id>
+        <sys_metadata>18ec99311be811106a08a9b4bd4bcbc1</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>User</sys_name>
+        <sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package>
+        <sys_parent display_value="WFH Requests">1bdc99311be811106a08a9b4bd4bcb12</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope>
+        <sys_scope_delete display_value="">4c6c017a72da4588a43d0b2e3ce46da4</sys_scope_delete>
+        <sys_update_name>sys_dictionary_x_852034_wfh_requests_user</sys_update_name>
+        <sys_update_version display_value="sys_dictionary_x_852034_wfh_requests_user">be9b2cb61ba015106a08a9b4bd4bcbd4</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-12 01:21:59</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
