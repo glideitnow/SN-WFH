@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="gsw_change_log">
+    <gsw_change_log action="INSERT_OR_UPDATE">
+        <change_date>2022-07-09 02:02:08</change_date>
+        <changed_by display_value="David Administrator">37e395b51ba811106a08a9b4bd4bcb00</changed_by>
+        <content display_value="Step1">9dc64f7d53d00300d044ddeeff7b12cb</content>
+        <related_change_log_entry/>
+        <related_task_entry/>
+        <sys_class_name>gsw_change_log</sys_class_name>
+        <sys_created_by>David.Admin</sys_created_by>
+        <sys_created_on>2022-07-09 02:02:08</sys_created_on>
+        <sys_id>0764b18e1be851106a08a9b4bd4bcbe8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>2022-07-09 02:02:08</sys_name>
+        <sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope>
+        <sys_update_name>gsw_change_log_0764b18e1be851106a08a9b4bd4bcbe8</sys_update_name>
+        <sys_updated_by>David.Admin</sys_updated_by>
+        <sys_updated_on>2022-07-09 02:02:08</sys_updated_on>
+        <type>4</type>
+    </gsw_change_log>
+</record_update>

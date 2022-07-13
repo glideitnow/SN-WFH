@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_view">
+    <sys_ui_view action="INSERT_OR_UPDATE">
+        <group/>
+        <hidden>false</hidden>
+        <name>4_custom_portal_approval_x_852034_wfh</name>
+        <roles/>
+        <sys_class_name>sys_ui_view</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2022-07-12 05:04:07</sys_created_on>
+        <sys_id>50dabd8b18645510ca85be41bbe49102</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>4_custom_portal_approval_x_852034_wfh</sys_name>
+        <sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope>
+        <sys_update_name>sys_ui_view_50dabd8b18645510ca85be41bbe49102</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2022-07-12 05:04:07</sys_updated_on>
+        <title>4_custom_portal_approval_x_852034_wfh</title>
+        <user/>
+    </sys_ui_view>
+</record_update>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_852034_wfh.GetUserAJAX</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description>Gets the state of a service catalog request</description>
+        <name>GetUserAJAX</name>
+        <script><![CDATA[var GetUserAJAX = Class.create();
+GetUserAJAX.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+	getManager: function (){
+		return this._getUserProp('manager');
+	},
+
+	
+	
+	
+	
+    _getUserProp: function(prop) {
+        var sysID = this.getParameter('sysparm_sys_id');
+        var gRec = new GlideRecord('sys_user');
+        if (gRec.get(sysID)) {
+            return gRec.getValue(prop);
+        }
+		gs.addErrorMessage('Oh no!');
+	},
+	
+    isPublic: function() {
+        return false;
+    },	
+	
+    type: 'GetUserAJAX'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>David.Admin</sys_created_by>
+        <sys_created_on>2022-07-12 01:09:12</sys_created_on>
+        <sys_id>c11541071ba055106a08a9b4bd4bcb1b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>GetUserAJAX</sys_name>
+        <sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope>
+        <sys_update_name>sys_script_include_c11541071ba055106a08a9b4bd4bcb1b</sys_update_name>
+        <sys_updated_by>David.Admin</sys_updated_by>
+        <sys_updated_on>2022-07-12 01:13:08</sys_updated_on>
+    </sys_script_include>
+</record_update>

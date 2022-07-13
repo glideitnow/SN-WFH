@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="7fe165f51be811106a08a9b4bd4bcb5e" sys_domain="global" table="x_852034_wfh_requests" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-07-08 06:02:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f7e165f51be811106a08a9b4bd4bcb61</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_852034_wfh_requests" name="x_852034_wfh_requests" sys_domain="global" view="Default view">7fe165f51be811106a08a9b4bd4bcb5e</sys_ui_form>
+            <sys_ui_section caption="Request - WFH" display_value="Request - WFH" name="x_852034_wfh_requests" sys_domain="global" view="Default view">33e165f51be811106a08a9b4bd4bcb5d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-07-08 06:02:52</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-07-08 06:10:35</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b0b3ed391be811106a08a9b4bd4bcb82</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_852034_wfh_requests" name="x_852034_wfh_requests" sys_domain="global" view="Default view">7fe165f51be811106a08a9b4bd4bcb5e</sys_ui_form>
+            <sys_ui_section caption="Details" display_value="Details" name="x_852034_wfh_requests" sys_domain="global" view="Default view">78b3ed391be811106a08a9b4bd4bcb80</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-07-08 06:10:35</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-07-08 06:13:02</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e844e5791be811106a08a9b4bd4bcb7c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_852034_wfh_requests" name="x_852034_wfh_requests" sys_domain="global" view="Default view">7fe165f51be811106a08a9b4bd4bcb5e</sys_ui_form>
+            <sys_ui_section caption="Stats" display_value="Stats" name="x_852034_wfh_requests" sys_domain="global" view="Default view">ac44e5791be811106a08a9b4bd4bcb79</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-07-08 06:13:02</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>3</position>
+            <sys_created_by>David.Admin</sys_created_by>
+            <sys_created_on>2022-07-11 06:26:23</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>69144dfe1be015106a08a9b4bd4bcbe7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_852034_wfh_requests" name="x_852034_wfh_requests" sys_domain="global" view="Default view">7fe165f51be811106a08a9b4bd4bcb5e</sys_ui_form>
+            <sys_ui_section caption="Activities" display_value="Activities" name="x_852034_wfh_requests" sys_domain="global" view="Default view">a5144dfe1be015106a08a9b4bd4bcb74</sys_ui_section>
+            <sys_updated_by>David.Admin</sys_updated_by>
+            <sys_updated_on>2022-07-11 06:26:23</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_852034_wfh_requests</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-07-08 06:02:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7fe165f51be811106a08a9b4bd4bcb5e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_852034_wfh_requests</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope>
+            <sys_update_name>sys_ui_form_sections_7fe165f51be811106a08a9b4bd4bcb5e</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-07-08 06:02:52</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>
