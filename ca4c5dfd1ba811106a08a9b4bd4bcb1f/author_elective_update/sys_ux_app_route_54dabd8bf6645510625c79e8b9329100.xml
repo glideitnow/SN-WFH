@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_route">
+    <sys_ux_app_route action="DELETE">
+        <app_config display_value="Working From Home (WFH) Config">90da7d8b1b6455106a08a9b4bd4bcbd8</app_config>
+        <description/>
+        <fields>sysId</fields>
+        <icon/>
+        <name>Article page</name>
+        <optional_parameters/>
+        <order>0</order>
+        <parent_macroponent display_value="Portal App Shell">b66bf1075b31101016fd7c1bf481c7a7</parent_macroponent>
+        <parent_macroponent_composition_element_id/>
+        <route_type>article</route_type>
+        <screen_type display_value="Article page">d0dabd8b256455109e30a43a02b46c00</screen_type>
+        <sys_class_name>sys_ux_app_route</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2022-07-12 05:04:09</sys_created_on>
+        <sys_id>54dabd8bf6645510625c79e8b9329100</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Article page</sys_name>
+        <sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope>
+        <sys_update_name>sys_ux_app_route_54dabd8bf6645510625c79e8b9329100</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2022-07-12 05:04:09</sys_updated_on>
+    </sys_ux_app_route>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</application>
+        <file_path/>
+        <instance_id>835dfff4db24b340387021c4059619f4</instance_id>
+        <instance_name>dev77946</instance_name>
+        <name>sys_ux_app_route_54dabd8bf6645510625c79e8b9329100</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_route"><sys_ux_app_route action="INSERT_OR_UPDATE"><app_config display_value="Working From Home (WFH) Config">90da7d8b1b6455106a08a9b4bd4bcbd8</app_config><description/><fields>sysId</fields><icon/><name>Article page</name><optional_parameters/><order>0</order><parent_macroponent display_value="Portal App Shell">b66bf1075b31101016fd7c1bf481c7a7</parent_macroponent><parent_macroponent_composition_element_id/><route_type>article</route_type><screen_type display_value="Article page">d0dabd8b256455109e30a43a02b46c00</screen_type><sys_class_name>sys_ux_app_route</sys_class_name><sys_created_by>system</sys_created_by><sys_created_on>2022-07-12 05:04:09</sys_created_on><sys_id>54dabd8bf6645510625c79e8b9329100</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Article page</sys_name><sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package><sys_policy/><sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope><sys_update_name>sys_ux_app_route_54dabd8bf6645510625c79e8b9329100</sys_update_name><sys_updated_by>system</sys_updated_by><sys_updated_on>2022-07-12 05:04:09</sys_updated_on></sys_ux_app_route></record_update>]]></payload>
+        <payload_hash>488026031</payload_hash>
+        <record_name>Article page</record_name>
+        <reverted_from/>
+        <source>8bd017e11b2011106a08a9b4bd4bcb1a</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>current</state>
+        <sys_created_by/>
+        <sys_created_on>2022-07-07 19:29:02</sys_created_on>
+        <sys_id>db45d0041bb819106a08a9b4bd4bcb40</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>181da2318300000000</sys_recorded_at>
+        <sys_updated_by>David.Admin</sys_updated_by>
+        <sys_updated_on>2022-07-15 22:19:26</sys_updated_on>
+        <type>UX App Route</type>
+        <update_guid>9b45d00427b819106aa2931f6ade8140</update_guid>
+        <update_guid_history>9b45d00427b819106aa2931f6ade8140:488026031</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>David.Admin</sys_created_by>
+        <sys_created_on>2022-07-15 00:14:23</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_app_route">sys_ux_app_route</sys_db_object>
+        <sys_id>44265fc6c10d4d78b7ce27c4fa204040</sys_id>
+        <sys_metadata>54dabd8bf6645510625c79e8b9329100</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Article page</sys_name>
+        <sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope>
+        <sys_scope_delete display_value="">4c6c017a72da4588a43d0b2e3ce46da4</sys_scope_delete>
+        <sys_update_name>sys_ux_app_route_54dabd8bf6645510625c79e8b9329100</sys_update_name>
+        <sys_update_version display_value="sys_ux_app_route_54dabd8bf6645510625c79e8b9329100">db45d0041bb819106a08a9b4bd4bcb40</sys_update_version>
+        <sys_updated_by>David.Admin</sys_updated_by>
+        <sys_updated_on>2022-07-15 00:14:23</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
