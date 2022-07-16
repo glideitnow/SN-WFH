@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_data_policy2">
+    <sys_data_policy2 action="DELETE">
+        <active>true</active>
+        <apply_import_set>true</apply_import_set>
+        <apply_soap>true</apply_soap>
+        <conditions/>
+        <description/>
+        <enforce_ui>true</enforce_ui>
+        <inherit>false</inherit>
+        <model_id/>
+        <model_table>x_852034_wfh_requests</model_table>
+        <reverse_if_false>true</reverse_if_false>
+        <short_description>test</short_description>
+        <sys_class_name>sys_data_policy2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-14 06:37:18</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4833287b1b2cd5106a08a9b4bd4bcb23</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>test</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope>
+        <sys_update_name>sys_data_policy2_4833287b1b2cd5106a08a9b4bd4bcb23</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-14 06:38:28</sys_updated_on>
+    </sys_data_policy2>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</application>
+        <file_path/>
+        <instance_id>835dfff4db24b340387021c4059619f4</instance_id>
+        <instance_name>dev77946</instance_name>
+        <name>sys_data_policy2_4833287b1b2cd5106a08a9b4bd4bcb23</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_data_policy2"><sys_data_policy2 action="INSERT_OR_UPDATE"><active>true</active><apply_import_set>true</apply_import_set><apply_soap>true</apply_soap><conditions/><description/><enforce_ui>true</enforce_ui><inherit>false</inherit><model_id/><model_table>x_852034_wfh_requests</model_table><reverse_if_false>true</reverse_if_false><short_description>test</short_description><sys_class_name>sys_data_policy2</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-07-14 06:37:18</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>4833287b1b2cd5106a08a9b4bd4bcb23</sys_id><sys_mod_count>2</sys_mod_count><sys_name>test</sys_name><sys_overrides/><sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package><sys_policy/><sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope><sys_update_name>sys_data_policy2_4833287b1b2cd5106a08a9b4bd4bcb23</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-07-14 06:38:28</sys_updated_on></sys_data_policy2></record_update>]]></payload>
+        <payload_hash>-1592914426</payload_hash>
+        <record_name>test</record_name>
+        <reverted_from/>
+        <source>2ab2125f1b6495106a08a9b4bd4bcb75</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-14 06:38:28</sys_created_on>
+        <sys_id>fb93a83b1b2cd5106a08a9b4bd4bcb5a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>181fb6e24360000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-14 06:38:28</sys_updated_on>
+        <type>Data Policy</type>
+        <update_guid>b393a83b642cd5102228d337f8829a5a</update_guid>
+        <update_guid_history>b393a83b642cd5102228d337f8829a5a:-1592914426,4593ac7b902cd510519b16ca2402b765:-560909445,e653e43b592cd510f6e8fe2a2f24c88b:-456142013</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-14 06:40:40</sys_created_on>
+        <sys_db_object display_value="" name="sys_data_policy2">sys_data_policy2</sys_db_object>
+        <sys_id>3d6dab0ab6114136929b70c1b1908444</sys_id>
+        <sys_metadata>4833287b1b2cd5106a08a9b4bd4bcb23</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>test</sys_name>
+        <sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package>
+        <sys_parent display_value="WFH Requests">1bdc99311be811106a08a9b4bd4bcb12</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope>
+        <sys_scope_delete display_value="">4c6c017a72da4588a43d0b2e3ce46da4</sys_scope_delete>
+        <sys_update_name>sys_data_policy2_4833287b1b2cd5106a08a9b4bd4bcb23</sys_update_name>
+        <sys_update_version display_value="sys_data_policy2_4833287b1b2cd5106a08a9b4bd4bcb23">fb93a83b1b2cd5106a08a9b4bd4bcb5a</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-14 06:40:40</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_852034_wfh.DateValidationUtil</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description>A set of functions to enfocre date validation on any date/datetime field within this application (x_852034_wfh) scope only</description>
+        <name>DateValidationUtil</name>
+        <script><![CDATA[var DateValidationUtil = Class.create();
+DateValidationUtil.prototype = {
+    initialize: function(startDate, endDate) {
+        this.DEBUG_PREFIX = "KIT.SN.SI.DateValidationUtil:";
+        this.startDate = startDate;
+        this.endDate = endDate;
+    },
+
+    /* checks if the date is in future */
+    isFutureDate: function() {
+        try {
+
+            return this.startDate >= new GlideDate() ? true : false;
+
+        } catch (err) {
+            gs.error("{0} runtime error {1}", this.DEBUG_PREFIX, err);
+            throw err;
+        }
+    },
+
+    /* checks if the date is in past */
+    isPastDate: function() {
+        try {
+
+            return this.startDate < new GlideDate() ? true : false;
+
+        } catch (err) {
+            gs.error("{0} runtime error {1}", this.DEBUG_PREFIX, err);
+            throw err;
+        }
+    },
+
+    /* checks if the end date is after the start date */
+    isValidDateDiff: function() {
+        try {
+
+            return this.endDate >= this.startDate ? true : false;
+
+        } catch (err) {
+            gs.error("{0} runtime error {1}", this.DEBUG_PREFIX, err);
+            throw err;
+        }
+    },
+
+    type: 'DateValidationUtil'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-14 06:51:43</sys_created_on>
+        <sys_id>d346683f1b2cd5106a08a9b4bd4bcbde</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_name>DateValidationUtil</sys_name>
+        <sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope>
+        <sys_update_name>sys_script_include_d346683f1b2cd5106a08a9b4bd4bcbde</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-15 03:20:43</sys_updated_on>
+    </sys_script_include>
+</record_update>
