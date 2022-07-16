@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="DELETE">
+        <includes/>
+        <macroponent display_value="Record">623e46031be455106a08a9b4bd4bcba1</macroponent>
+        <name>showOnloadAlerts</name>
+        <required_translations>[ ]</required_translations>
+        <script><![CDATA[function handler({api,event,imports}) {
+  var paramsString = api.context.props.extraParams,
+    paramsObj = paramsString?.split('/'),
+    alerts;
+
+  if (!paramsObj || !paramsObj.length || (paramsObj.indexOf('alerts') < 0)) return;
+
+  alerts = paramsObj[paramsObj.indexOf('alerts') + 1];
+  try {
+    alerts = JSON.parse(alerts);
+  } catch(e) {}
+
+  if (!alerts)
+    return;
+  if (typeof alerts == 'string') {
+    alerts = [{
+      id: "record-alert-1",
+      status: "info",
+      icon: "info-circle-outline",
+      content: alerts,
+      action: {
+        type: "dismiss"
+      }
+    }];
+  }
+  api.emit('NOW_UXF_PAGE#ADD_NOTIFICATIONS', {
+    items: alerts
+  });
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>David.Admin</sys_created_by>
+        <sys_created_on>2022-07-12 06:28:50</sys_created_on>
+        <sys_id>1f3e06431be455106a08a9b4bd4bcb01</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>showOnloadAlerts</sys_name>
+        <sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope>
+        <sys_update_name>sys_ux_client_script_1f3e06431be455106a08a9b4bd4bcb01</sys_update_name>
+        <sys_updated_by>David.Admin</sys_updated_by>
+        <sys_updated_on>2022-07-12 06:35:39</sys_updated_on>
+        <type>default</type>
+    </sys_ux_client_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</application>
+        <file_path/>
+        <instance_id>835dfff4db24b340387021c4059619f4</instance_id>
+        <instance_name>dev77946</instance_name>
+        <name>sys_ux_client_script_1f3e06431be455106a08a9b4bd4bcb01</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ux_client_script"&gt;&lt;sys_ux_client_script action="INSERT_OR_UPDATE"&gt;&lt;includes/&gt;&lt;macroponent display_value="Record"&gt;623e46031be455106a08a9b4bd4bcba1&lt;/macroponent&gt;&lt;name&gt;showOnloadAlerts&lt;/name&gt;&lt;required_translations&gt;[ ]&lt;/required_translations&gt;&lt;script&gt;&lt;![CDATA[function handler({api,event,imports}) {
+  var paramsString = api.context.props.extraParams,
+    paramsObj = paramsString?.split('/'),
+    alerts;
+
+  if (!paramsObj || !paramsObj.length || (paramsObj.indexOf('alerts') &lt; 0)) return;
+
+  alerts = paramsObj[paramsObj.indexOf('alerts') + 1];
+  try {
+    alerts = JSON.parse(alerts);
+  } catch(e) {}
+
+  if (!alerts)
+    return;
+  if (typeof alerts == 'string') {
+    alerts = [{
+      id: "record-alert-1",
+      status: "info",
+      icon: "info-circle-outline",
+      content: alerts,
+      action: {
+        type: "dismiss"
+      }
+    }];
+  }
+  api.emit('NOW_UXF_PAGE#ADD_NOTIFICATIONS', {
+    items: alerts
+  });
+}]]&gt;&lt;/script&gt;&lt;script_api_version&gt;2.0.0&lt;/script_api_version&gt;&lt;sys_class_name&gt;sys_ux_client_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;David.Admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-07-12 06:28:50&lt;/sys_created_on&gt;&lt;sys_id&gt;1f3e06431be455106a08a9b4bd4bcb01&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;showOnloadAlerts&lt;/sys_name&gt;&lt;sys_package display_value="Working From Home (WFH)" source="x_852034_wfh"&gt;ca4c5dfd1ba811106a08a9b4bd4bcb1f&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Working From Home (WFH)"&gt;ca4c5dfd1ba811106a08a9b4bd4bcb1f&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ux_client_script_1f3e06431be455106a08a9b4bd4bcb01&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;David.Admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-07-12 06:35:39&lt;/sys_updated_on&gt;&lt;type&gt;default&lt;/type&gt;&lt;/sys_ux_client_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>2009125333</payload_hash>
+        <record_name>showOnloadAlerts</record_name>
+        <reverted_from/>
+        <source>f97481901b3c59106a08a9b4bd4bcb67</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>David.Admin</sys_created_by>
+        <sys_created_on>2022-07-15 22:19:29</sys_created_on>
+        <sys_id>3d9489901b3c59106a08a9b4bd4bcb7a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18203f2060b0000001</sys_recorded_at>
+        <sys_updated_by>David.Admin</sys_updated_by>
+        <sys_updated_on>2022-07-15 22:19:29</sys_updated_on>
+        <type>UX Client Script</type>
+        <update_guid>0a738e40657059109e06551bdff7b047</update_guid>
+        <update_guid_history>0a738e40657059109e06551bdff7b047:2009125333,4b10015cb1f85910f1fe84cdfc592e0a:0,0fcf0ec3e2e455106b52481d8b816ecd:2009125333,1f3e0643b6e45510f13e423ab15b9003:-1262859857</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>David.Admin</sys_created_by>
+        <sys_created_on>2022-07-16 00:13:00</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_client_script">sys_ux_client_script</sys_db_object>
+        <sys_id>322f4df1525541f690407893f83e33b1</sys_id>
+        <sys_metadata>1f3e06431be455106a08a9b4bd4bcb01</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>showOnloadAlerts</sys_name>
+        <sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope>
+        <sys_scope_delete display_value="">4c6c017a72da4588a43d0b2e3ce46da4</sys_scope_delete>
+        <sys_update_name>sys_ux_client_script_1f3e06431be455106a08a9b4bd4bcb01</sys_update_name>
+        <sys_update_version display_value="sys_ux_client_script_1f3e06431be455106a08a9b4bd4bcb01">3d9489901b3c59106a08a9b4bd4bcb7a</sys_update_version>
+        <sys_updated_by>David.Admin</sys_updated_by>
+        <sys_updated_on>2022-07-16 00:13:00</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

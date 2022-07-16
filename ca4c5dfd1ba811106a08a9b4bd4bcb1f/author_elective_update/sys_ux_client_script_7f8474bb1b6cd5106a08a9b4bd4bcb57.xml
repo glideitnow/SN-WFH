@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="DELETE">
+        <includes/>
+        <macroponent display_value="Record">a38470bb1b6cd5106a08a9b4bd4bcb6d</macroponent>
+        <name>Update selected tab index</name>
+        <required_translations>[ ]</required_translations>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ */
+function handler({ api, event, helpers, imports }) {
+    const gFormData = api.data.gform.nowRecordFormBlob;
+    if (gFormData.isNewRecord)
+        return;
+
+    const { selectedTabIndex, isInitialPageLoad } = event.payload;
+
+    if (isInitialPageLoad === false) {  // Not emit CONTENT_UPDATED when isInitialPageLoad is undefined or true
+        api.emit('CONTENT_UPDATED', {
+            params: {
+                selectedTabIndex: selectedTabIndex,
+                query: api.context.props.query,
+                views: api.context.props.views,
+                extraParams: api.context.props.extraParams
+            }
+        });
+    }
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>David.Admin</sys_created_by>
+        <sys_created_on>2022-07-14 07:52:28</sys_created_on>
+        <sys_id>7f8474bb1b6cd5106a08a9b4bd4bcb57</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Update selected tab index</sys_name>
+        <sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope>
+        <sys_update_name>sys_ux_client_script_7f8474bb1b6cd5106a08a9b4bd4bcb57</sys_update_name>
+        <sys_updated_by>David.Admin</sys_updated_by>
+        <sys_updated_on>2022-07-14 08:18:14</sys_updated_on>
+        <type>default</type>
+    </sys_ux_client_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</application>
+        <file_path/>
+        <instance_id>835dfff4db24b340387021c4059619f4</instance_id>
+        <instance_name>dev77946</instance_name>
+        <name>sys_ux_client_script_7f8474bb1b6cd5106a08a9b4bd4bcb57</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ux_client_script"&gt;&lt;sys_ux_client_script action="INSERT_OR_UPDATE"&gt;&lt;includes/&gt;&lt;macroponent display_value="Record"&gt;a38470bb1b6cd5106a08a9b4bd4bcb6d&lt;/macroponent&gt;&lt;name&gt;Update selected tab index&lt;/name&gt;&lt;required_translations&gt;[ ]&lt;/required_translations&gt;&lt;script&gt;&lt;![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ */
+function handler({ api, event, helpers, imports }) {
+    const gFormData = api.data.gform.nowRecordFormBlob;
+    if (gFormData.isNewRecord)
+        return;
+
+    const { selectedTabIndex, isInitialPageLoad } = event.payload;
+
+    if (isInitialPageLoad === false) {  // Not emit CONTENT_UPDATED when isInitialPageLoad is undefined or true
+        api.emit('CONTENT_UPDATED', {
+            params: {
+                selectedTabIndex: selectedTabIndex,
+                query: api.context.props.query,
+                views: api.context.props.views,
+                extraParams: api.context.props.extraParams
+            }
+        });
+    }
+}]]&gt;&lt;/script&gt;&lt;script_api_version&gt;2.0.0&lt;/script_api_version&gt;&lt;sys_class_name&gt;sys_ux_client_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;David.Admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-07-14 07:52:28&lt;/sys_created_on&gt;&lt;sys_id&gt;7f8474bb1b6cd5106a08a9b4bd4bcb57&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;Update selected tab index&lt;/sys_name&gt;&lt;sys_package display_value="Working From Home (WFH)" source="x_852034_wfh"&gt;ca4c5dfd1ba811106a08a9b4bd4bcb1f&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Working From Home (WFH)"&gt;ca4c5dfd1ba811106a08a9b4bd4bcb1f&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ux_client_script_7f8474bb1b6cd5106a08a9b4bd4bcb57&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;David.Admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-07-14 08:18:14&lt;/sys_updated_on&gt;&lt;type&gt;default&lt;/type&gt;&lt;/sys_ux_client_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1815725484</payload_hash>
+        <record_name>Update selected tab index</record_name>
+        <reverted_from/>
+        <source>f97481901b3c59106a08a9b4bd4bcb67</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>David.Admin</sys_created_by>
+        <sys_created_on>2022-07-15 22:19:32</sys_created_on>
+        <sys_id>3e94c9901b3c59106a08a9b4bd4bcb7e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18203f2144f0000001</sys_recorded_at>
+        <sys_updated_by>David.Admin</sys_updated_by>
+        <sys_updated_on>2022-07-15 22:19:32</sys_updated_on>
+        <type>UX Client Script</type>
+        <update_guid>53d269802efc1910ce5a2cef37955a08</update_guid>
+        <update_guid_history>53d269802efc1910ce5a2cef37955a08:1815725484,9fef701cadf859108f7052b55d7f0a6f:-960194632,a17abc73cfacd51017d7e19deda84336:1815725484,bf8474bbc36cd510328315ea17c1dd5b:-452909882</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>David.Admin</sys_created_by>
+        <sys_created_on>2022-07-16 00:15:16</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_client_script">sys_ux_client_script</sys_db_object>
+        <sys_id>065d037b43de40c4b12c45b3fc4e6f44</sys_id>
+        <sys_metadata>7f8474bb1b6cd5106a08a9b4bd4bcb57</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Update selected tab index</sys_name>
+        <sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope>
+        <sys_scope_delete display_value="">4c6c017a72da4588a43d0b2e3ce46da4</sys_scope_delete>
+        <sys_update_name>sys_ux_client_script_7f8474bb1b6cd5106a08a9b4bd4bcb57</sys_update_name>
+        <sys_update_version display_value="sys_ux_client_script_7f8474bb1b6cd5106a08a9b4bd4bcb57">3e94c9901b3c59106a08a9b4bd4bcb7e</sys_update_version>
+        <sys_updated_by>David.Admin</sys_updated_by>
+        <sys_updated_on>2022-07-16 00:15:16</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

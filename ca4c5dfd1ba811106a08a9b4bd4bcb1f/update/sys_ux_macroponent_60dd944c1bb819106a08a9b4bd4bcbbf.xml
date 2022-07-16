@@ -364,7 +364,7 @@
                 },
                 "isContextMenuHidden" : {
                   "type" : "JSON_LITERAL",
-                  "value" : true
+                  "value" : false
                 },
                 "isSectionMenuHidden" : {
                   "type" : "JSON_LITERAL",
@@ -372,7 +372,7 @@
                 },
                 "isFormOptionsHidden" : {
                   "type" : "JSON_LITERAL",
-                  "value" : true
+                  "value" : false
                 },
                 "isRemovePaddingLeft" : {
                   "type" : "JSON_LITERAL",
@@ -400,7 +400,7 @@
                 },
                 "isNewRecord" : {
                   "type" : "JSON_LITERAL",
-                  "value" : true
+                  "value" : false
                 },
                 "scrollableHost" : {
                   "type" : "JSON_LITERAL",
@@ -1318,7 +1318,7 @@
     },
     "view" : {
       "type" : "JSON_LITERAL",
-      "value" : "new_request"
+      "value" : ""
     },
     "forcedViewName" : {
       "type" : "JSON_LITERAL",
@@ -1708,13 +1708,13 @@
         <sys_created_by>David.Admin</sys_created_by>
         <sys_created_on>2022-07-15 00:51:36</sys_created_on>
         <sys_id>60dd944c1bb819106a08a9b4bd4bcbbf</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_name>Record</sys_name>
         <sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package>
         <sys_policy/>
         <sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope>
         <sys_update_name>sys_ux_macroponent_60dd944c1bb819106a08a9b4bd4bcbbf</sys_update_name>
         <sys_updated_by>David.Admin</sys_updated_by>
-        <sys_updated_on>2022-07-15 08:17:52</sys_updated_on>
+        <sys_updated_on>2022-07-15 23:45:32</sys_updated_on>
     </sys_ux_macroponent>
 </record_update>

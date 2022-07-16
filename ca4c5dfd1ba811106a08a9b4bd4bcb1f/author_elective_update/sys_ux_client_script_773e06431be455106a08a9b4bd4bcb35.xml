@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="DELETE">
+        <includes/>
+        <macroponent display_value="Record">623e46031be455106a08a9b4bd4bcba1</macroponent>
+        <name>Handle activityLogs update</name>
+        <required_translations>[ ]</required_translations>
+        <script><![CDATA[
+function handler({api, event: {payload: {name, value}}, helpers, imports}) {
+    const TEMPLATES_REFRESH_STATE_NAME = 'templatesRefresh';
+    const TEMPLATES_REFRESH_OPERATIONS = ['inserted', 'closed', 'deleted', 'updated'];
+    const templateRefreshState = api.state[TEMPLATES_REFRESH_STATE_NAME];
+
+    if (name === 'activityLogs' && value && value.size > 0) {
+        const mapEntries = Array.from(value);
+        if (!mapEntries || mapEntries.length < 1)
+            return;
+        const curCrudActivities = mapEntries.pop()[1].activities.get('crud');
+        if (!curCrudActivities || curCrudActivities.length < 1)
+            return;
+        const {table, operation, timestamp} = curCrudActivities[curCrudActivities.length - 1];
+
+        if (table.match(/^sys_template\d*$/) && TEMPLATES_REFRESH_OPERATIONS.includes(operation) && timestamp !== templateRefreshState.timestamp) {
+                api.setState(TEMPLATES_REFRESH_STATE_NAME, {
+                    timestamp,
+                });
+        }
+    }
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>David.Admin</sys_created_by>
+        <sys_created_on>2022-07-12 06:28:53</sys_created_on>
+        <sys_id>773e06431be455106a08a9b4bd4bcb35</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Handle activityLogs update</sys_name>
+        <sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope>
+        <sys_update_name>sys_ux_client_script_773e06431be455106a08a9b4bd4bcb35</sys_update_name>
+        <sys_updated_by>David.Admin</sys_updated_by>
+        <sys_updated_on>2022-07-12 06:35:41</sys_updated_on>
+        <type>default</type>
+    </sys_ux_client_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</application>
+        <file_path/>
+        <instance_id>835dfff4db24b340387021c4059619f4</instance_id>
+        <instance_name>dev77946</instance_name>
+        <name>sys_ux_client_script_773e06431be455106a08a9b4bd4bcb35</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ux_client_script"&gt;&lt;sys_ux_client_script action="INSERT_OR_UPDATE"&gt;&lt;includes/&gt;&lt;macroponent display_value="Record"&gt;623e46031be455106a08a9b4bd4bcba1&lt;/macroponent&gt;&lt;name&gt;Handle activityLogs update&lt;/name&gt;&lt;required_translations&gt;[ ]&lt;/required_translations&gt;&lt;script&gt;&lt;![CDATA[
+function handler({api, event: {payload: {name, value}}, helpers, imports}) {
+    const TEMPLATES_REFRESH_STATE_NAME = 'templatesRefresh';
+    const TEMPLATES_REFRESH_OPERATIONS = ['inserted', 'closed', 'deleted', 'updated'];
+    const templateRefreshState = api.state[TEMPLATES_REFRESH_STATE_NAME];
+
+    if (name === 'activityLogs' &amp;&amp; value &amp;&amp; value.size &gt; 0) {
+        const mapEntries = Array.from(value);
+        if (!mapEntries || mapEntries.length &lt; 1)
+            return;
+        const curCrudActivities = mapEntries.pop()[1].activities.get('crud');
+        if (!curCrudActivities || curCrudActivities.length &lt; 1)
+            return;
+        const {table, operation, timestamp} = curCrudActivities[curCrudActivities.length - 1];
+
+        if (table.match(/^sys_template\d*$/) &amp;&amp; TEMPLATES_REFRESH_OPERATIONS.includes(operation) &amp;&amp; timestamp !== templateRefreshState.timestamp) {
+                api.setState(TEMPLATES_REFRESH_STATE_NAME, {
+                    timestamp,
+                });
+        }
+    }
+}]]&gt;&lt;/script&gt;&lt;script_api_version&gt;2.0.0&lt;/script_api_version&gt;&lt;sys_class_name&gt;sys_ux_client_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;David.Admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-07-12 06:28:53&lt;/sys_created_on&gt;&lt;sys_id&gt;773e06431be455106a08a9b4bd4bcb35&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;Handle activityLogs update&lt;/sys_name&gt;&lt;sys_package display_value="Working From Home (WFH)" source="x_852034_wfh"&gt;ca4c5dfd1ba811106a08a9b4bd4bcb1f&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Working From Home (WFH)"&gt;ca4c5dfd1ba811106a08a9b4bd4bcb1f&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ux_client_script_773e06431be455106a08a9b4bd4bcb35&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;David.Admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-07-12 06:35:41&lt;/sys_updated_on&gt;&lt;type&gt;default&lt;/type&gt;&lt;/sys_ux_client_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>2030587560</payload_hash>
+        <record_name>Handle activityLogs update</record_name>
+        <reverted_from/>
+        <source>f97481901b3c59106a08a9b4bd4bcb67</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>David.Admin</sys_created_by>
+        <sys_created_on>2022-07-15 22:19:32</sys_created_on>
+        <sys_id>b294c9901b3c59106a08a9b4bd4bcb73</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18203f213990000001</sys_recorded_at>
+        <sys_updated_by>David.Admin</sys_updated_by>
+        <sys_updated_on>2022-07-15 22:19:32</sys_updated_on>
+        <type>UX Client Script</type>
+        <update_guid>0a738e4020705910d4034cdaff985f4a</update_guid>
+        <update_guid_history>0a738e4020705910d4034cdaff985f4a:2030587560,1310015cc0f8591011f186ab1cac725c:0,a7cf4ec3d3e45510f1210b321522865d:2030587560,f33e0643fde4551091c57a7c8b425e39:-969926770</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>David.Admin</sys_created_by>
+        <sys_created_on>2022-07-16 00:13:16</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_client_script">sys_ux_client_script</sys_db_object>
+        <sys_id>064c3e378ec64bd881af3851df1199e4</sys_id>
+        <sys_metadata>773e06431be455106a08a9b4bd4bcb35</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Handle activityLogs update</sys_name>
+        <sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope>
+        <sys_scope_delete display_value="">4c6c017a72da4588a43d0b2e3ce46da4</sys_scope_delete>
+        <sys_update_name>sys_ux_client_script_773e06431be455106a08a9b4bd4bcb35</sys_update_name>
+        <sys_update_version display_value="sys_ux_client_script_773e06431be455106a08a9b4bd4bcb35">b294c9901b3c59106a08a9b4bd4bcb73</sys_update_version>
+        <sys_updated_by>David.Admin</sys_updated_by>
+        <sys_updated_on>2022-07-16 00:13:16</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
