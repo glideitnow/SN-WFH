@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <includes/>
+        <macroponent display_value="Drafted">53d776901bf099106a08a9b4bd4bcb99</macroponent>
+        <name>Go back to edit record</name>
+        <required_translations>[ ]</required_translations>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ * @param {ApiHelpers} params.helpers
+ */
+function handler({
+    api,
+    event,
+    helpers,
+    imports
+}) {
+    const strTable = api.context.props.table;
+    const strSysid = api.context.props.sysid;
+
+    helpers.navigate.to('wfh-request', {
+        page: 'edit',
+        table: strTable,
+        sysid: strSysid
+    }, {
+        refresh: Date.now()
+    });
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>David.Admin</sys_created_by>
+        <sys_created_on>2022-07-17 00:36:22</sys_created_on>
+        <sys_id>b88d6a6c1b30d9106a08a9b4bd4bcbdb</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Go back to edit record</sys_name>
+        <sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope>
+        <sys_update_name>sys_ux_client_script_b88d6a6c1b30d9106a08a9b4bd4bcbdb</sys_update_name>
+        <sys_updated_by>David.Admin</sys_updated_by>
+        <sys_updated_on>2022-07-17 00:47:19</sys_updated_on>
+        <type>default</type>
+    </sys_ux_client_script>
+</record_update>

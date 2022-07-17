@@ -4,15 +4,29 @@
             <element>u_reason</element>
             <position>0</position>
             <sys_created_by>David.Admin</sys_created_by>
-            <sys_created_on>2022-07-14 06:23:41</sys_created_on>
-            <sys_id>d73064b71b2cd5106a08a9b4bd4bcbff</sys_id>
+            <sys_created_on>2022-07-16 07:39:50</sys_created_on>
+            <sys_id>5ad48b9c1bf099106a08a9b4bd4bcb46</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Details" display_value="Details" name="x_852034_wfh_requests" sys_domain="global" view="Default view">78b3ed391be811106a08a9b4bd4bcb80</sys_ui_section>
             <sys_updated_by>David.Admin</sys_updated_by>
-            <sys_updated_on>2022-07-14 06:23:41</sys_updated_on>
+            <sys_updated_on>2022-07-16 07:39:50</sys_updated_on>
             <sys_user/>
             <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>activity.xml</element>
+            <position>1</position>
+            <sys_created_by>David.Admin</sys_created_by>
+            <sys_created_on>2022-07-16 07:39:50</sys_created_on>
+            <sys_id>92d48b9c1bf099106a08a9b4bd4bcb47</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter display_value="Activities (filtered)">444ea5c6bf310100e628555b3f0739d6</sys_ui_formatter>
+            <sys_ui_section caption="Details" display_value="Details" name="x_852034_wfh_requests" sys_domain="global" view="Default view">78b3ed391be811106a08a9b4bd4bcb80</sys_ui_section>
+            <sys_updated_by>David.Admin</sys_updated_by>
+            <sys_updated_on>2022-07-16 07:39:50</sys_updated_on>
+            <sys_user/>
+            <type>formatter</type>
         </sys_ui_element>
         <sys_ui_section action="INSERT_OR_UPDATE">
             <caption>Details</caption>

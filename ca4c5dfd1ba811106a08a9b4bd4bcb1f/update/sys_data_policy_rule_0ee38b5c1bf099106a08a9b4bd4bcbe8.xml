@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_data_policy_rule">
+    <sys_data_policy_rule action="INSERT_OR_UPDATE">
+        <disabled>true</disabled>
+        <field>u_start_date</field>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_data_policy_rule</sys_class_name>
+        <sys_created_by>David.Admin</sys_created_by>
+        <sys_created_on>2022-07-16 07:36:02</sys_created_on>
+        <sys_data_policy display_value="Cancelled WFH Requests by employees are ready only">bcb3835c1bf099106a08a9b4bd4bcbc0</sys_data_policy>
+        <sys_id>0ee38b5c1bf099106a08a9b4bd4bcbe8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>u_start_date</sys_name>
+        <sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope>
+        <sys_update_name>sys_data_policy_rule_0ee38b5c1bf099106a08a9b4bd4bcbe8</sys_update_name>
+        <sys_updated_by>David.Admin</sys_updated_by>
+        <sys_updated_on>2022-07-16 07:36:02</sys_updated_on>
+        <table>x_852034_wfh_requests</table>
+    </sys_data_policy_rule>
+</record_update>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_screen">
     <sys_ux_screen action="INSERT_OR_UPDATE">
         <active>true</active>
-        <app_config display_value="Working From Home (WFH) Config">90da7d8b1b6455106a08a9b4bd4bcbd8</app_config>
+        <app_config display_value="Working From Home (WFH) Portal Config">90da7d8b1b6455106a08a9b4bd4bcbd8</app_config>
         <description/>
         <event_mappings>[ {
   "eventMappingId" : "clfflnwhhcraaddqhddffhhddeeccbbdkxah",
@@ -98,10 +98,6 @@
     "type" : "JSON_LITERAL",
     "value" : ""
   },
-  "views" : {
-    "type" : "JSON_LITERAL",
-    "value" : ""
-  },
   "page" : {
     "type" : "JSON_LITERAL",
     "value" : ""
@@ -152,7 +148,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>638474bb1b6cd5106a08a9b4bd4bcb3a</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name>WFH Request NEW</sys_name>
         <sys_overrides/>
         <sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package>
@@ -160,7 +156,7 @@
         <sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope>
         <sys_update_name>sys_ux_screen_638474bb1b6cd5106a08a9b4bd4bcb3a</sys_update_name>
         <sys_updated_by>David.Admin</sys_updated_by>
-        <sys_updated_on>2022-07-15 04:10:16</sys_updated_on>
+        <sys_updated_on>2022-07-17 05:39:04</sys_updated_on>
     </sys_ux_screen>
     <sys_translated_text action="delete_multiple" query="documentkey=638474bb1b6cd5106a08a9b4bd4bcb3a"/>
 </record_update>

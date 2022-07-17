@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_data_policy2">
+    <sys_data_policy2 action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <apply_import_set>true</apply_import_set>
+        <apply_soap>true</apply_soap>
+        <conditions table="x_852034_wfh_requests">u_state!=0^EQ<item display_value="Draft" endquery="false" field="u_state" goto="false" newquery="false" operator="!=" or="false" value="0"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </conditions>
+        <description>Once a Request has moved from draft, the User cannot be changed.</description>
+        <enforce_ui>true</enforce_ui>
+        <inherit>false</inherit>
+        <model_id/>
+        <model_table>x_852034_wfh_requests</model_table>
+        <reverse_if_false>true</reverse_if_false>
+        <short_description>WFH Request Users are locked in</short_description>
+        <sys_class_name>sys_data_policy2</sys_class_name>
+        <sys_created_by>David.Admin</sys_created_by>
+        <sys_created_on>2022-07-16 07:46:55</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8e46c3101b3499106a08a9b4bd4bcb58</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>WFH Request Users are locked in</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope>
+        <sys_update_name>sys_data_policy2_8e46c3101b3499106a08a9b4bd4bcb58</sys_update_name>
+        <sys_updated_by>David.Admin</sys_updated_by>
+        <sys_updated_on>2022-07-16 07:53:02</sys_updated_on>
+    </sys_data_policy2>
+</record_update>

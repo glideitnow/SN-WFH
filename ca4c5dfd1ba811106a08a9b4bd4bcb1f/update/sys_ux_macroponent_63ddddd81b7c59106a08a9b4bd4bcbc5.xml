@@ -364,89 +364,986 @@
       },
       "overrides" : {
         "composition" : [ {
-          "elementId" : "calendar_report_1",
-          "elementLabel" : "Calendar Report 1",
+          "elementId" : "calendar_1",
+          "elementLabel" : "Calendar 1",
           "propertyValues" : {
-            "table" : {
+            "availableTimezones" : {
               "type" : "JSON_LITERAL",
-              "value" : "x_852034_wfh_requests"
+              "value" : [ {
+                "name" : "GMT",
+                "label" : "GMT"
+              } ]
             },
-            "reportSource" : {
-              "type" : "JSON_LITERAL",
-              "value" : ""
-            },
-            "encodedQuery" : {
-              "type" : "CLIENT_TRANSFORM",
-              "transform" : {
-                "operands" : {
-                  "type" : "LIST_CONTAINER",
-                  "container" : [ {
+            "availableViews" : {
+              "type" : "LIST_CONTAINER",
+              "container" : [ {
+                "type" : "MAP_CONTAINER",
+                "container" : {
+                  "view" : {
                     "type" : "JSON_LITERAL",
-                    "value" : "u_active=true^u_state=3"
-                  } ]
+                    "value" : "DAY"
+                  },
+                  "viewProvider" : {
+                    "type" : "JSON_LITERAL",
+                    "value" : "DAY"
+                  },
+                  "label" : {
+                    "type" : "TRANSLATION_LITERAL",
+                    "value" : {
+                      "code" : null,
+                      "message" : "Day",
+                      "comment" : ""
+                    }
+                  },
+                  "type" : {
+                    "type" : "JSON_LITERAL",
+                    "value" : "Calendar"
+                  }
+                }
+              }, {
+                "type" : "MAP_CONTAINER",
+                "container" : {
+                  "view" : {
+                    "type" : "JSON_LITERAL",
+                    "value" : "work_week"
+                  },
+                  "viewProvider" : {
+                    "type" : "JSON_LITERAL",
+                    "value" : "COLUMN"
+                  },
+                  "label" : {
+                    "type" : "TRANSLATION_LITERAL",
+                    "value" : {
+                      "code" : null,
+                      "message" : "Work Week",
+                      "comment" : ""
+                    }
+                  },
+                  "type" : {
+                    "type" : "JSON_LITERAL",
+                    "value" : "Calendar"
+                  }
+                }
+              }, {
+                "type" : "MAP_CONTAINER",
+                "container" : {
+                  "view" : {
+                    "type" : "JSON_LITERAL",
+                    "value" : "WEEK"
+                  },
+                  "viewProvider" : {
+                    "type" : "JSON_LITERAL",
+                    "value" : "WEEK"
+                  },
+                  "label" : {
+                    "type" : "TRANSLATION_LITERAL",
+                    "value" : {
+                      "code" : null,
+                      "message" : "Week",
+                      "comment" : ""
+                    }
+                  },
+                  "type" : {
+                    "type" : "JSON_LITERAL",
+                    "value" : "Calendar"
+                  }
+                }
+              }, {
+                "type" : "MAP_CONTAINER",
+                "container" : {
+                  "view" : {
+                    "type" : "JSON_LITERAL",
+                    "value" : "MONTH"
+                  },
+                  "viewProvider" : {
+                    "type" : "JSON_LITERAL",
+                    "value" : "MONTH"
+                  },
+                  "label" : {
+                    "type" : "TRANSLATION_LITERAL",
+                    "value" : {
+                      "code" : null,
+                      "message" : "Month",
+                      "comment" : ""
+                    }
+                  },
+                  "type" : {
+                    "type" : "JSON_LITERAL",
+                    "value" : "Calendar"
+                  }
+                }
+              }, {
+                "type" : "MAP_CONTAINER",
+                "container" : {
+                  "view" : {
+                    "type" : "JSON_LITERAL",
+                    "value" : "TIMELINE_DAY"
+                  },
+                  "viewProvider" : {
+                    "type" : "JSON_LITERAL",
+                    "value" : "TIMELINE_DAY"
+                  },
+                  "label" : {
+                    "type" : "TRANSLATION_LITERAL",
+                    "value" : {
+                      "code" : null,
+                      "message" : "Day",
+                      "comment" : ""
+                    }
+                  },
+                  "type" : {
+                    "type" : "JSON_LITERAL",
+                    "value" : "Timeline"
+                  }
+                }
+              }, {
+                "type" : "MAP_CONTAINER",
+                "container" : {
+                  "view" : {
+                    "type" : "JSON_LITERAL",
+                    "value" : "TIMELINE_WEEK"
+                  },
+                  "viewProvider" : {
+                    "type" : "JSON_LITERAL",
+                    "value" : "TIMELINE_WEEK"
+                  },
+                  "label" : {
+                    "type" : "TRANSLATION_LITERAL",
+                    "value" : {
+                      "code" : null,
+                      "message" : "Week",
+                      "comment" : ""
+                    }
+                  },
+                  "type" : {
+                    "type" : "JSON_LITERAL",
+                    "value" : "Timeline"
+                  }
+                }
+              } ]
+            },
+            "configAria" : {
+              "type" : "MAP_CONTAINER",
+              "container" : { }
+            },
+            "contextDate" : {
+              "type" : "JSON_LITERAL",
+              "value" : "2020-07-29 10:31:29"
+            },
+            "contextualPanelItems" : {
+              "type" : "JSON_LITERAL",
+              "value" : [ {
+                "icon" : "filter-outline",
+                "id" : "filter",
+                "label" : "Filter"
+              } ]
+            },
+            "currentView" : {
+              "type" : "JSON_LITERAL",
+              "value" : "TIMELINE_WEEK"
+            },
+            "customizableLabels" : {
+              "type" : "MAP_CONTAINER",
+              "container" : {
+                "newButton" : {
+                  "type" : "MAP_CONTAINER",
+                  "container" : {
+                    "text" : {
+                      "type" : "TRANSLATION_LITERAL",
+                      "value" : {
+                        "code" : null,
+                        "message" : "New",
+                        "comment" : ""
+                      }
+                    }
+                  }
                 },
-                "operator" : "CONCAT"
+                "agendaEmptyState" : {
+                  "type" : "MAP_CONTAINER",
+                  "container" : {
+                    "text" : {
+                      "type" : "TRANSLATION_LITERAL",
+                      "value" : {
+                        "code" : null,
+                        "message" : "No Events Scheduled",
+                        "comment" : ""
+                      }
+                    },
+                    "subText" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : ""
+                    }
+                  }
+                }
               }
             },
-            "startDateField" : {
+            "dateFormat" : {
               "type" : "JSON_LITERAL",
-              "value" : "u_start_date"
+              "value" : "YYYY-MM-DD"
             },
-            "endDateField" : {
+            "datePickerTemplates" : {
               "type" : "JSON_LITERAL",
-              "value" : "u_end_date"
-            },
-            "eventDisplayFields" : {
-              "type" : "JSON_LITERAL",
-              "value" : "u_user"
-            },
-            "componentTitle" : {
-              "type" : "TRANSLATION_LITERAL",
               "value" : {
-                "code" : null,
-                "message" : "",
-                "comment" : ""
+                "work_week" : "startMoment ? startMoment.format('ddd, MMM D') + '-' + endMoment.format('ddd, MMM D') : ''"
               }
             },
-            "disableFollowFilters" : {
+            "dir" : {
               "type" : "JSON_LITERAL",
-              "value" : true
+              "value" : "default"
             },
-            "hideFilterOverview" : {
+            "externalEvent" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "events" : {
+              "type" : "JSON_LITERAL",
+              "value" : [ {
+                "title" : "Demo day",
+                "bgColor" : "nds-orange",
+                "start" : "2020-07-29 04:00:01",
+                "end" : "2020-07-29 18:00:00",
+                "childEvents" : [ {
+                  "title" : "ITSM",
+                  "bgColor" : "#78b0cc",
+                  "start" : "2020-07-29 07:30:01",
+                  "end" : "2020-07-29 09:45:00"
+                }, {
+                  "title" : "ITBM",
+                  "bgColor" : "#ecdf93",
+                  "start" : "2020-07-29 11:15:01",
+                  "end" : "2020-07-29 12:45:00"
+                }, {
+                  "title" : "CSM",
+                  "bgColor" : "#28b353",
+                  "start" : "2020-07-29 14:00:01",
+                  "end" : "2020-07-29 16:00:00"
+                } ],
+                "group" : "Hardware",
+                "id" : "100",
+                "description" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It ha",
+                "startMS" : 1595995201000,
+                "endMS" : 1596045600000
+              }, {
+                "title" : "Short Event",
+                "bgColor" : "nds-orange",
+                "start" : "2020-07-29 08:00:00",
+                "end" : "2020-07-29 08:15:00",
+                "group" : "Hardware",
+                "id" : "101",
+                "description" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It ha",
+                "startMS" : 1596009600000,
+                "endMS" : 1596010500000
+              }, {
+                "title" : "Short Event 1",
+                "bgColor" : "nds-orange",
+                "start" : "2020-07-29 23:45:00",
+                "end" : "2020-07-29 23:50:00",
+                "group" : "Hardware",
+                "id" : "102",
+                "description" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It ha",
+                "startMS" : 1596066300000,
+                "endMS" : 1596066600000
+              }, {
+                "title" : "Event 2",
+                "bgColor" : "#FF0000",
+                "start" : "2020-07-29 02:20:00",
+                "end" : "2020-07-29 06:00:00",
+                "group" : "Hardware",
+                "id" : "103",
+                "description" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It ha",
+                "startMS" : 1595989200000,
+                "endMS" : 1596002400000
+              }, {
+                "title" : "Event 3",
+                "start" : "2020-07-29 03:30:01",
+                "end" : "2020-07-29 07:00:00",
+                "group" : "Hardware",
+                "id" : "104",
+                "description" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It ha",
+                "startMS" : 1595993401000,
+                "endMS" : 1596006000000
+              }, {
+                "title" : "Event 4",
+                "start" : "2020-07-29 02:50:01",
+                "end" : "2020-07-29 07:30:00",
+                "group" : "Hardware",
+                "id" : "105",
+                "description" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It ha",
+                "startMS" : 1595991001000,
+                "endMS" : 1596007800000
+              }, {
+                "title" : "Event 3_1",
+                "start" : "2020-07-29 03:30:01",
+                "end" : "2020-07-29 07:00:00",
+                "group" : "HardDisk",
+                "id" : "106",
+                "description" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It ha",
+                "startMS" : 1595993401000,
+                "endMS" : 1596006000000
+              }, {
+                "title" : "Event 4_1",
+                "start" : "2020-07-29 02:50:01",
+                "end" : "2020-07-29 07:30:00",
+                "group" : "HardDisk",
+                "id" : "107",
+                "description" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It ha",
+                "startMS" : 1595991001000,
+                "endMS" : 1596007800000
+              }, {
+                "title" : "Event 5",
+                "bgColor" : "nds-purple",
+                "start" : "2020-07-29 08:00:01",
+                "end" : "2020-07-29 10:00:00",
+                "group" : "Software",
+                "id" : "108",
+                "description" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It ha",
+                "startMS" : 1596009601000,
+                "endMS" : 1596016800000
+              }, {
+                "title" : "Event 6",
+                "start" : "2020-07-29 08:00:01",
+                "end" : "2020-07-29 10:00:00",
+                "group" : "Software",
+                "id" : "109",
+                "description" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It ha",
+                "startMS" : 1596009601000,
+                "endMS" : 1596016800000
+              }, {
+                "title" : "Event 7",
+                "bgColor" : "red",
+                "start" : "2020-07-29 12:00:01",
+                "end" : "2020-07-29 13:30:00",
+                "group" : "ServiceDesk",
+                "id" : "110",
+                "description" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It ha",
+                "startMS" : 1596024001000,
+                "endMS" : 1596029400000
+              }, {
+                "title" : "MIN HEIGHT",
+                "start" : "2020-07-29 12:00:01",
+                "end" : "2020-07-29 12:01:01",
+                "group" : "ServiceDesk",
+                "id" : "111",
+                "description" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It ha",
+                "startMS" : 1596024001000,
+                "endMS" : 1596024061000
+              }, {
+                "title" : "Event 8",
+                "start" : "2020-07-29 12:00:01",
+                "end" : "2020-07-29 15:00:00",
+                "group" : "ServiceDesk",
+                "id" : "112",
+                "startMS" : 1596024001000,
+                "endMS" : 1596034800000
+              }, {
+                "title" : "Event 9 multi day - non overlapping",
+                "bgColor" : "#94baf7",
+                "start" : "2020-07-29 02:00:00",
+                "end" : "2020-07-30 03:00:00",
+                "group" : "ServiceDesk",
+                "id" : "113",
+                "gradientColor1" : "#ccc",
+                "description" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It ha",
+                "startMS" : 1595988000000,
+                "endMS" : 1596078000000
+              }, {
+                "title" : "Event 9_1 With Gradient",
+                "textColor" : "#fff",
+                "start" : "2020-07-30 10:00:01",
+                "end" : "2020-07-30 15:00:00",
+                "group" : "ServiceDesk",
+                "id" : "114",
+                "gradientColor1" : "#0e78c4",
+                "gradientColor2" : "#68abda",
+                "startMS" : 1596103201000,
+                "endMS" : 1596121200000
+              }, {
+                "title" : "Event 10",
+                "start" : "2020-07-31 01:40:00",
+                "end" : "2020-07-31 04:10:00",
+                "group" : "Network",
+                "id" : "115",
+                "startMS" : 1596159600000,
+                "endMS" : 1596168600000
+              }, {
+                "title" : "Event 11",
+                "start" : "2020-07-31 04:00:00",
+                "end" : "2020-07-31 08:10:00",
+                "group" : "Network",
+                "id" : "116",
+                "startMS" : 1596168000000,
+                "endMS" : 1596183000000
+              }, {
+                "title" : "Event 12 Read Only",
+                "bgColor" : "#ff0000",
+                "start" : "2020-07-31 08:00:00",
+                "end" : "2020-07-31 11:10:00",
+                "readOnly" : true,
+                "group" : "Software",
+                "id" : "117",
+                "startMS" : 1596182400000,
+                "endMS" : 1596193800000
+              }, {
+                "title" : "Event 13 Only resizable",
+                "bgColor" : "#ecdf93",
+                "start" : "2020-07-31 11:00:00",
+                "end" : "2020-07-31 16:10:00",
+                "allowMove" : false,
+                "allowResize" : true,
+                "group" : "Software",
+                "id" : "118",
+                "startMS" : 1596193200000,
+                "endMS" : 1596211800000
+              }, {
+                "title" : "Event 13_1 With Gradient",
+                "start" : "2020-07-31 19:00:00",
+                "end" : "2020-07-31 21:10:00",
+                "allowMove" : false,
+                "allowResize" : true,
+                "group" : "Software",
+                "id" : "119",
+                "gradientColor1" : "#ccc",
+                "gradientColor2" : "#fff",
+                "borderColor" : "#ccc",
+                "startMS" : 1596222000000,
+                "endMS" : 1596229800000
+              }, {
+                "title" : "Event 14 Only be moved",
+                "bgColor" : "#94baf7",
+                "start" : "2020-08-02 02:00:00",
+                "end" : "2020-08-02 06:00:00",
+                "allowMove" : true,
+                "allowResize" : false,
+                "group" : "MIM",
+                "id" : "120",
+                "startMS" : 1596333600000,
+                "endMS" : 1596348000000
+              }, {
+                "title" : "Event 15",
+                "start" : "2020-08-02 02:30:00",
+                "end" : "2020-08-02 05:40:00",
+                "group" : "MIM",
+                "id" : "121",
+                "startMS" : 1596335400000,
+                "endMS" : 1596346800000
+              }, {
+                "title" : "Event 16",
+                "start" : "2020-08-02 07:00:00",
+                "end" : "2020-08-02 11:00:00",
+                "group" : "MIM",
+                "id" : "122",
+                "startMS" : 1596351600000,
+                "endMS" : 1596366000000
+              }, {
+                "title" : "Event 17",
+                "start" : "2020-08-02 07:10:00",
+                "end" : "2020-08-02 15:10:00",
+                "group" : "MIM",
+                "id" : "123",
+                "startMS" : 1596352200000,
+                "endMS" : 1596381000000
+              }, {
+                "title" : "Event 18",
+                "start" : "2020-08-02 07:15:00",
+                "end" : "2020-08-02 19:10:00",
+                "group" : "MIM",
+                "id" : "124",
+                "startMS" : 1596352500000,
+                "endMS" : 1596395400000
+              }, {
+                "title" : "Event 15_1",
+                "bgColor" : "nds-brown",
+                "start" : "2020-08-02 02:30:00",
+                "end" : "2020-08-02 05:40:00",
+                "group" : "TechinicalPlan",
+                "id" : "125",
+                "startMS" : 1596335400000,
+                "endMS" : 1596346800000
+              }, {
+                "title" : "Event 16_1",
+                "start" : "2020-08-02 07:00:00",
+                "end" : "2020-08-02 11:00:00",
+                "group" : "TechnicalPlan",
+                "id" : "126",
+                "startMS" : 1596351600000,
+                "endMS" : 1596366000000
+              }, {
+                "title" : "Event 17_1",
+                "start" : "2020-08-02 07:10:00",
+                "end" : "2020-08-02 15:10:00",
+                "group" : "CommunicationPlan",
+                "id" : "127",
+                "startMS" : 1596352200000,
+                "endMS" : 1596381000000
+              }, {
+                "title" : "Event 18_1",
+                "start" : "2020-08-02 07:15:00",
+                "end" : "2020-08-02 19:10:00",
+                "group" : "CommuinicationPlan",
+                "id" : "128",
+                "startMS" : 1596352500000,
+                "endMS" : 1596395400000
+              }, {
+                "title" : "Event 15_2",
+                "bgColor" : "nds-teal",
+                "start" : "2020-08-02 02:30:00",
+                "end" : "2020-08-02 05:40:00",
+                "group" : "ConferenceTask",
+                "id" : "129",
+                "startMS" : 1596335400000,
+                "endMS" : 1596346800000
+              }, {
+                "title" : "Event 16_2",
+                "start" : "2020-08-02 07:00:00",
+                "end" : "2020-08-02 11:00:00",
+                "group" : "ConferenceTask",
+                "id" : "130",
+                "startMS" : 1596351600000,
+                "endMS" : 1596366000000
+              }, {
+                "title" : "Event 17_2",
+                "start" : "2020-08-02 07:10:00",
+                "end" : "2020-08-02 15:10:00",
+                "group" : "CommunicationTask",
+                "id" : "131",
+                "startMS" : 1596352200000,
+                "endMS" : 1596381000000
+              }, {
+                "title" : "Event 18_2",
+                "start" : "2020-08-02 07:15:00",
+                "end" : "2020-08-02 19:10:00",
+                "group" : "CommTask2",
+                "id" : "132",
+                "startMS" : 1596352500000,
+                "endMS" : 1596395400000
+              }, {
+                "title" : "Event 15_3",
+                "start" : "2020-08-02 02:30:00",
+                "end" : "2020-08-02 05:40:00",
+                "group" : "SMSTask",
+                "id" : "133",
+                "startMS" : 1596335400000,
+                "endMS" : 1596346800000
+              }, {
+                "title" : "Event 16_3",
+                "start" : "2020-08-02 07:00:00",
+                "end" : "2020-08-02 11:00:00",
+                "group" : "SMSTask",
+                "id" : "134",
+                "startMS" : 1596351600000,
+                "endMS" : 1596366000000
+              }, {
+                "title" : "Event 17_3",
+                "bgColor" : "nds-gray",
+                "start" : "2020-08-02 07:10:00",
+                "end" : "2020-08-02 15:10:00",
+                "group" : "MailTask",
+                "id" : "135",
+                "startMS" : 1596352200000,
+                "endMS" : 1596381000000
+              }, {
+                "title" : "Event 18_3",
+                "start" : "2020-08-05 07:15:00",
+                "end" : "2020-08-05 19:10:00",
+                "group" : "MailTask",
+                "id" : "136",
+                "startMS" : 1596611700000,
+                "endMS" : 1596654600000
+              }, {
+                "title" : "Event 19_3",
+                "start" : "2020-08-05 07:15:00",
+                "end" : "2020-08-05 19:10:00",
+                "group" : "MailTask",
+                "id" : "137",
+                "startMS" : 1596611700000,
+                "endMS" : 1596654600000
+              }, {
+                "title" : "Event 20_3",
+                "start" : "2020-08-28 07:15:00",
+                "end" : "2020-08-28 19:10:00",
+                "group" : "MailTask",
+                "id" : "138",
+                "startMS" : 1598598900000,
+                "endMS" : 1598641800000
+              }, {
+                "title" : "Event 21_3",
+                "start" : "2020-08-28 07:15:00",
+                "end" : "2020-08-28 19:10:00",
+                "group" : "MailTask",
+                "id" : "139",
+                "startMS" : 1598598900000,
+                "endMS" : 1598641800000
+              }, {
+                "title" : "Event 22",
+                "start" : "2020-08-05 00:00:00",
+                "end" : "2020-08-06 00:00:00",
+                "group" : "Hardware",
+                "id" : "140",
+                "startMS" : 1596585600000,
+                "endMS" : 1596672000000
+              } ]
+            },
+            "firstDayOfWeek" : {
+              "type" : "JSON_LITERAL",
+              "value" : 0
+            },
+            "hotkeys" : {
+              "type" : "LIST_CONTAINER",
+              "container" : [ {
+                "type" : "MAP_CONTAINER",
+                "container" : {
+                  "eventName" : {
+                    "type" : "TRANSLATION_LITERAL",
+                    "value" : {
+                      "code" : null,
+                      "message" : "markspan",
+                      "comment" : ""
+                    }
+                  },
+                  "selector" : {
+                    "type" : "JSON_LITERAL",
+                    "value" : ".mark-span"
+                  },
+                  "keyCode" : {
+                    "type" : "JSON_LITERAL",
+                    "value" : 77
+                  },
+                  "name" : {
+                    "type" : "JSON_LITERAL",
+                    "value" : "M"
+                  },
+                  "view" : {
+                    "type" : "JSON_LITERAL",
+                    "value" : "COLUMN"
+                  },
+                  "info" : {
+                    "type" : "MAP_CONTAINER",
+                    "container" : {
+                      "next" : {
+                        "type" : "MAP_CONTAINER",
+                        "container" : {
+                          "keyName" : {
+                            "type" : "JSON_LITERAL",
+                            "value" : "M"
+                          },
+                          "description" : {
+                            "type" : "TRANSLATION_LITERAL",
+                            "value" : {
+                              "code" : null,
+                              "message" : "Select next mark span event",
+                              "comment" : ""
+                            }
+                          }
+                        }
+                      },
+                      "previous" : {
+                        "type" : "MAP_CONTAINER",
+                        "container" : {
+                          "keyName" : {
+                            "type" : "JSON_LITERAL",
+                            "value" : "Shift + M"
+                          },
+                          "description" : {
+                            "type" : "TRANSLATION_LITERAL",
+                            "value" : {
+                              "code" : null,
+                              "message" : "Select previous mark span event",
+                              "comment" : ""
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              } ]
+            },
+            "locale" : {
+              "type" : "JSON_LITERAL",
+              "value" : "default"
+            },
+            "markSpans" : {
+              "type" : "JSON_LITERAL",
+              "value" : [ {
+                "startDate" : "2019-01-01",
+                "endDate" : "2020-01-01",
+                "occurrenceDays" : [ 0 ],
+                "zones" : [ {
+                  "startTime" : "00:00:00",
+                  "endTime" : "23:59:59"
+                } ],
+                "textColor" : "blue",
+                "bgColor" : "rgb(251, 236, 207)",
+                "block" : false,
+                "$$mid" : 0
+              }, {
+                "startDate" : "2019-08-01",
+                "endDate" : "2019-11-01",
+                "occurrenceDays" : [ 6 ],
+                "zones" : [ {
+                  "startTime" : "01:00:00",
+                  "endTime" : "04:00:00"
+                } ],
+                "block" : true,
+                "title" : "Blackout",
+                "$$mid" : 1
+              }, {
+                "startDate" : "2019-08-01",
+                "endDate" : "2019-11-01",
+                "occurrenceDays" : [ 6 ],
+                "zones" : [ {
+                  "startTime" : "09:00:00",
+                  "endTime" : "20:00:00"
+                } ],
+                "block" : true,
+                "inclusiveCheck" : true,
+                "title" : "Blackout Inclusive",
+                "$$mid" : 2
+              }, {
+                "occurrenceDays" : [ 2 ],
+                "zones" : [ {
+                  "startTime" : "00:00:00",
+                  "endTime" : "23:59:59"
+                } ],
+                "block" : true,
+                "title" : "Maintenance - GMT (Full Day)",
+                "timezone" : "GMT",
+                "$$mid" : 3
+              } ]
+            },
+            "popoverContentState" : {
+              "type" : "JSON_LITERAL",
+              "value" : {
+                "value" : "empty"
+              }
+            },
+            "hideKeyboardShortcuts" : {
               "type" : "JSON_LITERAL",
               "value" : false
             },
-            "hideDescription" : {
+            "popoverEnabled" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "security" : {
+              "type" : "JSON_LITERAL",
+              "value" : {
+                "readOnly" : false,
+                "allowCreate" : true,
+                "allowMove" : true,
+                "allowResize" : true
+              }
+            },
+            "splitMultiDayEvent" : {
               "type" : "JSON_LITERAL",
               "value" : true
             },
-            "componentDescription" : {
-              "type" : "TRANSLATION_LITERAL",
+            "timeFormat" : {
+              "type" : "JSON_LITERAL",
+              "value" : "HH:mm"
+            },
+            "sections" : {
+              "type" : "JSON_LITERAL",
+              "value" : [ {
+                "id" : "ITSM_IDC",
+                "title" : "Calendar Component",
+                "isCollapsed" : false,
+                "showHeader" : true,
+                "textColor" : "",
+                "children" : [ {
+                  "id" : "Software",
+                  "title" : "Appointment Booking",
+                  "markspans" : [ {
+                    "from" : 9,
+                    "spans" : 4,
+                    "color" : "#94baf7",
+                    "content" : ""
+                  }, {
+                    "from" : 13,
+                    "spans" : 1,
+                    "color" : "#e6f7c7",
+                    "content" : ""
+                  }, {
+                    "from" : 14,
+                    "spans" : 4,
+                    "color" : "#ecdf93",
+                    "content" : ""
+                  } ]
+                }, {
+                  "id" : "HardwareSection",
+                  "title" : "Calendar view",
+                  "isCollapsed" : false,
+                  "showHeader" : true,
+                  "children" : [ {
+                    "id" : "Hardware",
+                    "title" : "Readonly Calendar"
+                  }, {
+                    "id" : "HardDisk",
+                    "title" : "Editable Calendar",
+                    "markspans" : [ {
+                      "from" : 2,
+                      "spans" : 8,
+                      "color" : "#ffbdc5"
+                    }, {
+                      "from" : 8,
+                      "spans" : 2,
+                      "color" : "#e6f7c7"
+                    } ]
+                  }, {
+                    "id" : "NetworkGroup",
+                    "title" : "Drag and Drop support",
+                    "isCollapsed" : false,
+                    "showHeader" : true,
+                    "children" : [ {
+                      "id" : "Network",
+                      "title" : "Reschedule Events",
+                      "markspans" : [ {
+                        "from" : 8,
+                        "spans" : 8,
+                        "color" : "#ccc",
+                        "style" : {
+                          "backgroundImage" : "repeating-linear-gradient(-25deg, #fff, #fff 20px, #df5646 20px, #df5646 40px, #fff 40px, #fff 60px, #1c78a4 60px, #1c78a4 80px)"
+                        }
+                      }, {
+                        "from" : 8,
+                        "spans" : 2,
+                        "color" : "#ffbdc5"
+                      } ]
+                    }, {
+                      "id" : "Network1",
+                      "title" : "Extend/Shrink Events"
+                    } ]
+                  } ]
+                }, {
+                  "id" : "ServiceDesk",
+                  "title" : "Timeline View"
+                } ]
+              }, {
+                "id" : "ITBM_IDC",
+                "title" : "Mobile Applications",
+                "isCollapsed" : false,
+                "showHeader" : true,
+                "textColor" : "",
+                "children" : [ {
+                  "id" : "MIM",
+                  "title" : "MIM"
+                }, {
+                  "id" : "TechnicalPlan",
+                  "title" : "On Call Application",
+                  "isCollapsed" : false,
+                  "showHeader" : true,
+                  "children" : [ {
+                    "id" : "CommunicationTask",
+                    "title" : "View My Shifts"
+                  }, {
+                    "id" : "ConferenceTask",
+                    "title" : "Create Rotas",
+                    "isCollapsed" : false,
+                    "showHeader" : true,
+                    "children" : [ {
+                      "id" : "SMSTask",
+                      "title" : "View overlapping rotas"
+                    }, {
+                      "id" : "CommunicationPlan",
+                      "title" : "8-5 Shifts",
+                      "isCollapsed" : false,
+                      "showHeader" : true,
+                      "children" : [ {
+                        "id" : "MailTask",
+                        "title" : "Gaps"
+                      } ]
+                    } ]
+                  } ]
+                } ]
+              } ]
+            },
+            "timelineVerticalLines" : {
+              "type" : "JSON_LITERAL",
+              "value" : [ {
+                "meta" : { },
+                "inlineStyle" : {
+                  "width" : "2px",
+                  "height" : "100%",
+                  "margin" : "0 auto",
+                  "backgroundColor" : "#fff",
+                  "backgroundRepeat" : "repeat-y",
+                  "backgroundSize" : "100% 88px",
+                  "backgroundPosition" : "0% 0%",
+                  "backgroundImage" : "repeating-linear-gradient(-25deg, #fff, #fff 20px, #df5646 20px, #df5646 40px, #fff 40px, #fff 60px, #1c78a4 60px, #1c78a4 80px)"
+                },
+                "utcMS" : 1596006089149
+              }, {
+                "meta" : {
+                  "id" : 1
+                },
+                "inlineStyle" : {
+                  "width" : "2px",
+                  "height" : "100%",
+                  "margin" : "0 auto"
+                },
+                "utcMS" : 1595991689149
+              } ]
+            },
+            "timezone" : {
+              "type" : "JSON_LITERAL",
+              "value" : "GMT"
+            },
+            "viewSettings" : {
+              "type" : "JSON_LITERAL",
               "value" : {
-                "code" : null,
-                "message" : "",
-                "comment" : ""
+                "DAY" : {
+                  "snapGranularity" : 15,
+                  "splitRow" : 2
+                },
+                "WEEK" : {
+                  "snapGranularity" : 15,
+                  "splitRow" : 2
+                },
+                "work_week" : {
+                  "snapGranularity" : 15,
+                  "numberOfDays" : 5,
+                  "splitRow" : 2
+                },
+                "TIMELINE_DAY" : {
+                  "snapGranularity" : 15,
+                  "splitRow" : 2,
+                  "timeRowSpan" : 60,
+                  "groupBy" : "group",
+                  "animation" : false
+                },
+                "TIMELINE_WEEK" : {
+                  "eventHeight" : 20,
+                  "xStep" : 1,
+                  "xSize" : 7,
+                  "xStart" : 0,
+                  "xUnitName" : "days",
+                  "titleWidth" : 240,
+                  "viewName" : "TIMELINE_WEEK",
+                  "groupBy" : "group",
+                  "scrollDebounceTime" : 100,
+                  "noScrolling" : false,
+                  "eventMinWidthMS" : 3600000,
+                  "animation" : false,
+                  "snapGranularity" : 480,
+                  "splitRow" : 3,
+                  "numberOfDays" : 7,
+                  "viewLabel" : "Week"
+                }
               }
             },
-            "viewType" : {
+            "enableNewButton" : {
               "type" : "JSON_LITERAL",
-              "value" : "MONTH"
+              "value" : true
             },
-            "eventColor" : {
+            "enableNewCalendarClick" : {
               "type" : "JSON_LITERAL",
-              "value" : ""
-            },
-            "filterConfigurations" : {
-              "type" : "STATE_BINDING",
-              "binding" : {
-                "address" : [ "parFilters" ]
-              }
+              "value" : true
             }
           },
           "eventMappings" : [ ],
           "slot" : null,
           "definition" : {
-            "id" : "259e0221ff18a75c5f5f0fb28fa5d32f",
+            "id" : "1de221250a27afba43b9b3b04594857f",
             "type" : "MACROPONENT"
           },
           "overrides" : null,
@@ -456,15 +1353,13 @@
           },
           "isHero" : false,
           "isNonDestructive" : false,
-          "styles" : {
-            "height" : "initial"
-          }
+          "styles" : { }
         } ],
         "layout" : {
           "default" : {
             "children" : null,
             "isInline" : null,
-            "items" : [{"element_id":"calendar_report_1","styles":{}}],
+            "items" : [{"element_id":"calendar_1","styles":{}}],
             "root" : null,
             "rules" : null,
             "styles" : {"flex-direction":"column"},
@@ -533,7 +1428,40 @@
         <name>Start</name>
         <props>[ ]</props>
         <required_translations>[ {
+  "message" : "Day",
+  "comment" : ""
+}, {
+  "message" : "Filter",
+  "comment" : ""
+}, {
+  "message" : "GMT",
+  "comment" : ""
+}, {
+  "message" : "Month",
+  "comment" : ""
+}, {
+  "message" : "New",
+  "comment" : ""
+}, {
+  "message" : "No Events Scheduled",
+  "comment" : ""
+}, {
+  "message" : "Select next mark span event",
+  "comment" : ""
+}, {
+  "message" : "Select previous mark span event",
+  "comment" : ""
+}, {
+  "message" : "Week",
+  "comment" : ""
+}, {
+  "message" : "Work Week",
+  "comment" : ""
+}, {
   "message" : "Working from home request portal",
+  "comment" : ""
+}, {
+  "message" : "markspan",
   "comment" : ""
 } ]</required_translations>
         <root_component/>
@@ -545,13 +1473,13 @@
         <sys_created_by>David.Admin</sys_created_by>
         <sys_created_on>2022-07-16 00:09:55</sys_created_on>
         <sys_id>63ddddd81b7c59106a08a9b4bd4bcbc5</sys_id>
-        <sys_mod_count>15</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_name>Start</sys_name>
         <sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package>
         <sys_policy/>
         <sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope>
         <sys_update_name>sys_ux_macroponent_63ddddd81b7c59106a08a9b4bd4bcbc5</sys_update_name>
         <sys_updated_by>David.Admin</sys_updated_by>
-        <sys_updated_on>2022-07-16 02:25:39</sys_updated_on>
+        <sys_updated_on>2022-07-17 06:28:10</sys_updated_on>
     </sys_ux_macroponent>
 </record_update>

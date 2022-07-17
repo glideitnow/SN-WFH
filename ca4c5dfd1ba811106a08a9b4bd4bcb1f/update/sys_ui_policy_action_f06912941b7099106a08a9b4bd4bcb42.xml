@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field>u_state</field>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>David.Admin</sys_created_by>
+        <sys_created_on>2022-07-16 04:30:09</sys_created_on>
+        <sys_id>f06912941b7099106a08a9b4bd4bcb42</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>u_state</sys_name>
+        <sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope>
+        <sys_update_name>sys_ui_policy_action_f06912941b7099106a08a9b4bd4bcb42</sys_update_name>
+        <sys_updated_by>David.Admin</sys_updated_by>
+        <sys_updated_on>2022-07-17 05:49:59</sys_updated_on>
+        <table>x_852034_wfh_requests</table>
+        <ui_policy display_value="Hide Active and State fields">43f8da141b7099106a08a9b4bd4bcb76</ui_policy>
+        <visible>false</visible>
+    </sys_ui_policy_action>
+</record_update>

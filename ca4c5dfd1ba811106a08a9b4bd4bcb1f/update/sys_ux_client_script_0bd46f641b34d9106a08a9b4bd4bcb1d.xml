@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <includes/>
+        <macroponent display_value="Submitted Request">5af027601b34d9106a08a9b4bd4bcbf1</macroponent>
+        <name>confirmation_message_1_caption</name>
+        <required_translations>[ ]</required_translations>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ */
+function evaluateProperty({
+    api
+}) {
+
+    const ticketNumber = api.data.gform.nowRecordCommonHeader.primaryValue;
+    const message = 'Request ID: ' + ticketNumber;
+    return message;
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>David.Admin</sys_created_by>
+        <sys_created_on>2022-07-17 04:38:11</sys_created_on>
+        <sys_id>0bd46f641b34d9106a08a9b4bd4bcb1d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>confirmation_message_1_caption</sys_name>
+        <sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope>
+        <sys_update_name>sys_ux_client_script_0bd46f641b34d9106a08a9b4bd4bcb1d</sys_update_name>
+        <sys_updated_by>David.Admin</sys_updated_by>
+        <sys_updated_on>2022-07-17 04:39:25</sys_updated_on>
+        <type>transform</type>
+    </sys_ux_client_script>
+</record_update>

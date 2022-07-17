@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="DELETE">
+        <includes/>
+        <macroponent display_value="Record">60dd944c1bb819106a08a9b4bd4bcbbf</macroponent>
+        <name>Log Related List Refresh Request on Record Page</name>
+        <required_translations>[ ]</required_translations>
+        <script><![CDATA[function handler({api, event, imports}) {
+	const rlName = event.payload.relatedListName;
+	if (rlName) {
+		let rlRequests = {...api.state.relatedListRefreshRequests};
+		rlRequests[rlName] = { timestamp: new Date().getTime() };
+		api.setState('relatedListRefreshRequests', rlRequests);
+	}
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>David.Admin</sys_created_by>
+        <sys_created_on>2022-07-15 00:51:37</sys_created_on>
+        <sys_id>b0dd944c1bb819106a08a9b4bd4bcbed</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Log Related List Refresh Request on Record Page</sys_name>
+        <sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope>
+        <sys_update_name>sys_ux_client_script_b0dd944c1bb819106a08a9b4bd4bcbed</sys_update_name>
+        <sys_updated_by>David.Admin</sys_updated_by>
+        <sys_updated_on>2022-07-15 01:03:52</sys_updated_on>
+        <type>default</type>
+    </sys_ux_client_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</application>
+        <file_path/>
+        <instance_id>835dfff4db24b340387021c4059619f4</instance_id>
+        <instance_name>dev77946</instance_name>
+        <name>sys_ux_client_script_b0dd944c1bb819106a08a9b4bd4bcbed</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ux_client_script"&gt;&lt;sys_ux_client_script action="INSERT_OR_UPDATE"&gt;&lt;includes/&gt;&lt;macroponent display_value="Record"&gt;60dd944c1bb819106a08a9b4bd4bcbbf&lt;/macroponent&gt;&lt;name&gt;Log Related List Refresh Request on Record Page&lt;/name&gt;&lt;required_translations&gt;[ ]&lt;/required_translations&gt;&lt;script&gt;&lt;![CDATA[function handler({api, event, imports}) {
+	const rlName = event.payload.relatedListName;
+	if (rlName) {
+		let rlRequests = {...api.state.relatedListRefreshRequests};
+		rlRequests[rlName] = { timestamp: new Date().getTime() };
+		api.setState('relatedListRefreshRequests', rlRequests);
+	}
+}]]&gt;&lt;/script&gt;&lt;script_api_version&gt;2.0.0&lt;/script_api_version&gt;&lt;sys_class_name&gt;sys_ux_client_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;David.Admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-07-15 00:51:37&lt;/sys_created_on&gt;&lt;sys_id&gt;b0dd944c1bb819106a08a9b4bd4bcbed&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;Log Related List Refresh Request on Record Page&lt;/sys_name&gt;&lt;sys_package display_value="Working From Home (WFH)" source="x_852034_wfh"&gt;ca4c5dfd1ba811106a08a9b4bd4bcb1f&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Working From Home (WFH)"&gt;ca4c5dfd1ba811106a08a9b4bd4bcb1f&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ux_client_script_b0dd944c1bb819106a08a9b4bd4bcbed&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;David.Admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-07-15 01:03:52&lt;/sys_updated_on&gt;&lt;type&gt;default&lt;/type&gt;&lt;/sys_ux_client_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-914330990</payload_hash>
+        <record_name>Log Related List Refresh Request on Record Page</record_name>
+        <reverted_from/>
+        <source>f97481901b3c59106a08a9b4bd4bcb67</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>David.Admin</sys_created_by>
+        <sys_created_on>2022-07-15 22:19:34</sys_created_on>
+        <sys_id>03940d901b3c59106a08a9b4bd4bcb22</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18203f219950000001</sys_recorded_at>
+        <sys_updated_by>David.Admin</sys_updated_by>
+        <sys_updated_on>2022-07-15 22:19:34</sys_updated_on>
+        <type>UX Client Script</type>
+        <update_guid>f5f38680f1705910f59db039ecd5042c</update_guid>
+        <update_guid_history>f5f38680f1705910f59db039ecd5042c:-914330990,1cefbcd8fef8591010b296fbb0a0fe10:-1149662306,d0a02c00aff81910ee38326eeee22214:-914330990,f0dd944c01b81910b8d14ace4f66d3f2:-841295956</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>David.Admin</sys_created_by>
+        <sys_created_on>2022-07-17 00:54:17</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_client_script">sys_ux_client_script</sys_db_object>
+        <sys_id>0b7244cebd6d467ab0764637cf8f5ed9</sys_id>
+        <sys_metadata>b0dd944c1bb819106a08a9b4bd4bcbed</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Log Related List Refresh Request on Record Page</sys_name>
+        <sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope>
+        <sys_scope_delete display_value="">4c6c017a72da4588a43d0b2e3ce46da4</sys_scope_delete>
+        <sys_update_name>sys_ux_client_script_b0dd944c1bb819106a08a9b4bd4bcbed</sys_update_name>
+        <sys_update_version display_value="sys_ux_client_script_b0dd944c1bb819106a08a9b4bd4bcbed">03940d901b3c59106a08a9b4bd4bcb22</sys_update_version>
+        <sys_updated_by>David.Admin</sys_updated_by>
+        <sys_updated_on>2022-07-17 00:54:17</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

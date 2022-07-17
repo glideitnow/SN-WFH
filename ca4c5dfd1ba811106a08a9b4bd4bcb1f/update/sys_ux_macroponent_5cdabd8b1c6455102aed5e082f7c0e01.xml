@@ -284,7 +284,7 @@
                               },
                               "filterQuery" : {
                                 "type" : "JSON_LITERAL",
-                                "value" : null
+                                "value" : "u_userDYNAMIC90d1921e5f510100a9ad2572f2b477fe^u_state=3^u_active=true"
                               },
                               "reportSourceSysId" : {
                                 "type" : "JSON_LITERAL",
@@ -303,7 +303,7 @@
                         },
                         "wrapTitle" : {
                           "type" : "JSON_LITERAL",
-                          "value" : false
+                          "value" : true
                         },
                         "showHeaderSeparator" : {
                           "type" : "JSON_LITERAL",
@@ -313,7 +313,7 @@
                           "type" : "TRANSLATION_LITERAL",
                           "value" : {
                             "code" : null,
-                            "message" : "Total",
+                            "message" : "Your Total Upcoming WFH",
                             "comment" : ""
                           }
                         },
@@ -413,7 +413,7 @@
                         },
                         "showMetricLabel" : {
                           "type" : "JSON_LITERAL",
-                          "value" : true
+                          "value" : false
                         },
                         "showThreshold" : {
                           "type" : "JSON_LITERAL",
@@ -429,11 +429,11 @@
                         },
                         "followFilters" : {
                           "type" : "JSON_LITERAL",
-                          "value" : true
+                          "value" : false
                         },
                         "showFilterIcon" : {
                           "type" : "JSON_LITERAL",
-                          "value" : true
+                          "value" : false
                         },
                         "enableRealTimeUpdate" : {
                           "type" : "JSON_LITERAL",
@@ -503,7 +503,10 @@
                       },
                       "isHero" : false,
                       "isNonDestructive" : false,
-                      "styles" : { }
+                      "styles" : {
+                        "background" : "rgb(var(--now-color--neutral-1))",
+                        "margin" : "var(--now-static-space--lg)"
+                      }
                     } ],
                     "layout" : {
                       "default" : {
@@ -621,8 +624,8 @@
   "isNonDestructive" : false,
   "styles" : { }
 }, {
-  "elementId" : "container_1",
-  "elementLabel" : "Container 1",
+  "elementId" : "row_3",
+  "elementLabel" : "Row 3",
   "propertyValues" : {
     "ariaRegionName" : {
       "type" : "TRANSLATION_LITERAL",
@@ -657,312 +660,89 @@
   },
   "overrides" : {
     "composition" : [ {
-      "elementId" : "list_1",
-      "elementLabel" : "List 1",
+      "elementId" : "calendar_report_1",
+      "elementLabel" : "Calendar Report 1",
       "propertyValues" : {
-        "menuSelection" : {
-          "type" : "JSON_LITERAL",
-          "value" : "Select menu to connect..."
-        },
         "table" : {
           "type" : "JSON_LITERAL",
           "value" : "x_852034_wfh_requests"
         },
-        "listTitle" : {
+        "reportSource" : {
+          "type" : "JSON_LITERAL",
+          "value" : ""
+        },
+        "encodedQuery" : {
+          "type" : "CLIENT_TRANSFORM",
+          "transform" : {
+            "operands" : {
+              "type" : "LIST_CONTAINER",
+              "container" : [ {
+                "type" : "JSON_LITERAL",
+                "value" : "u_active=true^u_state=3"
+              } ]
+            },
+            "operator" : "CONCAT"
+          }
+        },
+        "startDateField" : {
+          "type" : "JSON_LITERAL",
+          "value" : "u_start_date"
+        },
+        "endDateField" : {
+          "type" : "JSON_LITERAL",
+          "value" : "u_end_date"
+        },
+        "eventDisplayFields" : {
+          "type" : "JSON_LITERAL",
+          "value" : "u_user"
+        },
+        "componentTitle" : {
           "type" : "TRANSLATION_LITERAL",
           "value" : {
             "code" : null,
-            "message" : "All WFH Requests",
+            "message" : "",
             "comment" : ""
           }
         },
-        "selectedListId" : {
-          "type" : "JSON_LITERAL",
-          "value" : "Select..."
-        },
-        "fixedQuery" : {
-          "type" : "JSON_LITERAL",
-          "value" : ""
-        },
-        "query" : {
-          "type" : "JSON_LITERAL",
-          "value" : ""
-        },
-        "view" : {
-          "type" : "JSON_LITERAL",
-          "value" : ""
-        },
-        "columns" : {
-          "type" : "JSON_LITERAL",
-          "value" : ""
-        },
-        "groupByField" : {
-          "type" : "JSON_LITERAL",
-          "value" : ""
-        },
-        "maxColumns" : {
-          "type" : "JSON_LITERAL",
-          "value" : null
-        },
-        "limit" : {
-          "type" : "JSON_LITERAL",
-          "value" : null
-        },
-        "actionConfigId" : {
-          "type" : "JSON_LITERAL",
-          "value" : ""
-        },
-        "hideDeclarativeActions" : {
-          "type" : "JSON_LITERAL",
-          "value" : true
-        },
-        "highlightedValueConfigId" : {
-          "type" : "JSON_LITERAL",
-          "value" : ""
-        },
-        "hideHighlightedValues" : {
-          "type" : "JSON_LITERAL",
-          "value" : true
-        },
-        "hideHeader" : {
-          "type" : "JSON_LITERAL",
-          "value" : true
-        },
-        "headerSize" : {
-          "type" : "JSON_LITERAL",
-          "value" : "sm"
-        },
-        "headingLevel" : {
-          "type" : "JSON_LITERAL",
-          "value" : 1
-        },
-        "hideTitle" : {
-          "type" : "JSON_LITERAL",
-          "value" : true
-        },
-        "hideTitleRowCount" : {
+        "disableFollowFilters" : {
           "type" : "JSON_LITERAL",
           "value" : false
         },
-        "hideRefreshButton" : {
+        "hideFilterOverview" : {
           "type" : "JSON_LITERAL",
           "value" : false
         },
-        "hideLastRefreshedText" : {
-          "type" : "JSON_LITERAL",
-          "value" : true
-        },
-        "hideMenuButton" : {
+        "hideDescription" : {
           "type" : "JSON_LITERAL",
           "value" : false
         },
-        "hideOptionToSaveAs" : {
-          "type" : "JSON_LITERAL",
-          "value" : false
-        },
-        "hideListSharing" : {
-          "type" : "JSON_LITERAL",
-          "value" : true
-        },
-        "hideFilterPanel" : {
-          "type" : "JSON_LITERAL",
-          "value" : false
-        },
-        "hidePanelFooter" : {
-          "type" : "JSON_LITERAL",
-          "value" : false
-        },
-        "hidePanelRestore" : {
-          "type" : "JSON_LITERAL",
-          "value" : false
-        },
-        "hidePanelAdvanced" : {
-          "type" : "JSON_LITERAL",
-          "value" : true
-        },
-        "hidePanelConditionDelete" : {
-          "type" : "JSON_LITERAL",
-          "value" : false
-        },
-        "listMenuOpen" : {
-          "type" : "JSON_LITERAL",
-          "value" : true
-        },
-        "hideQuickEdit" : {
-          "type" : "JSON_LITERAL",
-          "value" : false
-        },
-        "hideSelectAll" : {
-          "type" : "JSON_LITERAL",
-          "value" : false
-        },
-        "hideCheckboxHover" : {
-          "type" : "JSON_LITERAL",
-          "value" : false
-        },
-        "hideRowSelector" : {
-          "type" : "JSON_LITERAL",
-          "value" : false
-        },
-        "hideUnnecessaryRowSelectors" : {
-          "type" : "JSON_LITERAL",
-          "value" : true
-        },
-        "hideColumnGrouping" : {
-          "type" : "JSON_LITERAL",
-          "value" : false
-        },
-        "hideColumnResizing" : {
-          "type" : "JSON_LITERAL",
-          "value" : false
-        },
-        "hideColumnFiltering" : {
-          "type" : "JSON_LITERAL",
-          "value" : false
-        },
-        "hideColumnSorting" : {
-          "type" : "JSON_LITERAL",
-          "value" : false
-        },
-        "hidePersonalization" : {
-          "type" : "JSON_LITERAL",
-          "value" : false
-        },
-        "hideColumnReorder" : {
-          "type" : "JSON_LITERAL",
-          "value" : false
-        },
-        "hideDotwalk" : {
-          "type" : "JSON_LITERAL",
-          "value" : false
-        },
-        "hideDragDrop" : {
-          "type" : "JSON_LITERAL",
-          "value" : true
-        },
-        "hideCellFilter" : {
-          "type" : "JSON_LITERAL",
-          "value" : false
-        },
-        "hideInlineEditing" : {
-          "type" : "JSON_LITERAL",
-          "value" : false
-        },
-        "hideHighlightContent" : {
-          "type" : "JSON_LITERAL",
-          "value" : false
-        },
-        "highlightContent" : {
-          "type" : "JSON_LITERAL",
+        "componentDescription" : {
+          "type" : "TRANSLATION_LITERAL",
           "value" : {
-            "color" : "green"
+            "code" : null,
+            "message" : "",
+            "comment" : ""
           }
         },
-        "hideLinks" : {
+        "viewType" : {
           "type" : "JSON_LITERAL",
-          "value" : false
+          "value" : "MONTH"
         },
-        "overrideWordWrapUserPref" : {
-          "type" : "JSON_LITERAL",
-          "value" : false
-        },
-        "wordWrap" : {
-          "type" : "JSON_LITERAL",
-          "value" : false
-        },
-        "maxCharLimit" : {
-          "type" : "JSON_LITERAL",
-          "value" : 4000
-        },
-        "isRefList" : {
-          "type" : "JSON_LITERAL",
-          "value" : true
-        },
-        "hideEmptyStateImage" : {
-          "type" : "JSON_LITERAL",
-          "value" : false
-        },
-        "hidePagination" : {
-          "type" : "JSON_LITERAL",
-          "value" : true
-        },
-        "hidePages" : {
-          "type" : "JSON_LITERAL",
-          "value" : false
-        },
-        "hideRange" : {
-          "type" : "JSON_LITERAL",
-          "value" : false
-        },
-        "hideRowCount" : {
-          "type" : "JSON_LITERAL",
-          "value" : false
-        },
-        "hidePreviousPage" : {
-          "type" : "JSON_LITERAL",
-          "value" : false
-        },
-        "hideFirstPage" : {
-          "type" : "JSON_LITERAL",
-          "value" : false
-        },
-        "hideLastPage" : {
-          "type" : "JSON_LITERAL",
-          "value" : false
-        },
-        "hideNextPage" : {
-          "type" : "JSON_LITERAL",
-          "value" : false
-        },
-        "hideLimitSelector" : {
-          "type" : "JSON_LITERAL",
-          "value" : false
-        },
-        "tiny" : {
+        "eventColor" : {
           "type" : "JSON_LITERAL",
           "value" : ""
         },
-        "error" : {
-          "type" : "JSON_LITERAL",
-          "value" : { }
-        },
-        "selectedRecords" : {
-          "type" : "JSON_LITERAL",
-          "value" : [ ]
-        },
-        "refreshRequested" : {
-          "type" : "JSON_LITERAL",
-          "value" : null
-        },
-        "page" : {
-          "type" : "JSON_LITERAL",
-          "value" : 1
-        },
-        "recordSelectedTable" : {
-          "type" : "JSON_LITERAL",
-          "value" : ""
-        },
-        "recordSelectedSysId" : {
-          "type" : "JSON_LITERAL",
-          "value" : ""
-        },
-        "recordSelectedQuery" : {
-          "type" : "JSON_LITERAL",
-          "value" : ""
-        },
-        "recordSelectedView" : {
-          "type" : "JSON_LITERAL",
-          "value" : ""
-        },
-        "daClientActionContract" : {
-          "type" : "JSON_LITERAL",
-          "value" : null
+        "filterConfigurations" : {
+          "type" : "STATE_BINDING",
+          "binding" : {
+            "address" : [ "parFilters" ]
+          }
         }
       },
       "eventMappings" : [ ],
       "slot" : null,
       "definition" : {
-        "id" : "66ee7d86e81f696c9f9be19d8424cc0d",
+        "id" : "259e0221ff18a75c5f5f0fb28fa5d32f",
         "type" : "MACROPONENT"
       },
       "overrides" : null,
@@ -972,18 +752,20 @@
       },
       "isHero" : false,
       "isNonDestructive" : false,
-      "styles" : { }
+      "styles" : {
+        "height" : "initial"
+      }
     } ],
     "layout" : {
       "default" : {
         "children" : null,
         "isInline" : null,
-        "items" : [{"element_id":"list_1","styles":{}}],
+        "items" : [{"element_id":"calendar_report_1","styles":{}}],
         "root" : null,
         "rules" : null,
-        "styles" : {"grid-template-rows":"auto","grid-template-columns":"auto","grid-template-areas":"\"main\"","grid-gap":"1rem","display":"grid","flex-direction":"row"},
+        "styles" : {"grid-template-rows":"auto","grid-template-columns":"auto","grid-template-areas":"\"main\"","grid-gap":"1rem","display":"flex","flex-direction":"row","padding":"var(--now-static-space--lg)"},
         "templateId" : "5832fd4d53c31010e6bcddeeff7b12db",
-        "type" : "grid"
+        "type" : "flex"
       },
       "version" : "3.0.0"
     }
@@ -995,8 +777,10 @@
   "isHero" : false,
   "isNonDestructive" : false,
   "styles" : {
-    "height" : "100%",
-    "width" : "100%"
+    "width" : "100%",
+    "background-color" : "rgb(var(--now-color_background--secondary))",
+    "min-height" : "50px",
+    "grid-area" : "row3"
   }
 }, {
   "elementId" : "alert_1",
@@ -2325,6 +2109,155 @@
   "styles" : {
     "width" : "100%"
   }
+}, {
+  "elementId" : "row2",
+  "elementLabel" : "Row 2",
+  "propertyValues" : {
+    "ariaRegionName" : {
+      "type" : "TRANSLATION_LITERAL",
+      "value" : {
+        "code" : null,
+        "message" : "",
+        "comment" : ""
+      }
+    },
+    "includeAriaHeading" : {
+      "type" : "JSON_LITERAL",
+      "value" : false
+    },
+    "ariaRegionHeadingLevel" : {
+      "type" : "JSON_LITERAL",
+      "value" : "1"
+    },
+    "type" : {
+      "type" : "JSON_LITERAL",
+      "value" : "section"
+    },
+    "ariaRole" : {
+      "type" : "JSON_LITERAL",
+      "value" : ""
+    }
+  },
+  "eventMappings" : [ ],
+  "slot" : null,
+  "definition" : {
+    "id" : "d356d14b6e293a3020a244b63d278d8f",
+    "type" : "MACROPONENT"
+  },
+  "overrides" : {
+    "composition" : [ {
+      "elementId" : "rich_text_1",
+      "elementLabel" : "Rich text 1",
+      "propertyValues" : {
+        "html" : {
+          "type" : "TRANSLATION_LITERAL",
+          "value" : {
+            "code" : null,
+            "message" : "&lt;p&gt;&lt;span style=\"font-size: 24pt;\"&gt;Hey, who wants to WORK FROM HOME??&amp;nbsp;&lt;/span&gt;&lt;/p&gt;",
+            "comment" : ""
+          }
+        }
+      },
+      "eventMappings" : [ ],
+      "slot" : null,
+      "definition" : {
+        "id" : "2d56f06d55f46bbd4e79b5e624beb940",
+        "type" : "MACROPONENT"
+      },
+      "overrides" : null,
+      "isHidden" : {
+        "type" : "JSON_LITERAL",
+        "value" : null
+      },
+      "isHero" : false,
+      "isNonDestructive" : false,
+      "styles" : { }
+    }, {
+      "elementId" : "container_9",
+      "elementLabel" : "Container 9",
+      "propertyValues" : {
+        "ariaRegionName" : {
+          "type" : "TRANSLATION_LITERAL",
+          "value" : {
+            "code" : null,
+            "message" : "",
+            "comment" : ""
+          }
+        },
+        "includeAriaHeading" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "ariaRegionHeadingLevel" : {
+          "type" : "JSON_LITERAL",
+          "value" : "1"
+        },
+        "type" : {
+          "type" : "JSON_LITERAL",
+          "value" : "section"
+        },
+        "ariaRole" : {
+          "type" : "JSON_LITERAL",
+          "value" : ""
+        }
+      },
+      "eventMappings" : [ ],
+      "slot" : null,
+      "definition" : {
+        "id" : "d356d14b6e293a3020a244b63d278d8f",
+        "type" : "MACROPONENT"
+      },
+      "overrides" : {
+        "composition" : [ ],
+        "layout" : {
+          "default" : {
+            "children" : null,
+            "isInline" : null,
+            "items" : [],
+            "root" : null,
+            "rules" : null,
+            "styles" : {"flex-direction":"column","display":"grid","grid-template-columns":"1fr 1fr 1fr","grid-template-rows":"1fr"},
+            "templateId" : "5832fd4d53c31010e6bcddeeff7b12db",
+            "type" : "grid"
+          },
+          "version" : "3.0.0"
+        }
+      },
+      "isHidden" : {
+        "type" : "JSON_LITERAL",
+        "value" : null
+      },
+      "isHero" : false,
+      "isNonDestructive" : false,
+      "styles" : {
+        "width" : "100%"
+      }
+    } ],
+    "layout" : {
+      "default" : {
+        "children" : null,
+        "isInline" : null,
+        "items" : [{"element_id":"rich_text_1","styles":{}},{"element_id":"container_9","styles":{}},{"element_id":"calendar_report_1","styles":{}}],
+        "root" : null,
+        "rules" : null,
+        "styles" : {"flex-direction":"column","display":"flex","align-items":"center"},
+        "templateId" : "5832fd4d53c31010e6bcddeeff7b12db",
+        "type" : "flex"
+      },
+      "version" : "3.0.0"
+    }
+  },
+  "isHidden" : {
+    "type" : "JSON_LITERAL",
+    "value" : null
+  },
+  "isHero" : false,
+  "isNonDestructive" : false,
+  "styles" : {
+    "width" : "100%",
+    "grid-area" : "row2",
+    "background" : "rgb(var(--now-color--neutral-0))"
+  }
 } ]</composition>
         <da_relay_models/>
         <data>[ {
@@ -3082,10 +3015,10 @@
   "default" : {
     "children" : null,
     "isInline" : null,
-    "items" : [{"rules":{},"styles":{"width":"100%","height":"22rem","background-position":"85% 100%","background-repeat":"no-repeat","background-size":"820px 382px","background-color":"rgb(var(--now-color_grouped--blue-1))","background-image":"url(custom_portal_banner.svg)","grid-area":"row1"},"element_id":"6e4cb126c3121010f46b42583c40dd1c_Row_1"},{"rules":{},"styles":{"background-color":"rgb(var(--now-color_background--secondary))","grid-area":"row2"},"element_id":"container_1"}],
+    "items" : [{"rules":{},"styles":{"width":"100%","height":"22rem","background-position":"85% 100%","background-repeat":"no-repeat","background-size":"820px 382px","background-color":"rgb(var(--now-color_grouped--blue-1))","background-image":"url(custom_portal_banner.svg)","grid-area":"row1"},"element_id":"6e4cb126c3121010f46b42583c40dd1c_Row_1"},{"element_id":"row2","styles":{}},{"rules":{},"styles":{"background-color":"rgb(var(--now-color_background--secondary))","grid-area":"row2"},"element_id":"row_3"},{"element_id":"calendar_report_1","styles":{}}],
     "root" : null,
     "rules" : null,
-    "styles" : {"grid-template-rows":"auto 1fr","grid-template-columns":"1fr","grid-template-areas":"\"row1\" \"row2\"","grid-gap":"0px","min-height":"400px","height":"100%"},
+    "styles" : {"grid-template-rows":"auto auto 1fr","grid-template-columns":"1fr","grid-template-areas":"\"row1\"\"row2\"\"row3\"","grid-gap":"0px","display":"grid","padding":"var(--now-static-space--lg)","background":"rgb(var(--now-color--primary-0))"},
     "templateId" : "1afa9dc153c31010e6bcddeeff7b1280",
     "type" : "grid"
   },
@@ -3107,7 +3040,7 @@
   "disabled" : false
 } ]</props>
         <required_translations>[ {
-  "message" : "All WFH Requests",
+  "message" : "&lt;p&gt;&lt;span style=\"font-size: 24pt;\"&gt;Hey, who wants to WORK FROM HOME??&amp;nbsp;&lt;/span&gt;&lt;/p&gt;",
   "comment" : ""
 }, {
   "message" : "Approve",
@@ -3131,9 +3064,6 @@
   "message" : "Reject request",
   "comment" : ""
 }, {
-  "message" : "Total",
-  "comment" : ""
-}, {
   "message" : "WFH Requests",
   "comment" : ""
 }, {
@@ -3141,6 +3071,9 @@
   "comment" : ""
 }, {
   "message" : "You have rejected the following task",
+  "comment" : ""
+}, {
+  "message" : "Your Total Upcoming WFH",
   "comment" : ""
 } ]</required_translations>
         <root_component/>
@@ -3218,13 +3151,13 @@
         <sys_created_by>system</sys_created_by>
         <sys_created_on>2022-07-12 05:04:04</sys_created_on>
         <sys_id>5cdabd8b1c6455102aed5e082f7c0e01</sys_id>
-        <sys_mod_count>16</sys_mod_count>
+        <sys_mod_count>25</sys_mod_count>
         <sys_name>Landing Page</sys_name>
         <sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package>
         <sys_policy/>
         <sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope>
         <sys_update_name>sys_ux_macroponent_5cdabd8b1c6455102aed5e082f7c0e01</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-07-13 07:19:04</sys_updated_on>
+        <sys_updated_by>David.Admin</sys_updated_by>
+        <sys_updated_on>2022-07-16 06:42:23</sys_updated_on>
     </sys_ux_macroponent>
 </record_update>

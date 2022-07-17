@@ -3,7 +3,7 @@
         <choices/>
         <description/>
         <name>chrome_menu_actions</name>
-        <page display_value="Working From Home (WFH)">98da7d8bc464551064653a731cc368f3</page>
+        <page display_value="Working From Home (WFH) Portal">98da7d8bc464551064653a731cc368f3</page>
         <required_translations>[{"message":"Report issue","comment":""}]</required_translations>
         <route/>
         <suffix/>

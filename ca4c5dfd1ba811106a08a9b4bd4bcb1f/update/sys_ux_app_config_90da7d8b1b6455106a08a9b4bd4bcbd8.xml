@@ -3,24 +3,24 @@
         <active>true</active>
         <custom_icon/>
         <default_route_type/>
-        <description/>
+        <description>Manage and submit WFH requests</description>
         <encode_query_string>false</encode_query_string>
         <icon/>
         <landing_path>landing</landing_path>
-        <name>Working From Home (WFH) Config</name>
+        <name>Working From Home (WFH) Portal Config</name>
         <prefetch_limits/>
         <sys_class_name>sys_ux_app_config</sys_class_name>
         <sys_created_by>system</sys_created_by>
         <sys_created_on>2022-07-12 05:04:06</sys_created_on>
         <sys_id>90da7d8b1b6455106a08a9b4bd4bcbd8</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name>Working From Home (WFH) Config</sys_name>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Working From Home (WFH) Portal Config</sys_name>
         <sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package>
         <sys_policy/>
         <sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope>
         <sys_update_name>sys_ux_app_config_90da7d8b1b6455106a08a9b4bd4bcbd8</sys_update_name>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2022-07-12 05:04:06</sys_updated_on>
+        <sys_updated_by>David.Admin</sys_updated_by>
+        <sys_updated_on>2022-07-17 03:16:48</sys_updated_on>
     </sys_ux_app_config>
     <sys_translated_text action="delete_multiple" query="documentkey=90da7d8b1b6455106a08a9b4bd4bcbd8"/>
 </record_update>

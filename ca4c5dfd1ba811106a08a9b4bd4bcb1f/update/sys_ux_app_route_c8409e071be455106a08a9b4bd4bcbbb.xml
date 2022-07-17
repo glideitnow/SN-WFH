@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_route">
     <sys_ux_app_route action="INSERT_OR_UPDATE">
-        <app_config display_value="Working From Home (WFH) Config">90da7d8b1b6455106a08a9b4bd4bcbd8</app_config>
+        <app_config display_value="Working From Home (WFH) Portal Config">90da7d8b1b6455106a08a9b4bd4bcbd8</app_config>
         <description/>
         <fields>userGivenTable,table,label,parentRecordSysId,parentFieldName,referencedFieldName,extensionPoint,view,columns,hideSelectAll,type,relatedListName</fields>
         <icon/>

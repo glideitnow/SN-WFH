@@ -3,7 +3,7 @@
         <choices/>
         <description/>
         <name>chrome_header</name>
-        <page display_value="Working From Home (WFH)">98da7d8bc464551064653a731cc368f3</page>
+        <page display_value="Working From Home (WFH) Portal">98da7d8bc464551064653a731cc368f3</page>
         <required_translations>[]</required_translations>
         <route display_value="Login">1cda7d8b0864551023fd3a96e57311ff</route>
         <suffix/>

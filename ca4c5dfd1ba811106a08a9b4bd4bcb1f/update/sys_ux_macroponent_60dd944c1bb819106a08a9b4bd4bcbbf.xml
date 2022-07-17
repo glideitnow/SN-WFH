@@ -654,25 +654,6 @@
                       "clientScript" : null,
                       "conditional" : null,
                       "declarativeAction" : null,
-                      "event" : null,
-                      "operation" : {
-                        "dataBrokerId" : "dc6e87a5232200100e4bc50947bf654b",
-                        "operationName" : "ADD_INFO_MESSAGE",
-                        "parentResourceId" : "gform",
-                        "payload" : {
-                          "type" : "JSON_LITERAL",
-                          "value" : {
-                            "message" : "Request Saved"
-                          }
-                        }
-                      },
-                      "targetId" : "clfflnredddaaddpbddffhhddqnixuqxo",
-                      "type" : "DATABROKER_OP"
-                    }, {
-                      "broker" : null,
-                      "clientScript" : null,
-                      "conditional" : null,
-                      "declarativeAction" : null,
                       "event" : {
                         "apiName" : null,
                         "payload" : {
@@ -791,7 +772,39 @@
                       "container" : { }
                     }
                   },
-                  "eventMappings" : [ ],
+                  "eventMappings" : [ {
+                    "eventMappingId" : "clffovjdcjaahhhhxddffhhddffuxftdjm",
+                    "isConfiguration" : false,
+                    "offRowStorageId" : null,
+                    "sourceEventApiName" : "sn_button.NOW_BUTTON#CLICKED",
+                    "sourceEventCorrelationId" : null,
+                    "sourceEventDefinition" : {
+                      "apiName" : "sn_button.NOW_BUTTON#CLICKED",
+                      "id" : null,
+                      "type" : "UXEVENT"
+                    },
+                    "sourceEventSysId" : null,
+                    "targets" : [ {
+                      "broker" : null,
+                      "clientScript" : null,
+                      "conditional" : null,
+                      "declarativeAction" : null,
+                      "event" : null,
+                      "operation" : {
+                        "dataBrokerId" : "dc6e87a5232200100e4bc50947bf654b",
+                        "operationName" : "EXECUTE_UI_ACTION",
+                        "parentResourceId" : "gform",
+                        "payload" : {
+                          "type" : "JSON_LITERAL",
+                          "value" : {
+                            "actionSysId" : "8678d5c41bbc19106a08a9b4bd4bcb16"
+                          }
+                        }
+                      },
+                      "targetId" : "clffovjdckaahhhhyddffhhddvjbbdlccyr",
+                      "type" : "DATABROKER_OP"
+                    } ]
+                  } ],
                   "slot" : null,
                   "definition" : {
                     "id" : "d37ce8abca89d02905fed903c8e34d8e",
@@ -875,7 +888,7 @@
                 },
                 "hideTagsValue" : {
                   "type" : "JSON_LITERAL",
-                  "value" : false
+                  "value" : true
                 },
                 "recordTags" : {
                   "type" : "JSON_LITERAL",
@@ -975,54 +988,6 @@
   "elementId" : "gform",
   "elementLabel" : "Glide Form",
   "eventMappings" : [ {
-    "eventMappingId" : "ckqhhjueeeuaaaacczddhhhsixfhhbbbmf",
-    "isConfiguration" : false,
-    "offRowStorageId" : null,
-    "sourceEventApiName" : "sn_now_record_form.SN_FORM_DATA_CONNECTED#CONTENT_ITEMS_SELECTED",
-    "sourceEventCorrelationId" : null,
-    "sourceEventDefinition" : {
-      "apiName" : "sn_now_record_form.SN_FORM_DATA_CONNECTED#CONTENT_ITEMS_SELECTED",
-      "id" : null,
-      "type" : "UXEVENT"
-    },
-    "sourceEventSysId" : null,
-    "targets" : [ {
-      "broker" : null,
-      "clientScript" : {
-        "sysId" : "61ddd44c1bb819106a08a9b4bd4bcb9a"
-      },
-      "conditional" : null,
-      "declarativeAction" : null,
-      "event" : null,
-      "operation" : null,
-      "targetId" : "ckqhhjueeeuaaaaddaaddhhhsaacwhtmaaaa",
-      "type" : "CLIENT_SCRIPT"
-    } ]
-  }, {
-    "eventMappingId" : "previewRecordClicked",
-    "isConfiguration" : false,
-    "offRowStorageId" : null,
-    "sourceEventApiName" : "sn_now_record_form.SN_FORM_DATA_CONNECTED#PREVIEW_RECORD",
-    "sourceEventCorrelationId" : null,
-    "sourceEventDefinition" : {
-      "apiName" : "sn_now_record_form.SN_FORM_DATA_CONNECTED#PREVIEW_RECORD",
-      "id" : null,
-      "type" : "UXEVENT"
-    },
-    "sourceEventSysId" : null,
-    "targets" : [ {
-      "broker" : null,
-      "clientScript" : {
-        "sysId" : "85ddd44c1bb819106a08a9b4bd4bcb12"
-      },
-      "conditional" : null,
-      "declarativeAction" : null,
-      "event" : null,
-      "operation" : null,
-      "targetId" : "formPreviewRecordClicked",
-      "type" : "CLIENT_SCRIPT"
-    } ]
-  }, {
     "eventMappingId" : "formAddNotifications",
     "isConfiguration" : false,
     "offRowStorageId" : null,
@@ -1124,78 +1089,6 @@
       "type" : "EVENT"
     } ]
   }, {
-    "eventMappingId" : "formScreenStatusChanged",
-    "isConfiguration" : false,
-    "offRowStorageId" : null,
-    "sourceEventApiName" : "sn_now_record_form.SN_FORM_DATA_CONNECTED#SCREEN_STATUS_CHANGED",
-    "sourceEventCorrelationId" : null,
-    "sourceEventDefinition" : {
-      "apiName" : "sn_now_record_form.SN_FORM_DATA_CONNECTED#SCREEN_STATUS_CHANGED",
-      "id" : null,
-      "type" : "UXEVENT"
-    },
-    "sourceEventSysId" : null,
-    "targets" : [ {
-      "broker" : null,
-      "clientScript" : {
-        "sysId" : "75ddd44c1bb819106a08a9b4bd4bcbb8"
-      },
-      "conditional" : null,
-      "declarativeAction" : null,
-      "event" : null,
-      "operation" : null,
-      "targetId" : "ckviifaateelaaaaeemddeggwtjfjjccaxr",
-      "type" : "CLIENT_SCRIPT"
-    } ]
-  }, {
-    "eventMappingId" : "formItemClicked",
-    "isConfiguration" : false,
-    "offRowStorageId" : null,
-    "sourceEventApiName" : "sn_now_record_form.SN_FORM_DATA_CONNECTED#ITEM_SELECTED",
-    "sourceEventCorrelationId" : null,
-    "sourceEventDefinition" : {
-      "apiName" : "sn_now_record_form.SN_FORM_DATA_CONNECTED#ITEM_SELECTED",
-      "id" : null,
-      "type" : "UXEVENT"
-    },
-    "sourceEventSysId" : null,
-    "targets" : [ {
-      "broker" : null,
-      "clientScript" : {
-        "sysId" : "85ddd44c1bb819106a08a9b4bd4bcb12"
-      },
-      "conditional" : null,
-      "declarativeAction" : null,
-      "event" : null,
-      "operation" : null,
-      "targetId" : "formItemClicked",
-      "type" : "CLIENT_SCRIPT"
-    } ]
-  }, {
-    "eventMappingId" : "openPhone",
-    "isConfiguration" : false,
-    "offRowStorageId" : null,
-    "sourceEventApiName" : "sn_now_record_form.SN_FORM_DATA_CONNECTED#OPEN_PHONE",
-    "sourceEventCorrelationId" : null,
-    "sourceEventDefinition" : {
-      "apiName" : "sn_now_record_form.SN_FORM_DATA_CONNECTED#OPEN_PHONE",
-      "id" : null,
-      "type" : "UXEVENT"
-    },
-    "sourceEventSysId" : null,
-    "targets" : [ {
-      "broker" : null,
-      "clientScript" : {
-        "sysId" : "38dd944c1bb819106a08a9b4bd4bcbe0"
-      },
-      "conditional" : null,
-      "declarativeAction" : null,
-      "event" : null,
-      "operation" : null,
-      "targetId" : "cklifgeelvaaaabbjjddhhhrbbbbokmaaao",
-      "type" : "CLIENT_SCRIPT"
-    } ]
-  }, {
     "eventMappingId" : "formSetLoading",
     "isConfiguration" : false,
     "offRowStorageId" : null,
@@ -1244,41 +1137,6 @@
       "operation" : null,
       "targetId" : "formSetLoadingState",
       "type" : "EVENT"
-    }, {
-      "broker" : null,
-      "clientScript" : {
-        "sysId" : "d1ddd44c1bb819106a08a9b4bd4bcb5e"
-      },
-      "conditional" : null,
-      "declarativeAction" : null,
-      "event" : null,
-      "operation" : null,
-      "targetId" : "ckhffcciiggffoaaaaaaqddhhhjggcjqyyddd",
-      "type" : "CLIENT_SCRIPT"
-    } ]
-  }, {
-    "eventMappingId" : "formDomainUpdated",
-    "isConfiguration" : false,
-    "offRowStorageId" : null,
-    "sourceEventApiName" : "sn_now_record_form.SN_FORM_DATA_CONNECTED#DOMAIN_UPDATED",
-    "sourceEventCorrelationId" : null,
-    "sourceEventDefinition" : {
-      "apiName" : "sn_now_record_form.SN_FORM_DATA_CONNECTED#DOMAIN_UPDATED",
-      "id" : null,
-      "type" : "UXEVENT"
-    },
-    "sourceEventSysId" : null,
-    "targets" : [ {
-      "broker" : null,
-      "clientScript" : {
-        "sysId" : "49ddd44c1bb819106a08a9b4bd4bcb07"
-      },
-      "conditional" : null,
-      "declarativeAction" : null,
-      "event" : null,
-      "operation" : null,
-      "targetId" : "formDomainUpdatedTarget",
-      "type" : "CLIENT_SCRIPT"
     } ]
   } ],
   "inputValues" : {
@@ -1348,18 +1206,6 @@
         <interactions/>
         <interfaces/>
         <internal_event_mappings>{
-  "sn_uxf_page.NOW_UXF_PAGE#RECORD_LINK_CLICKED" : [ {
-    "broker" : null,
-    "clientScript" : {
-      "sysId" : "85ddd44c1bb819106a08a9b4bd4bcb12"
-    },
-    "conditional" : null,
-    "declarativeAction" : null,
-    "event" : null,
-    "operation" : null,
-    "targetId" : "uxfPageRecordLinkClicked",
-    "type" : "CLIENT_SCRIPT"
-  } ],
   "sn_uib_base_aw.RECORD#GFORM_REMOVE_FORM_MESSAGE" : [ {
     "broker" : null,
     "clientScript" : null,
@@ -1384,75 +1230,6 @@
     },
     "targetId" : "ckbldbixbbaaaaaahhddhggdsoifffggbbzformMessage",
     "type" : "DATABROKER_OP"
-  } ],
-  "MACROPONENT_PROPERTY_CHANGED" : [ {
-    "broker" : null,
-    "clientScript" : {
-      "sysId" : "0ddd944c1bb819106a08a9b4bd4bcbfd"
-    },
-    "conditional" : null,
-    "declarativeAction" : null,
-    "event" : null,
-    "operation" : null,
-    "targetId" : "logInteractionActivities",
-    "type" : "CLIENT_SCRIPT"
-  }, {
-    "broker" : null,
-    "clientScript" : {
-      "sysId" : "a0dd944c1bb819106a08a9b4bd4bcbd7"
-    },
-    "conditional" : null,
-    "declarativeAction" : null,
-    "event" : null,
-    "operation" : null,
-    "targetId" : "Conditionally refresh special handing notes data broker",
-    "type" : "CLIENT_SCRIPT"
-  }, {
-    "broker" : null,
-    "clientScript" : {
-      "sysId" : "b1ddd44c1bb819106a08a9b4bd4bcbcb"
-    },
-    "conditional" : null,
-    "declarativeAction" : null,
-    "event" : null,
-    "operation" : null,
-    "targetId" : "ckiffggaaaebbaaaabbhddhiiccyffczwpxee",
-    "type" : "CLIENT_SCRIPT"
-  }, {
-    "broker" : null,
-    "clientScript" : {
-      "sysId" : "25ddd44c1bb819106a08a9b4bd4bcb89"
-    },
-    "conditional" : null,
-    "declarativeAction" : null,
-    "event" : null,
-    "operation" : null,
-    "targetId" : "ckuchhmziiiiaaaaawddeggvxggeynnijj",
-    "type" : "CLIENT_SCRIPT"
-  } ],
-  "sn_uib_base_aw.RECORD#CLOSE_MODAL" : [ {
-    "broker" : null,
-    "clientScript" : {
-      "sysId" : "4eddd44c1bb819106a08a9b4bd4bcbf3"
-    },
-    "conditional" : null,
-    "declarativeAction" : null,
-    "event" : null,
-    "operation" : null,
-    "targetId" : "ckiffffxaccnaaaaaarddhiicclhgrgghydd",
-    "type" : "CLIENT_SCRIPT"
-  } ],
-  "sn_uib_base_aw.RECORD#NAV_ITEM_SELECTED" : [ {
-    "broker" : null,
-    "clientScript" : {
-      "sysId" : "85ddd44c1bb819106a08a9b4bd4bcb12"
-    },
-    "conditional" : null,
-    "declarativeAction" : null,
-    "event" : null,
-    "operation" : null,
-    "targetId" : "recordNavItemSelectedRequested",
-    "type" : "CLIENT_SCRIPT"
   } ],
   "sn_uib_base_aw.RECORD#GFORM_SET_VALUE" : [ {
     "broker" : null,
@@ -1490,77 +1267,6 @@
     },
     "targetId" : "ckbldbixbbaaaaaahhddhggdsoifffggbbz",
     "type" : "DATABROKER_OP"
-  } ],
-  "sn_uib_base_aw.RECORD#OPEN_MODAL" : [ {
-    "broker" : null,
-    "clientScript" : {
-      "sysId" : "4eddd44c1bb819106a08a9b4bd4bcbf3"
-    },
-    "conditional" : null,
-    "declarativeAction" : null,
-    "event" : null,
-    "operation" : null,
-    "targetId" : "ckiffffxaccnaaaaaaqddhiiccmpshhcccxw",
-    "type" : "CLIENT_SCRIPT"
-  } ],
-  "MACROPONENT_READY" : [ {
-    "broker" : null,
-    "clientScript" : {
-      "sysId" : "02ddd44c1bb819106a08a9b4bd4bcbdf"
-    },
-    "conditional" : null,
-    "declarativeAction" : null,
-    "event" : null,
-    "operation" : null,
-    "targetId" : "ckbqzybaawaaaaaadddsfehhoccexbbm",
-    "type" : "CLIENT_SCRIPT"
-  }, {
-    "broker" : null,
-    "clientScript" : {
-      "sysId" : "b1ddd44c1bb819106a08a9b4bd4bcbcb"
-    },
-    "conditional" : null,
-    "declarativeAction" : null,
-    "event" : null,
-    "operation" : null,
-    "targetId" : "ckiffffznenaaaabbgddhiiccvcjjrbter",
-    "type" : "CLIENT_SCRIPT"
-  } ],
-  "sn_uib_base_aw.RECORD#RELATED_LIST_REFRESH_REQUESTED" : [ {
-    "broker" : null,
-    "clientScript" : {
-      "sysId" : "b0dd944c1bb819106a08a9b4bd4bcbed"
-    },
-    "conditional" : null,
-    "declarativeAction" : null,
-    "event" : null,
-    "operation" : null,
-    "targetId" : "ckiffffxaccoaaaaaatddhiicccgmnoqij",
-    "type" : "CLIENT_SCRIPT"
-  } ],
-  "MACROPONENT_VIEWPORT_ROUTE_INITIALIZATION_COMPLETED" : [ {
-    "broker" : null,
-    "clientScript" : {
-      "sysId" : "b1ddd44c1bb819106a08a9b4bd4bcbcb"
-    },
-    "conditional" : null,
-    "declarativeAction" : null,
-    "event" : null,
-    "operation" : null,
-    "targetId" : "ckiffffxaccoaaaaaatddhiicccgmnoqij",
-    "type" : "CLIENT_SCRIPT"
-  } ],
-  "sn_uib_base_aw.RECORD#OPEN_CALL" : [ {
-    "broker" : null,
-    "clientScript" : {
-      "sysId" : "38dd944c1bb819106a08a9b4bd4bcbe0"
-    },
-    "conditional" : null,
-    "declarativeAction" : null,
-    "event" : null,
-    "operation" : null,
-    "targetId" : "cklifhiiggeeaaaaccyddhhhraacilhaawt",
-    "type" : "CLIENT_SCRIPT"
   } ]
 }</internal_event_mappings>
         <layout>{
@@ -1579,18 +1285,6 @@
         <macroponent_dependencies/>
         <name>Record</name>
         <props>[ {
-  "name" : "view",
-  "label" : "View",
-  "fieldType" : "string",
-  "typeMetadata" : null,
-  "valueType" : "string",
-  "mandatory" : false,
-  "defaultValue" : null,
-  "description" : "",
-  "readOnly" : false,
-  "selectable" : false,
-  "disabled" : false
-}, {
   "name" : "table",
   "label" : "Table",
   "fieldType" : "string",
@@ -1612,42 +1306,6 @@
   "defaultValue" : "",
   "description" : "",
   "readOnly" : true,
-  "selectable" : false,
-  "disabled" : false
-}, {
-  "name" : "fields",
-  "label" : "fields",
-  "fieldType" : "string",
-  "typeMetadata" : null,
-  "valueType" : "string",
-  "mandatory" : false,
-  "defaultValue" : null,
-  "description" : null,
-  "readOnly" : false,
-  "selectable" : false,
-  "disabled" : false
-}, {
-  "name" : "sysId",
-  "label" : "sysId",
-  "fieldType" : null,
-  "typeMetadata" : null,
-  "valueType" : null,
-  "mandatory" : true,
-  "defaultValue" : null,
-  "description" : null,
-  "readOnly" : false,
-  "selectable" : false,
-  "disabled" : false
-}, {
-  "name" : "views",
-  "label" : "View",
-  "fieldType" : null,
-  "typeMetadata" : null,
-  "valueType" : null,
-  "mandatory" : false,
-  "defaultValue" : "",
-  "description" : null,
-  "readOnly" : false,
   "selectable" : false,
   "disabled" : false
 }, {
@@ -1708,13 +1366,13 @@
         <sys_created_by>David.Admin</sys_created_by>
         <sys_created_on>2022-07-15 00:51:36</sys_created_on>
         <sys_id>60dd944c1bb819106a08a9b4bd4bcbbf</sys_id>
-        <sys_mod_count>13</sys_mod_count>
+        <sys_mod_count>18</sys_mod_count>
         <sys_name>Record</sys_name>
         <sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package>
         <sys_policy/>
         <sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope>
         <sys_update_name>sys_ux_macroponent_60dd944c1bb819106a08a9b4bd4bcbbf</sys_update_name>
         <sys_updated_by>David.Admin</sys_updated_by>
-        <sys_updated_on>2022-07-15 23:45:32</sys_updated_on>
+        <sys_updated_on>2022-07-17 05:26:43</sys_updated_on>
     </sys_ux_macroponent>
 </record_update>

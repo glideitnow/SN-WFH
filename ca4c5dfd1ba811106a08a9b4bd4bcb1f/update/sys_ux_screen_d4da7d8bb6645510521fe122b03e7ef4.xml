@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_screen">
     <sys_ux_screen action="INSERT_OR_UPDATE">
         <active>true</active>
-        <app_config display_value="Working From Home (WFH) Config">90da7d8b1b6455106a08a9b4bd4bcbd8</app_config>
+        <app_config display_value="Working From Home (WFH) Portal Config">90da7d8b1b6455106a08a9b4bd4bcbd8</app_config>
         <description/>
         <event_mappings>[ {
   "eventMappingId" : "ckhbsbbdiidaaaaddcddhhhqllgffboti",
