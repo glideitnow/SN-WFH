@@ -3,16 +3,16 @@
         <sys_ui_form_section action="INSERT_OR_UPDATE">
             <position>0</position>
             <sys_created_by>David.Admin</sys_created_by>
-            <sys_created_on>2022-07-18 03:34:57</sys_created_on>
+            <sys_created_on>2022-07-18 11:33:13</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>6aff98051bb41d106a08a9b4bd4bcbd7</sys_id>
-            <sys_mod_count>1</sys_mod_count>
+            <sys_id>a07d4a4d1b3c1d106a08a9b4bd4bcbd4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
             <sys_overrides/>
             <sys_ui_form display_value="x_852034_wfh_requests" name="x_852034_wfh_requests" sys_domain="global" view="0eea19cb1be055106a08a9b4bd4bcb06">08c73d441b3059106a08a9b4bd4bcb21</sys_ui_form>
-            <sys_ui_section caption="NULL" display_value="" name="x_852034_wfh_requests" sys_domain="global" view="0eea19cb1be055106a08a9b4bd4bcb06">6aff98051bb41d106a08a9b4bd4bcb3e</sys_ui_section>
+            <sys_ui_section caption="Requst" display_value="Requst" name="x_852034_wfh_requests" sys_domain="global" view="0eea19cb1be055106a08a9b4bd4bcb06">a07d4a4d1b3c1d106a08a9b4bd4bcb87</sys_ui_section>
             <sys_updated_by>David.Admin</sys_updated_by>
-            <sys_updated_on>2022-07-18 03:34:57</sys_updated_on>
+            <sys_updated_on>2022-07-18 11:33:13</sys_updated_on>
         </sys_ui_form_section>
         <sys_ui_form action="INSERT_OR_UPDATE">
             <name>x_852034_wfh_requests</name>

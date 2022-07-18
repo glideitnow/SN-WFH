@@ -4,9 +4,10 @@
         <active>true</active>
         <client>true</client>
         <client_script_v2><![CDATA[function onClick(g_form) {
-
+	g_form.setValue('u_state', 3);
+	g_form.save();
 }]]></client_script_v2>
-        <comments>"2" btw is Pending Approval</comments>
+        <comments/>
         <condition>current.u_state == "2"</condition>
         <form_action>true</form_action>
         <form_button>true</form_button>
@@ -44,7 +45,7 @@ function serverApproveRequest() {
     current.u_state = '3';
     current.update();
 }]]></script>
-        <show_insert>true</show_insert>
+        <show_insert>false</show_insert>
         <show_multiple_update>false</show_multiple_update>
         <show_query>false</show_query>
         <show_update>true</show_update>
@@ -54,7 +55,7 @@ function serverApproveRequest() {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>a20f594c1bbc19106a08a9b4bd4bcba9</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name>Approve Request</sys_name>
         <sys_overrides/>
         <sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package>
@@ -62,7 +63,7 @@ function serverApproveRequest() {
         <sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope>
         <sys_update_name>sys_ui_action_a20f594c1bbc19106a08a9b4bd4bcba9</sys_update_name>
         <sys_updated_by>David.Admin</sys_updated_by>
-        <sys_updated_on>2022-07-18 03:25:42</sys_updated_on>
+        <sys_updated_on>2022-07-18 10:24:33</sys_updated_on>
         <table>x_852034_wfh_requests</table>
         <ui11_compatible>false</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

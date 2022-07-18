@@ -17,7 +17,7 @@
         <sys_updated_by>David.Admin</sys_updated_by>
         <sys_updated_on>2022-07-17 05:50:26</sys_updated_on>
         <table>x_852034_wfh_requests</table>
-        <ui_policy display_value="Hide Active and State fields">43f8da141b7099106a08a9b4bd4bcb76</ui_policy>
+        <ui_policy display_value="Hide Active">43f8da141b7099106a08a9b4bd4bcb76</ui_policy>
         <visible>false</visible>
     </sys_ui_policy_action>
 </record_update>

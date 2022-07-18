@@ -4,7 +4,8 @@
         <active>true</active>
         <client>true</client>
         <client_script_v2><![CDATA[function onClick(g_form) {
-
+    g_form.setValue('u_state', 4);
+	g_form.save();
 }]]></client_script_v2>
         <comments/>
         <condition>current.u_state == "2"</condition>
@@ -45,7 +46,7 @@ function serverReject() {
     current.u_state = '4';
     current.update();
 }]]></script>
-        <show_insert>true</show_insert>
+        <show_insert>false</show_insert>
         <show_multiple_update>false</show_multiple_update>
         <show_query>false</show_query>
         <show_update>true</show_update>
@@ -55,15 +56,15 @@ function serverReject() {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>11cf958c1bbc19106a08a9b4bd4bcb8e</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>Reject Request</sys_name>
         <sys_overrides/>
         <sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package>
         <sys_policy/>
         <sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope>
         <sys_update_name>sys_ui_action_11cf958c1bbc19106a08a9b4bd4bcb8e</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-07-18 02:11:30</sys_updated_on>
+        <sys_updated_by>David.Admin</sys_updated_by>
+        <sys_updated_on>2022-07-18 10:22:48</sys_updated_on>
         <table>x_852034_wfh_requests</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>
