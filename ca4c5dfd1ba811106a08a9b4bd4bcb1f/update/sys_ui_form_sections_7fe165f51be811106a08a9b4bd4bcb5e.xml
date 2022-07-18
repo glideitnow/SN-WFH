@@ -14,20 +14,6 @@
             <sys_updated_by>David.Admin</sys_updated_by>
             <sys_updated_on>2022-07-15 22:19:22</sys_updated_on>
         </sys_ui_form_section>
-        <sys_ui_form_section action="INSERT_OR_UPDATE">
-            <position>1</position>
-            <sys_created_by>David.Admin</sys_created_by>
-            <sys_created_on>2022-07-15 22:19:22</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_domain_path>/</sys_domain_path>
-            <sys_id>d49409901b3c59106a08a9b4bd4bcbc0</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_overrides/>
-            <sys_ui_form display_value="x_852034_wfh_requests" name="x_852034_wfh_requests" sys_domain="global" view="Default view">7fe165f51be811106a08a9b4bd4bcb5e</sys_ui_form>
-            <sys_ui_section caption="Details" display_value="Details" name="x_852034_wfh_requests" sys_domain="global" view="Default view">78b3ed391be811106a08a9b4bd4bcb80</sys_ui_section>
-            <sys_updated_by>David.Admin</sys_updated_by>
-            <sys_updated_on>2022-07-15 22:19:22</sys_updated_on>
-        </sys_ui_form_section>
         <sys_ui_form action="INSERT_OR_UPDATE">
             <name>x_852034_wfh_requests</name>
             <roles/>

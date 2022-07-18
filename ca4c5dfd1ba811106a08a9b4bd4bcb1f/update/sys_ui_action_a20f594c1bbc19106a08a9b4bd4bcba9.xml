@@ -2,11 +2,11 @@
     <sys_ui_action action="INSERT_OR_UPDATE">
         <action_name>approve_request_wfh</action_name>
         <active>true</active>
-        <client>false</client>
+        <client>true</client>
         <client_script_v2><![CDATA[function onClick(g_form) {
 
 }]]></client_script_v2>
-        <comments/>
+        <comments>"2" btw is Pending Approval</comments>
         <condition>current.u_state == "2"</condition>
         <form_action>true</form_action>
         <form_button>true</form_button>
@@ -28,11 +28,22 @@
         <list_style/>
         <messages/>
         <name>Approve Request</name>
-        <onclick/>
+        <onclick>approveRequest()</onclick>
         <order>100</order>
-        <script><![CDATA[// "2" btw is Pending Approval
-current.u_state = '3';
-current.update();]]></script>
+        <script><![CDATA[function approveRequest() {
+    g_form.setValue('u_state', 3);
+    gsftSubmit(null, g_form.getFormElement(), 'approve_request_wfh');
+}
+
+//Code that runs without 'onclick'
+//Ensure call to server-side function with no browser errors
+if (typeof window == 'undefined')
+    serverApproveRequest();
+
+function serverApproveRequest() {
+    current.u_state = '3';
+    current.update();
+}]]></script>
         <show_insert>true</show_insert>
         <show_multiple_update>false</show_multiple_update>
         <show_query>false</show_query>
@@ -43,7 +54,7 @@ current.update();]]></script>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>a20f594c1bbc19106a08a9b4bd4bcba9</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>Approve Request</sys_name>
         <sys_overrides/>
         <sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package>
@@ -51,9 +62,9 @@ current.update();]]></script>
         <sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope>
         <sys_update_name>sys_ui_action_a20f594c1bbc19106a08a9b4bd4bcba9</sys_update_name>
         <sys_updated_by>David.Admin</sys_updated_by>
-        <sys_updated_on>2022-07-17 04:05:02</sys_updated_on>
+        <sys_updated_on>2022-07-18 03:25:42</sys_updated_on>
         <table>x_852034_wfh_requests</table>
-        <ui11_compatible>true</ui11_compatible>
+        <ui11_compatible>false</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>
     </sys_ui_action>
 </record_update>

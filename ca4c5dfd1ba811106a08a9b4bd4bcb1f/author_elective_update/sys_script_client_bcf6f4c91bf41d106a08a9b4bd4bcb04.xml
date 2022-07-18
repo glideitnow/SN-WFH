@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>false</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>Validates the dates on the WFH request when submitted.</description>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Date Validation on Submit</name>
+        <order/>
+        <script><![CDATA[function onSubmit() {
+    var startDate = g_form.getValue("u_start_date");
+    var endDate = g_form.getValue("u_end_date");
+    var format = g_user_date_time_format;
+
+    // get date strings into a number of milliseconds since 1970-01-01
+    var startDateMs = getDateFromFormat(startDate, format);
+	var endDateMs = getDateFromFormat(endDate, format);
+	
+	if (startDateMs < endDateMs)
+		return true;
+
+	g_form.clearMessages();
+	
+	// 0 from "getDateFormat" means an invalid date string was passed to it
+	if (startDateMs === 0 || endDateMs === 0) {
+        if (startDate === 0)
+            g_form.addErrorMessage("Start Date invalid.");
+
+        if (endDate === 0)
+            g_form.addErrorMessage("End Date invalid");
+
+        return false;
+    }
+
+	if (startDateMs > endDateMs) {
+        g_form.addErrorMessage("Your End date must be after your Start Date.");
+
+        return false;
+
+    }
+
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>David.Admin</sys_created_by>
+        <sys_created_on>2022-07-18 05:17:35</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>bcf6f4c91bf41d106a08a9b4bd4bcb04</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Date Validation on Submit</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope>
+        <sys_update_name>sys_script_client_bcf6f4c91bf41d106a08a9b4bd4bcb04</sys_update_name>
+        <sys_updated_by>David.Admin</sys_updated_by>
+        <sys_updated_on>2022-07-18 05:26:13</sys_updated_on>
+        <table>x_852034_wfh_requests</table>
+        <type>onSubmit</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</application>
+        <file_path/>
+        <instance_id>835dfff4db24b340387021c4059619f4</instance_id>
+        <instance_name>dev77946</instance_name>
+        <name>sys_script_client_bcf6f4c91bf41d106a08a9b4bd4bcb04</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;false&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description&gt;Validates the dates on the WFH request when submitted.&lt;/description&gt;&lt;field/&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;Date Validation on Submit&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onSubmit() {
+    var startDate = g_form.getValue("u_start_date");
+    var endDate = g_form.getValue("u_end_date");
+    var format = g_user_date_time_format;
+
+    // get date strings into a number of milliseconds since 1970-01-01
+    var startDateMs = getDateFromFormat(startDate, format);
+	var endDateMs = getDateFromFormat(endDate, format);
+	
+	if (startDateMs &lt; endDateMs)
+		return true;
+
+	g_form.clearMessages();
+	
+	// 0 from "getDateFormat" means an invalid date string was passed to it
+	if (startDateMs === 0 || endDateMs === 0) {
+        if (startDate === 0)
+            g_form.addErrorMessage("Start Date invalid.");
+
+        if (endDate === 0)
+            g_form.addErrorMessage("End Date invalid");
+
+        return false;
+    }
+
+	if (startDateMs &gt; endDateMs) {
+        g_form.addErrorMessage("Your End date must be after your Start Date.");
+
+        return false;
+
+    }
+
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;David.Admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-07-18 05:17:35&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;bcf6f4c91bf41d106a08a9b4bd4bcb04&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name&gt;Date Validation on Submit&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Working From Home (WFH)" source="x_852034_wfh"&gt;ca4c5dfd1ba811106a08a9b4bd4bcb1f&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Working From Home (WFH)"&gt;ca4c5dfd1ba811106a08a9b4bd4bcb1f&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_bcf6f4c91bf41d106a08a9b4bd4bcb04&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;David.Admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-07-18 05:26:13&lt;/sys_updated_on&gt;&lt;table&gt;x_852034_wfh_requests&lt;/table&gt;&lt;type&gt;onSubmit&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1017678505</payload_hash>
+        <record_name>Date Validation on Submit</record_name>
+        <reverted_from/>
+        <source>56ac0e171b6495106a08a9b4bd4bcbb7</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>David.Admin</sys_created_by>
+        <sys_created_on>2022-07-18 05:26:13</sys_created_on>
+        <sys_id>e079704d1bf41d106a08a9b4bd4bcb90</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1820fc570ca0000001</sys_recorded_at>
+        <sys_updated_by>David.Admin</sys_updated_by>
+        <sys_updated_on>2022-07-18 05:26:13</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>e879704d7cf41d10b3a21a1727b6f28f</update_guid>
+        <update_guid_history>e879704d7cf41d10b3a21a1727b6f28f:1017678505,1d39b00d12f41d102edbe5c59cd3fa2a:2108010902,5fa7700d7ef41d10fe2acba83f5767c1:-1766715551,8a77bc893ff41d10b2f411cc230280ad:-209333737</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>David.Admin</sys_created_by>
+        <sys_created_on>2022-07-18 06:38:47</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>186419d1f8d3417c88162fe054097910</sys_id>
+        <sys_metadata>bcf6f4c91bf41d106a08a9b4bd4bcb04</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Date Validation on Submit</sys_name>
+        <sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package>
+        <sys_parent display_value="WFH Requests">1bdc99311be811106a08a9b4bd4bcb12</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope>
+        <sys_scope_delete display_value="">4c6c017a72da4588a43d0b2e3ce46da4</sys_scope_delete>
+        <sys_update_name>sys_script_client_bcf6f4c91bf41d106a08a9b4bd4bcb04</sys_update_name>
+        <sys_update_version display_value="sys_script_client_bcf6f4c91bf41d106a08a9b4bd4bcb04">e079704d1bf41d106a08a9b4bd4bcb90</sys_update_version>
+        <sys_updated_by>David.Admin</sys_updated_by>
+        <sys_updated_on>2022-07-18 06:38:47</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

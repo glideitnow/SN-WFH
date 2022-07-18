@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_policy">
     <sys_ui_policy action="INSERT_OR_UPDATE">
         <active>true</active>
-        <conditions table="x_852034_wfh_requests">u_state!=0^EQ<item display_value="Draft" endquery="false" field="u_state" goto="false" newquery="false" operator="!=" or="false" value="0"/>
+        <conditions table="x_852034_wfh_requests">u_stateIN2,3,4,5^EQ<item display_value="2,3,4,5" endquery="false" field="u_state" goto="false" newquery="false" operator="IN" or="false" value="2,3,4,5"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </conditions>
         <description>Once a Request has moved from draft, the User cannot be changed.</description>
@@ -12,7 +12,7 @@
         <model_table/>
         <on_load>true</on_load>
         <order>100</order>
-        <reverse_if_false>true</reverse_if_false>
+        <reverse_if_false>false</reverse_if_false>
         <run_scripts>false</run_scripts>
         <script_false><![CDATA[function onCondition() {}]]></script_false>
         <script_true><![CDATA[function onCondition() {}]]></script_true>
@@ -24,7 +24,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>efd7c7101b3499106a08a9b4bd4bcba8</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>WFH Request Users are locked in</sys_name>
         <sys_overrides/>
         <sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package>
@@ -32,7 +32,7 @@
         <sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope>
         <sys_update_name>sys_ui_policy_efd7c7101b3499106a08a9b4bd4bcba8</sys_update_name>
         <sys_updated_by>David.Admin</sys_updated_by>
-        <sys_updated_on>2022-07-16 07:53:02</sys_updated_on>
+        <sys_updated_on>2022-07-18 03:45:52</sys_updated_on>
         <table>x_852034_wfh_requests</table>
         <ui_type>0</ui_type>
         <view/>

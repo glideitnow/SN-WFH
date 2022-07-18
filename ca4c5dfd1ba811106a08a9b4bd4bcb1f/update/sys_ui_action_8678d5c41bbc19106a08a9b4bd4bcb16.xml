@@ -2,7 +2,7 @@
     <sys_ui_action action="INSERT_OR_UPDATE">
         <action_name>submit_request_wfh</action_name>
         <active>true</active>
-        <client>false</client>
+        <client>true</client>
         <client_script_v2><![CDATA[function onClick(g_form) {
 
 }]]></client_script_v2>
@@ -28,10 +28,21 @@
         <list_style/>
         <messages/>
         <name>Submit Request</name>
-        <onclick/>
+        <onclick>submitRequest()</onclick>
         <order>100</order>
-        <script><![CDATA[current.u_state = '2';
-current.update();]]></script>
+        <script><![CDATA[function submitRequest() {
+
+    gsftSubmit(null, g_form.getFormElement(), 'submit_request_wfh');
+}
+
+//Code that runs without 'onclick'
+//Ensure call to server-side function with no browser errors
+if (typeof window == 'undefined')
+    serverSubmitRequest();
+
+function serverSubmitRequest() {
+    current.update();
+}]]></script>
         <show_insert>true</show_insert>
         <show_multiple_update>false</show_multiple_update>
         <show_query>false</show_query>
@@ -42,7 +53,7 @@ current.update();]]></script>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>8678d5c41bbc19106a08a9b4bd4bcb16</sys_id>
-        <sys_mod_count>17</sys_mod_count>
+        <sys_mod_count>33</sys_mod_count>
         <sys_name>Submit Request</sys_name>
         <sys_overrides/>
         <sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package>
@@ -50,9 +61,9 @@ current.update();]]></script>
         <sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope>
         <sys_update_name>sys_ui_action_8678d5c41bbc19106a08a9b4bd4bcb16</sys_update_name>
         <sys_updated_by>David.Admin</sys_updated_by>
-        <sys_updated_on>2022-07-17 09:14:15</sys_updated_on>
+        <sys_updated_on>2022-07-18 06:34:43</sys_updated_on>
         <table>x_852034_wfh_requests</table>
         <ui11_compatible>true</ui11_compatible>
-        <ui16_compatible>true</ui16_compatible>
+        <ui16_compatible>false</ui16_compatible>
     </sys_ui_action>
 </record_update>
