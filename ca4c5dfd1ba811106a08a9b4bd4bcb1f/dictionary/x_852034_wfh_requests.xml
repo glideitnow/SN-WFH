@@ -6,6 +6,7 @@
         <element attributes="edge_encryption_enabled=true,encode_utf8=false" default="javascript: var manager; var user = new GlideRecord('sys_user'); user.get(gs.getUserID()); manager = user.manager; manager;" label="Manager" mandatory="true" max_length="32" name="u_manager" read_only="true" reference="sys_user" type="reference" use_dependent_field="true"/>
         <element label="Describe WFH reason (Optional)" max_length="300" name="u_reason" type="string"/>
         <element label="Recurring" max_length="40" name="u_recurring" type="boolean"/>
+        <element label="Rejection Reason" max_length="2000" name="u_rejection_reason" type="string"/>
         <element attributes="edge_encryption_enabled=true" default="javascript: var date_now = new GlideDateTime(); date_now.getDisplayValue();" label="Start date" mandatory="true" max_length="40" name="u_start_date" type="glide_date"/>
         <element attributes="edge_encryption_enabled=true" choice="3" default="0" label="State" max_length="40" name="u_state" read_only="true" type="string">
             <choice>
