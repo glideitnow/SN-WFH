@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_transform">
+    <sys_ux_data_broker_transform action="INSERT_OR_UPDATE">
+        <acl_failure_result/>
+        <api_name>x_852034_wfh.WFH calendariser</api_name>
+        <description>Turns WFH Requests into calendar events</description>
+        <mutates_server_data>false</mutates_server_data>
+        <name>WFH calendariser</name>
+        <output_schema/>
+        <private>false</private>
+        <props>[&#13;
+{&#13;
+  "name": "data",&#13;
+  "label": "data",&#13;
+  "description": "Planned Task GraphQL Data Result",&#13;
+  "readOnly": false,&#13;
+  "fieldType": "json",&#13;
+  "valueType": "object",&#13;
+  "mandatory": true&#13;
+}&#13;
+]</props>
+        <required_translations>[ {
+  "message" : "Planned Task GraphQL Data Result",
+  "comment" : ""
+}, {
+  "message" : "data",
+  "comment" : ""
+} ]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <script><![CDATA[function transform(input){
+	var returnArray = [];
+	var records = input.data;
+	
+	for (var i in records){
+		var myObj = {};
+		myObj.title = records[i]._row_data.displayValue;
+		myObj.id = records[i]._row_data.uniqueValue;
+		myObj.description = records[i].u_state.displayValue;
+		myObj.group = records[i].u_user.displayValue;
+		
+		var startUTC = new GlideDateTime(records[i].u_start_date.value);
+		myObj.start = startUTC.getNumericValue();
+		
+		var endUTC = new GlideDateTime(records[i].u_end_date.value);
+		myObj.end = endUTC.getNumericValue();
+
+		returnArray.push(myObj);
+	}
+	
+	return returnArray;
+}]]></script>
+        <sys_class_name>sys_ux_data_broker_transform</sys_class_name>
+        <sys_created_by>David.Admin</sys_created_by>
+        <sys_created_on>2022-07-17 08:39:01</sys_created_on>
+        <sys_id>a5db1c781bf4d9106a08a9b4bd4bcb92</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>WFH calendariser</sys_name>
+        <sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope>
+        <sys_update_name>sys_ux_data_broker_transform_a5db1c781bf4d9106a08a9b4bd4bcb92</sys_update_name>
+        <sys_updated_by>David.Admin</sys_updated_by>
+        <sys_updated_on>2022-07-18 00:19:37</sys_updated_on>
+    </sys_ux_data_broker_transform>
+    <sys_translated_text action="delete_multiple" query="documentkey=a5db1c781bf4d9106a08a9b4bd4bcb92"/>
+</record_update>

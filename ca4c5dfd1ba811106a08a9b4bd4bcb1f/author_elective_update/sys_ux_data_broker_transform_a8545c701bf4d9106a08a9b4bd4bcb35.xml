@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_transform">
+    <sys_ux_data_broker_transform action="DELETE">
+        <acl_failure_result/>
+        <api_name>x_852034_wfh.WFH Calendar converter</api_name>
+        <description>Make the WFH request calendar friendly? I dunno whats happenign lol</description>
+        <mutates_server_data>false</mutates_server_data>
+        <name>WFH Calendar converter</name>
+        <output_schema/>
+        <private>false</private>
+        <props>[&#13;
+{&#13;
+  "name": "data",&#13;
+  "label": "data",&#13;
+  "description": "Planned Task GraphQL Data Result",&#13;
+  "readOnly": false,&#13;
+  "fieldType": "json",&#13;
+  "valueType": "object",&#13;
+  "mandatory": true&#13;
+}&#13;
+]</props>
+        <required_translations>[ {
+  "message" : "Planned Task GraphQL Data Result",
+  "comment" : ""
+}, {
+  "message" : "data",
+  "comment" : ""
+} ]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <script><![CDATA[function transform(input){
+	var returnArray = [];
+	var records = input.data;
+	
+	for (var i in records){
+		var myObj = {};
+		myObj.title = records[i]._row_data.displayValue;
+		myObj.id = records[i]._row_data.uniqueValue;
+		myObj.description = records[i].u_state.displayValue;
+		myObj.group = records[i].u_user.displayVaule;
+		
+		var startUTC = new GlideDateTime(records[i].u_start_date.value);
+		myObj.start = startUTC.getNumericValue();
+		
+		var endUTC = new GlideDateTime(records[i].u_end_date.value);
+		myObj.end = endUTC.getNumericValue();
+
+		returnArray.push(myObj);
+	}
+	
+	return returnArray;
+}]]></script>
+        <sys_class_name>sys_ux_data_broker_transform</sys_class_name>
+        <sys_created_by>David.Admin</sys_created_by>
+        <sys_created_on>2022-07-17 08:09:29</sys_created_on>
+        <sys_id>a8545c701bf4d9106a08a9b4bd4bcb35</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>WFH Calendar converter</sys_name>
+        <sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope>
+        <sys_update_name>sys_ux_data_broker_transform_a8545c701bf4d9106a08a9b4bd4bcb35</sys_update_name>
+        <sys_updated_by>David.Admin</sys_updated_by>
+        <sys_updated_on>2022-07-17 08:22:53</sys_updated_on>
+    </sys_ux_data_broker_transform>
+    <sys_translated_text action="DELETE" query="documentkey=a8545c701bf4d9106a08a9b4bd4bcb35"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</application>
+        <file_path/>
+        <instance_id>835dfff4db24b340387021c4059619f4</instance_id>
+        <instance_name>dev77946</instance_name>
+        <name>sys_ux_data_broker_transform_a8545c701bf4d9106a08a9b4bd4bcb35</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ux_data_broker_transform"&gt;&lt;sys_ux_data_broker_transform action="INSERT_OR_UPDATE"&gt;&lt;acl_failure_result/&gt;&lt;api_name&gt;x_852034_wfh.WFH Calendar converter&lt;/api_name&gt;&lt;description&gt;Make the WFH request calendar friendly? I dunno whats happenign lol&lt;/description&gt;&lt;mutates_server_data&gt;false&lt;/mutates_server_data&gt;&lt;name&gt;WFH Calendar converter&lt;/name&gt;&lt;output_schema/&gt;&lt;private&gt;false&lt;/private&gt;&lt;props&gt;[&amp;#13;
+{&amp;#13;
+  "name": "data",&amp;#13;
+  "label": "data",&amp;#13;
+  "description": "Planned Task GraphQL Data Result",&amp;#13;
+  "readOnly": false,&amp;#13;
+  "fieldType": "json",&amp;#13;
+  "valueType": "object",&amp;#13;
+  "mandatory": true&amp;#13;
+}&amp;#13;
+]&lt;/props&gt;&lt;required_translations&gt;[ {
+  "message" : "Planned Task GraphQL Data Result",
+  "comment" : ""
+}, {
+  "message" : "data",
+  "comment" : ""
+} ]&lt;/required_translations&gt;&lt;schema_version&gt;1.0.0&lt;/schema_version&gt;&lt;script&gt;&lt;![CDATA[function transform(input){
+	var returnArray = [];
+	var records = input.data;
+	
+	for (var i in records){
+		var myObj = {};
+		myObj.title = records[i]._row_data.displayValue;
+		myObj.id = records[i]._row_data.uniqueValue;
+		myObj.description = records[i].u_state.displayValue;
+		myObj.group = records[i].u_user.displayVaule;
+		
+		var startUTC = new GlideDateTime(records[i].u_start_date.value);
+		myObj.start = startUTC.getNumericValue();
+		
+		var endUTC = new GlideDateTime(records[i].u_end_date.value);
+		myObj.end = endUTC.getNumericValue();
+
+		returnArray.push(myObj);
+	}
+	
+	return returnArray;
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_ux_data_broker_transform&lt;/sys_class_name&gt;&lt;sys_created_by&gt;David.Admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-07-17 08:09:29&lt;/sys_created_on&gt;&lt;sys_id&gt;a8545c701bf4d9106a08a9b4bd4bcb35&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;WFH Calendar converter&lt;/sys_name&gt;&lt;sys_package display_value="Working From Home (WFH)" source="x_852034_wfh"&gt;ca4c5dfd1ba811106a08a9b4bd4bcb1f&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Working From Home (WFH)"&gt;ca4c5dfd1ba811106a08a9b4bd4bcb1f&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ux_data_broker_transform_a8545c701bf4d9106a08a9b4bd4bcb35&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;David.Admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-07-17 08:22:53&lt;/sys_updated_on&gt;&lt;/sys_ux_data_broker_transform&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=a8545c701bf4d9106a08a9b4bd4bcb35"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1056542357</payload_hash>
+        <record_name>WFH Calendar converter</record_name>
+        <reverted_from/>
+        <source>56ac0e171b6495106a08a9b4bd4bcbb7</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>David.Admin</sys_created_by>
+        <sys_created_on>2022-07-17 08:22:53</sys_created_on>
+        <sys_id>36481c341bf4d9106a08a9b4bd4bcb79</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1820b40d3040000001</sys_recorded_at>
+        <sys_updated_by>David.Admin</sys_updated_by>
+        <sys_updated_on>2022-07-17 08:22:53</sys_updated_on>
+        <type>Data Broker Server Script</type>
+        <update_guid>3e481c342df4d91013408d0b117e5678</update_guid>
+        <update_guid_history>3e481c342df4d91013408d0b117e5678:1056542357,da355c708cf4d910e3951836c5a1e3fc:1918383348</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>David.Admin</sys_created_by>
+        <sys_created_on>2022-07-17 08:37:50</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_data_broker_transform">sys_ux_data_broker_transform</sys_db_object>
+        <sys_id>2beac0c9f4c34fb8a5230b4fce46f240</sys_id>
+        <sys_metadata>a8545c701bf4d9106a08a9b4bd4bcb35</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>WFH Calendar converter</sys_name>
+        <sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope>
+        <sys_scope_delete display_value="">4c6c017a72da4588a43d0b2e3ce46da4</sys_scope_delete>
+        <sys_update_name>sys_ux_data_broker_transform_a8545c701bf4d9106a08a9b4bd4bcb35</sys_update_name>
+        <sys_update_version display_value="sys_ux_data_broker_transform_a8545c701bf4d9106a08a9b4bd4bcb35">36481c341bf4d9106a08a9b4bd4bcb79</sys_update_version>
+        <sys_updated_by>David.Admin</sys_updated_by>
+        <sys_updated_on>2022-07-17 08:37:50</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

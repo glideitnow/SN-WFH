@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_transform">
+    <sys_ux_data_broker_transform action="INSERT_OR_UPDATE">
+        <acl_failure_result/>
+        <api_name>x_852034_wfh.WFH calendariser timeline sections</api_name>
+        <description>Creates the timeline section based on user</description>
+        <mutates_server_data>false</mutates_server_data>
+        <name>WFH calendariser timeline sections</name>
+        <output_schema/>
+        <private>false</private>
+        <props>[&#13;
+{&#13;
+  "name": "data",&#13;
+  "label": "data",&#13;
+  "description": "Planned Task GraphQL Data Result",&#13;
+  "readOnly": false,&#13;
+  "fieldType": "json",&#13;
+  "valueType": "object",&#13;
+  "mandatory": true&#13;
+}&#13;
+]</props>
+        <required_translations>[ {
+  "message" : "Planned Task GraphQL Data Result",
+  "comment" : ""
+}, {
+  "message" : "data",
+  "comment" : ""
+} ]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <script><![CDATA[function transform(input) {
+    var returnArray = [];
+    var arrayTime = new global.ArrayUtil();
+    var records = input.data;
+    var namesOnly = [];
+    for (var r in records) {
+        namesOnly.push(records[r].u_user.displayValue);
+    }
+    namesOnly = arrayTime.unique(namesOnly);
+
+
+    for (var i in namesOnly) {
+        var myObj = {};
+        myObj.id = namesOnly[i];
+        myObj.title = namesOnly[i];
+        myObj.showHeader = false;
+        myObj.isCollapsed = false;
+
+        returnArray.push(myObj);
+    }
+
+    return returnArray;
+}]]></script>
+        <sys_class_name>sys_ux_data_broker_transform</sys_class_name>
+        <sys_created_by>David.Admin</sys_created_by>
+        <sys_created_on>2022-07-18 00:20:24</sys_created_on>
+        <sys_id>3873f3781bf01d106a08a9b4bd4bcbc0</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>WFH calendariser timeline sections</sys_name>
+        <sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope>
+        <sys_update_name>sys_ux_data_broker_transform_3873f3781bf01d106a08a9b4bd4bcbc0</sys_update_name>
+        <sys_updated_by>David.Admin</sys_updated_by>
+        <sys_updated_on>2022-07-18 01:36:54</sys_updated_on>
+    </sys_ux_data_broker_transform>
+    <sys_translated_text action="delete_multiple" query="documentkey=3873f3781bf01d106a08a9b4bd4bcbc0"/>
+</record_update>
