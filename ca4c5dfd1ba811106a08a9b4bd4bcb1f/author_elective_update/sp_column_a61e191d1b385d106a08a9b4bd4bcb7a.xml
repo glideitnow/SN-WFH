@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column">
+    <sp_column action="DELETE">
+        <class_name/>
+        <order>3</order>
+        <size>3</size>
+        <size_lg/>
+        <size_sm/>
+        <size_xs/>
+        <sp_row display_value="1">261e951d1b385d106a08a9b4bd4bcb82</sp_row>
+        <sys_class_name>sp_column</sys_class_name>
+        <sys_created_by>David.Admin</sys_created_by>
+        <sys_created_on>2022-07-19 02:44:51</sys_created_on>
+        <sys_id>a61e191d1b385d106a08a9b4bd4bcb7a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>3</sys_name>
+        <sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope>
+        <sys_update_name>sp_column_a61e191d1b385d106a08a9b4bd4bcb7a</sys_update_name>
+        <sys_updated_by>David.Admin</sys_updated_by>
+        <sys_updated_on>2022-07-19 02:44:51</sys_updated_on>
+    </sp_column>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</application>
+        <file_path/>
+        <instance_id>835dfff4db24b340387021c4059619f4</instance_id>
+        <instance_name>dev77946</instance_name>
+        <name>sp_column_a61e191d1b385d106a08a9b4bd4bcb7a</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column"><sp_column action="INSERT_OR_UPDATE"><class_name/><order>3</order><size>3</size><size_lg/><size_sm/><size_xs/><sp_row display_value="1">261e951d1b385d106a08a9b4bd4bcb82</sp_row><sys_class_name>sp_column</sys_class_name><sys_created_by>David.Admin</sys_created_by><sys_created_on>2022-07-19 02:44:51</sys_created_on><sys_id>a61e191d1b385d106a08a9b4bd4bcb7a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>3</sys_name><sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package><sys_policy/><sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope><sys_update_name>sp_column_a61e191d1b385d106a08a9b4bd4bcb7a</sys_update_name><sys_updated_by>David.Admin</sys_updated_by><sys_updated_on>2022-07-19 02:44:51</sys_updated_on></sp_column></record_update>]]></payload>
+        <payload_hash>-784906760</payload_hash>
+        <record_name>3</record_name>
+        <reverted_from/>
+        <source>56ac0e171b6495106a08a9b4bd4bcbb7</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>David.Admin</sys_created_by>
+        <sys_created_on>2022-07-19 02:44:51</sys_created_on>
+        <sys_id>ae1e191d1b385d106a08a9b4bd4bcb7b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1821458106d0000001</sys_recorded_at>
+        <sys_updated_by>David.Admin</sys_updated_by>
+        <sys_updated_on>2022-07-19 02:44:51</sys_updated_on>
+        <type>Column</type>
+        <update_guid>e61e191d62385d10be05447c3a8a197b</update_guid>
+        <update_guid_history>e61e191d62385d10be05447c3a8a197b:-784906760</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="3">547c22591b7c5d106a08a9b4bd4bcbe7</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>David.Admin</sys_created_by>
+        <sys_created_on>2022-07-19 08:27:08</sys_created_on>
+        <sys_db_object display_value="" name="sp_column">sp_column</sys_db_object>
+        <sys_id>4bce322b64804b50ab9e6e9cbd5d34b1</sys_id>
+        <sys_metadata>a61e191d1b385d106a08a9b4bd4bcb7a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>3</sys_name>
+        <sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope>
+        <sys_scope_delete display_value="">4c6c017a72da4588a43d0b2e3ce46da4</sys_scope_delete>
+        <sys_update_name>sp_column_a61e191d1b385d106a08a9b4bd4bcb7a</sys_update_name>
+        <sys_update_version display_value="sp_column_a61e191d1b385d106a08a9b4bd4bcb7a">ae1e191d1b385d106a08a9b4bd4bcb7b</sys_update_version>
+        <sys_updated_by>David.Admin</sys_updated_by>
+        <sys_updated_on>2022-07-19 08:27:08</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

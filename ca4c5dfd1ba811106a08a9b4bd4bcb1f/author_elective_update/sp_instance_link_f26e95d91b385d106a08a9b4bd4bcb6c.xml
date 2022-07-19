@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance_link">
+    <sp_instance_link action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph>plus</glyph>
+        <id/>
+        <kb_article/>
+        <kb_category/>
+        <kb_topic/>
+        <order>1</order>
+        <roles/>
+        <sc_cat_item/>
+        <sc_category/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">6e1e951d1b385d106a08a9b4bd4bcb84</sp_column>
+        <sp_page display_value="wfh_request">eade9d511b385d106a08a9b4bd4bcb9c</sp_page>
+        <sp_widget display_value="Icon Link">3caa67afcb13020000f8d856634c9c2e</sp_widget>
+        <sys_class_name>sp_instance_link</sys_class_name>
+        <sys_created_by>David.Admin</sys_created_by>
+        <sys_created_on>2022-07-19 02:46:14</sys_created_on>
+        <sys_id>f26e95d91b385d106a08a9b4bd4bcb6c</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Submit a WFH</sys_name>
+        <sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope>
+        <sys_update_name>sp_instance_link_f26e95d91b385d106a08a9b4bd4bcb6c</sys_update_name>
+        <sys_updated_by>David.Admin</sys_updated_by>
+        <sys_updated_on>2022-07-19 06:46:46</sys_updated_on>
+        <title>Submit a WFH</title>
+        <type>page</type>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"link_template": {
+		"value": "Circle Icon",
+		"displayValue": "Circle Icon"
+	}
+}]]></widget_parameters>
+    </sp_instance_link>
+    <sys_translated_text action="DELETE" query="documentkey=f26e95d91b385d106a08a9b4bd4bcb6c"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</application>
+        <file_path/>
+        <instance_id>835dfff4db24b340387021c4059619f4</instance_id>
+        <instance_name>dev77946</instance_name>
+        <name>sp_instance_link_f26e95d91b385d106a08a9b4bd4bcb6c</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_instance_link"&gt;&lt;sp_instance_link action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;class_name/&gt;&lt;color&gt;default&lt;/color&gt;&lt;css/&gt;&lt;glyph&gt;plus&lt;/glyph&gt;&lt;id/&gt;&lt;kb_article/&gt;&lt;kb_category/&gt;&lt;kb_topic/&gt;&lt;order&gt;1&lt;/order&gt;&lt;roles/&gt;&lt;sc_cat_item/&gt;&lt;sc_category/&gt;&lt;short_description/&gt;&lt;size&gt;md&lt;/size&gt;&lt;sp_column display_value="1"&gt;6e1e951d1b385d106a08a9b4bd4bcb84&lt;/sp_column&gt;&lt;sp_page display_value="wfh_request"&gt;eade9d511b385d106a08a9b4bd4bcb9c&lt;/sp_page&gt;&lt;sp_widget display_value="Icon Link"&gt;3caa67afcb13020000f8d856634c9c2e&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_instance_link&lt;/sys_class_name&gt;&lt;sys_created_by&gt;David.Admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-07-19 02:46:14&lt;/sys_created_on&gt;&lt;sys_id&gt;f26e95d91b385d106a08a9b4bd4bcb6c&lt;/sys_id&gt;&lt;sys_mod_count&gt;7&lt;/sys_mod_count&gt;&lt;sys_name&gt;Submit a WFH&lt;/sys_name&gt;&lt;sys_package display_value="Working From Home (WFH)" source="x_852034_wfh"&gt;ca4c5dfd1ba811106a08a9b4bd4bcb1f&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Working From Home (WFH)"&gt;ca4c5dfd1ba811106a08a9b4bd4bcb1f&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_instance_link_f26e95d91b385d106a08a9b4bd4bcb6c&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;David.Admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-07-19 06:46:46&lt;/sys_updated_on&gt;&lt;title&gt;Submit a WFH&lt;/title&gt;&lt;type&gt;page&lt;/type&gt;&lt;url/&gt;&lt;widget_parameters&gt;&lt;![CDATA[{
+	"link_template": {
+		"value": "Circle Icon",
+		"displayValue": "Circle Icon"
+	}
+}]]&gt;&lt;/widget_parameters&gt;&lt;/sp_instance_link&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=f26e95d91b385d106a08a9b4bd4bcb6c"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>629306525</payload_hash>
+        <record_name>Submit a WFH</record_name>
+        <reverted_from/>
+        <source>56ac0e171b6495106a08a9b4bd4bcbb7</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>David.Admin</sys_created_by>
+        <sys_created_on>2022-07-19 06:46:46</sys_created_on>
+        <sys_id>4275d2911b3c5d106a08a9b4bd4bcb5c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1821535886b0000001</sys_recorded_at>
+        <sys_updated_by>David.Admin</sys_updated_by>
+        <sys_updated_on>2022-07-19 06:46:46</sys_updated_on>
+        <type>Instance with Link</type>
+        <update_guid>4a75d2911b3c5d108fb8535c8fcef95b</update_guid>
+        <update_guid_history>4a75d2911b3c5d108fb8535c8fcef95b:629306525,6d625a9ddcf85d10b05c4033c006f61d:1847420669,3ef15e9d71f85d10cf847089c6a019d7:1063144699,1b0e4e9920f85d10daa39ce527708cf4:-820181530,dabe115dde385d10b75063ad088389bd:-719443572,e8be955131385d10b2160f70fd3f904e:-1822923954,86aed91522385d1065ea18e2a848fe7b:22339694,f26e95d90f385d106b674e8631faba6e:-1110058025</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Submit a WFH">aa6c22591b7c5d106a08a9b4bd4bcbb2</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>David.Admin</sys_created_by>
+        <sys_created_on>2022-07-19 08:27:01</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance_link">sp_instance_link</sys_db_object>
+        <sys_id>05fbc13dd82a44989f3ad40db4b724c4</sys_id>
+        <sys_metadata>f26e95d91b385d106a08a9b4bd4bcb6c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Submit a WFH</sys_name>
+        <sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope>
+        <sys_scope_delete display_value="">4c6c017a72da4588a43d0b2e3ce46da4</sys_scope_delete>
+        <sys_update_name>sp_instance_link_f26e95d91b385d106a08a9b4bd4bcb6c</sys_update_name>
+        <sys_update_version display_value="sp_instance_link_f26e95d91b385d106a08a9b4bd4bcb6c">4275d2911b3c5d106a08a9b4bd4bcb5c</sys_update_version>
+        <sys_updated_by>David.Admin</sys_updated_by>
+        <sys_updated_on>2022-07-19 08:27:01</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

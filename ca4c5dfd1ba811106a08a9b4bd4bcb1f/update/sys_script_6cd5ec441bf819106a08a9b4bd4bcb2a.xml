@@ -29,7 +29,7 @@
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
 
-    var IS_DEBUG = true;
+    var IS_DEBUG = false;
     var DEBUG_PREFIX = 'KIT.SN.BR.Date Validations';
     var ERROR_MODEL = {
         CODE_0: 'Runtime error, please check system logs',
@@ -49,7 +49,7 @@
 
         !dateUtil.isFutureDate() ? showError(10) :
             !dateUtil.isValidDateDiff() ? showError(20) :
-            '';
+            current.u_state = '2'; // set state to [Pending Approval]
 
     } catch (err) {
         IS_DEBUG ? showError(100) : gs.error('{0}', err);
@@ -80,15 +80,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>6cd5ec441bf819106a08a9b4bd4bcb2a</sys_id>
-        <sys_mod_count>21</sys_mod_count>
+        <sys_mod_count>25</sys_mod_count>
         <sys_name>Date Validations</sys_name>
         <sys_overrides/>
         <sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package>
         <sys_policy/>
         <sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope>
         <sys_update_name>sys_script_6cd5ec441bf819106a08a9b4bd4bcb2a</sys_update_name>
-        <sys_updated_by>David.Admin</sys_updated_by>
-        <sys_updated_on>2022-07-18 06:24:44</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-19 06:15:51</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>

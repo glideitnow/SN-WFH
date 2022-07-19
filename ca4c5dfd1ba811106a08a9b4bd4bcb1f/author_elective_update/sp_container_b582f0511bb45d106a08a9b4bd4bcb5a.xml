@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container">
+    <sp_container action="DELETE">
+        <background_color/>
+        <background_image/>
+        <background_style>default</background_style>
+        <bootstrap_alt>false</bootstrap_alt>
+        <class_name/>
+        <container_class_name/>
+        <name>Work From Home Portal - Container 2</name>
+        <order>2</order>
+        <sp_page display_value="wfh_landing">24e0fcdd1b745d106a08a9b4bd4bcbd6</sp_page>
+        <subheader>false</subheader>
+        <sys_class_name>sp_container</sys_class_name>
+        <sys_created_by>David.Admin</sys_created_by>
+        <sys_created_on>2022-07-18 23:34:29</sys_created_on>
+        <sys_id>b582f0511bb45d106a08a9b4bd4bcb5a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Work From Home Portal - Container 2</sys_name>
+        <sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope>
+        <sys_update_name>sp_container_b582f0511bb45d106a08a9b4bd4bcb5a</sys_update_name>
+        <sys_updated_by>David.Admin</sys_updated_by>
+        <sys_updated_on>2022-07-18 23:34:29</sys_updated_on>
+        <title/>
+        <width>container</width>
+    </sp_container>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</application>
+        <file_path/>
+        <instance_id>835dfff4db24b340387021c4059619f4</instance_id>
+        <instance_name>dev77946</instance_name>
+        <name>sp_container_b582f0511bb45d106a08a9b4bd4bcb5a</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container"><sp_container action="INSERT_OR_UPDATE"><background_color/><background_image/><background_style>default</background_style><bootstrap_alt>false</bootstrap_alt><class_name/><container_class_name/><name>Work From Home Portal - Container 2</name><order>2</order><sp_page display_value="wfh_landing">24e0fcdd1b745d106a08a9b4bd4bcbd6</sp_page><subheader>false</subheader><sys_class_name>sp_container</sys_class_name><sys_created_by>David.Admin</sys_created_by><sys_created_on>2022-07-18 23:34:29</sys_created_on><sys_id>b582f0511bb45d106a08a9b4bd4bcb5a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Work From Home Portal - Container 2</sys_name><sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package><sys_policy/><sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope><sys_update_name>sp_container_b582f0511bb45d106a08a9b4bd4bcb5a</sys_update_name><sys_updated_by>David.Admin</sys_updated_by><sys_updated_on>2022-07-18 23:34:29</sys_updated_on><title/><width>container</width></sp_container></record_update>]]></payload>
+        <payload_hash>262042635</payload_hash>
+        <record_name>Work From Home Portal - Container 2</record_name>
+        <reverted_from/>
+        <source>56ac0e171b6495106a08a9b4bd4bcbb7</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>David.Admin</sys_created_by>
+        <sys_created_on>2022-07-18 23:34:29</sys_created_on>
+        <sys_id>b182f0511bb45d106a08a9b4bd4bcb5c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18213a9c5580000001</sys_recorded_at>
+        <sys_updated_by>David.Admin</sys_updated_by>
+        <sys_updated_on>2022-07-18 23:34:29</sys_updated_on>
+        <type>Container</type>
+        <update_guid>f982f0510cb45d10eefc162fe975c35b</update_guid>
+        <update_guid_history>f982f0510cb45d10eefc162fe975c35b:262042635</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Work From Home Portal - Container 2">d87c22591b7c5d106a08a9b4bd4bcbfb</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>David.Admin</sys_created_by>
+        <sys_created_on>2022-07-19 08:27:08</sys_created_on>
+        <sys_db_object display_value="" name="sp_container">sp_container</sys_db_object>
+        <sys_id>0e3e3414986546bd81d50e3c524e8f19</sys_id>
+        <sys_metadata>b582f0511bb45d106a08a9b4bd4bcb5a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Work From Home Portal - Container 2</sys_name>
+        <sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope>
+        <sys_scope_delete display_value="">4c6c017a72da4588a43d0b2e3ce46da4</sys_scope_delete>
+        <sys_update_name>sp_container_b582f0511bb45d106a08a9b4bd4bcb5a</sys_update_name>
+        <sys_update_version display_value="sp_container_b582f0511bb45d106a08a9b4bd4bcb5a">b182f0511bb45d106a08a9b4bd4bcb5c</sys_update_version>
+        <sys_updated_by>David.Admin</sys_updated_by>
+        <sys_updated_on>2022-07-19 08:27:08</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

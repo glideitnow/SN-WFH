@@ -207,127 +207,6 @@
         "background" : "rgb(var(--now-color--primary-0))"
       }
     }, {
-      "elementId" : "container_4",
-      "elementLabel" : "Main",
-      "propertyValues" : {
-        "ariaRegionName" : {
-          "type" : "TRANSLATION_LITERAL",
-          "value" : {
-            "code" : null,
-            "message" : "",
-            "comment" : ""
-          }
-        },
-        "includeAriaHeading" : {
-          "type" : "JSON_LITERAL",
-          "value" : false
-        },
-        "ariaRegionHeadingLevel" : {
-          "type" : "JSON_LITERAL",
-          "value" : "1"
-        },
-        "type" : {
-          "type" : "JSON_LITERAL",
-          "value" : "section"
-        },
-        "ariaRole" : {
-          "type" : "JSON_LITERAL",
-          "value" : ""
-        }
-      },
-      "eventMappings" : [ ],
-      "slot" : null,
-      "definition" : {
-        "id" : "d356d14b6e293a3020a244b63d278d8f",
-        "type" : "MACROPONENT"
-      },
-      "overrides" : {
-        "composition" : [ {
-          "elementId" : "container_5",
-          "elementLabel" : "Container 5",
-          "propertyValues" : {
-            "ariaRegionName" : {
-              "type" : "TRANSLATION_LITERAL",
-              "value" : {
-                "code" : null,
-                "message" : "",
-                "comment" : ""
-              }
-            },
-            "includeAriaHeading" : {
-              "type" : "JSON_LITERAL",
-              "value" : false
-            },
-            "ariaRegionHeadingLevel" : {
-              "type" : "JSON_LITERAL",
-              "value" : "1"
-            },
-            "type" : {
-              "type" : "JSON_LITERAL",
-              "value" : "section"
-            },
-            "ariaRole" : {
-              "type" : "JSON_LITERAL",
-              "value" : ""
-            }
-          },
-          "eventMappings" : [ ],
-          "slot" : null,
-          "definition" : {
-            "id" : "d356d14b6e293a3020a244b63d278d8f",
-            "type" : "MACROPONENT"
-          },
-          "overrides" : {
-            "composition" : [ ],
-            "layout" : {
-              "default" : {
-                "children" : null,
-                "isInline" : null,
-                "items" : [],
-                "root" : null,
-                "rules" : null,
-                "styles" : {"flex-direction":"column"},
-                "templateId" : "5832fd4d53c31010e6bcddeeff7b12db",
-                "type" : "flex"
-              },
-              "version" : "3.0.0"
-            }
-          },
-          "isHidden" : {
-            "type" : "JSON_LITERAL",
-            "value" : null
-          },
-          "isHero" : false,
-          "isNonDestructive" : false,
-          "styles" : {
-            "width" : "100%"
-          }
-        } ],
-        "layout" : {
-          "default" : {
-            "children" : null,
-            "isInline" : null,
-            "items" : [{"element_id":"container_5","styles":{}}],
-            "root" : null,
-            "rules" : null,
-            "styles" : {"flex-direction":"column"},
-            "templateId" : "5832fd4d53c31010e6bcddeeff7b12db",
-            "type" : "flex"
-          },
-          "version" : "3.0.0"
-        }
-      },
-      "isHidden" : {
-        "type" : "JSON_LITERAL",
-        "value" : null
-      },
-      "isHero" : false,
-      "isNonDestructive" : false,
-      "styles" : {
-        "width" : "100%",
-        "height" : "100%"
-      }
-    }, {
       "elementId" : "container_6",
       "elementLabel" : "Container 6",
       "propertyValues" : {
@@ -583,9 +462,7 @@
             },
             "datePickerTemplates" : {
               "type" : "JSON_LITERAL",
-              "value" : {
-                "work_week" : "startMoment ? startMoment.format('ddd, MMM D') + '-' + endMoment.format('ddd, MMM D') : ''"
-              }
+              "value" : [ ]
             },
             "dir" : {
               "type" : "JSON_LITERAL",
@@ -607,74 +484,7 @@
             },
             "hotkeys" : {
               "type" : "LIST_CONTAINER",
-              "container" : [ {
-                "type" : "MAP_CONTAINER",
-                "container" : {
-                  "eventName" : {
-                    "type" : "TRANSLATION_LITERAL",
-                    "value" : {
-                      "code" : null,
-                      "message" : "markspan",
-                      "comment" : ""
-                    }
-                  },
-                  "selector" : {
-                    "type" : "JSON_LITERAL",
-                    "value" : ".mark-span"
-                  },
-                  "keyCode" : {
-                    "type" : "JSON_LITERAL",
-                    "value" : 77
-                  },
-                  "name" : {
-                    "type" : "JSON_LITERAL",
-                    "value" : "M"
-                  },
-                  "view" : {
-                    "type" : "JSON_LITERAL",
-                    "value" : "COLUMN"
-                  },
-                  "info" : {
-                    "type" : "MAP_CONTAINER",
-                    "container" : {
-                      "next" : {
-                        "type" : "MAP_CONTAINER",
-                        "container" : {
-                          "keyName" : {
-                            "type" : "JSON_LITERAL",
-                            "value" : "M"
-                          },
-                          "description" : {
-                            "type" : "TRANSLATION_LITERAL",
-                            "value" : {
-                              "code" : null,
-                              "message" : "Select next mark span event",
-                              "comment" : ""
-                            }
-                          }
-                        }
-                      },
-                      "previous" : {
-                        "type" : "MAP_CONTAINER",
-                        "container" : {
-                          "keyName" : {
-                            "type" : "JSON_LITERAL",
-                            "value" : "Shift + M"
-                          },
-                          "description" : {
-                            "type" : "TRANSLATION_LITERAL",
-                            "value" : {
-                              "code" : null,
-                              "message" : "Select previous mark span event",
-                              "comment" : ""
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              } ]
+              "container" : [ ]
             },
             "locale" : {
               "type" : "JSON_LITERAL",
@@ -697,7 +507,7 @@
             },
             "popoverEnabled" : {
               "type" : "JSON_LITERAL",
-              "value" : true
+              "value" : false
             },
             "security" : {
               "type" : "JSON_LITERAL",
@@ -790,7 +600,7 @@
                   "eventMinWidthMS" : 86400000,
                   "animation" : false,
                   "snapGranularity" : 480,
-                  "splitRow" : 1,
+                  "splitRow" : 0,
                   "numberOfDays" : 14,
                   "viewLabel" : "Week"
                 }
@@ -818,7 +628,9 @@
           },
           "isHero" : false,
           "isNonDestructive" : false,
-          "styles" : { }
+          "styles" : {
+            "flex" : "0 1 auto"
+          }
         } ],
         "layout" : {
           "default" : {
@@ -846,7 +658,7 @@
       "default" : {
         "children" : null,
         "isInline" : null,
-        "items" : [{"element_id":"container_3","styles":{}},{"element_id":"container_2","styles":{}},{"element_id":"container_4","styles":{}},{"element_id":"container_6","styles":{}}],
+        "items" : [{"element_id":"container_3","styles":{}},{"element_id":"container_2","styles":{}},{"element_id":"container_6","styles":{}}],
         "root" : null,
         "rules" : null,
         "styles" : {"flex-direction":"column","display":"flex"},
@@ -887,7 +699,10 @@
       "transform" : {
         "operands" : {
           "type" : "LIST_CONTAINER",
-          "container" : [ ]
+          "container" : [ {
+            "type" : "JSON_LITERAL",
+            "value" : "u_active=true^u_state=3"
+          } ]
         },
         "operator" : "CONCAT"
       }
@@ -998,12 +813,6 @@
   "message" : "No Events Scheduled",
   "comment" : ""
 }, {
-  "message" : "Select next mark span event",
-  "comment" : ""
-}, {
-  "message" : "Select previous mark span event",
-  "comment" : ""
-}, {
   "message" : "Week",
   "comment" : ""
 }, {
@@ -1011,9 +820,6 @@
   "comment" : ""
 }, {
   "message" : "Working from home request portal",
-  "comment" : ""
-}, {
-  "message" : "markspan",
   "comment" : ""
 } ]</required_translations>
         <root_component/>
@@ -1025,13 +831,13 @@
         <sys_created_by>David.Admin</sys_created_by>
         <sys_created_on>2022-07-16 00:09:55</sys_created_on>
         <sys_id>63ddddd81b7c59106a08a9b4bd4bcbc5</sys_id>
-        <sys_mod_count>38</sys_mod_count>
+        <sys_mod_count>41</sys_mod_count>
         <sys_name>Start</sys_name>
         <sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package>
         <sys_policy/>
         <sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope>
         <sys_update_name>sys_ux_macroponent_63ddddd81b7c59106a08a9b4bd4bcbc5</sys_update_name>
         <sys_updated_by>David.Admin</sys_updated_by>
-        <sys_updated_on>2022-07-18 02:00:29</sys_updated_on>
+        <sys_updated_on>2022-07-19 06:45:49</sys_updated_on>
     </sys_ux_macroponent>
 </record_update>

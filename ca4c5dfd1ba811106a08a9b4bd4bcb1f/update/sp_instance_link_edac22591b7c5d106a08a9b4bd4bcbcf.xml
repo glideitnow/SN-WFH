@@ -2,9 +2,9 @@
     <sp_instance_link action="INSERT_OR_UPDATE">
         <active>true</active>
         <class_name/>
-        <color>default</color>
+        <color>success</color>
         <css/>
-        <glyph>plus</glyph>
+        <glyph>calendar</glyph>
         <id/>
         <kb_article/>
         <kb_category/>
@@ -13,26 +13,26 @@
         <roles/>
         <sc_cat_item/>
         <sc_category/>
-        <short_description>Submit a new WFH request</short_description>
+        <short_description/>
         <size>md</size>
-        <sp_column display_value="1">6e1e951d1b385d106a08a9b4bd4bcb84</sp_column>
+        <sp_column display_value="2">027ca2591b7c5d106a08a9b4bd4bcb00</sp_column>
         <sp_page/>
         <sp_widget display_value="Icon Link">3caa67afcb13020000f8d856634c9c2e</sp_widget>
         <sys_class_name>sp_instance_link</sys_class_name>
         <sys_created_by>David.Admin</sys_created_by>
-        <sys_created_on>2022-07-19 02:46:14</sys_created_on>
-        <sys_id>f26e95d91b385d106a08a9b4bd4bcb6c</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_name>Submit a WFH</sys_name>
+        <sys_created_on>2022-07-19 08:28:02</sys_created_on>
+        <sys_id>edac22591b7c5d106a08a9b4bd4bcbcf</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>View Calendar</sys_name>
         <sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package>
         <sys_policy/>
         <sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope>
-        <sys_update_name>sp_instance_link_f26e95d91b385d106a08a9b4bd4bcb6c</sys_update_name>
+        <sys_update_name>sp_instance_link_edac22591b7c5d106a08a9b4bd4bcbcf</sys_update_name>
         <sys_updated_by>David.Admin</sys_updated_by>
-        <sys_updated_on>2022-07-19 02:47:34</sys_updated_on>
-        <title>Submit a WFH</title>
-        <type>page</type>
-        <url/>
+        <sys_updated_on>2022-07-19 08:33:16</sys_updated_on>
+        <title>View Calendar</title>
+        <type>url</type>
+        <url>https://dev77946.service-now.com/x/852034/working-from-home-wfh-sp/start</url>
         <widget_parameters><![CDATA[{
 	"link_template": {
 		"value": "Top Icon",
@@ -40,5 +40,5 @@
 	}
 }]]></widget_parameters>
     </sp_instance_link>
-    <sys_translated_text action="delete_multiple" query="documentkey=f26e95d91b385d106a08a9b4bd4bcb6c"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=edac22591b7c5d106a08a9b4bd4bcbcf"/>
 </record_update>
