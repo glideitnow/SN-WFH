@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>2</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="2">deee951d1b385d106a08a9b4bd4bcb07</sp_column>
+        <sp_widget display_value="Form">fd1f4ec347730200ba13a5554ee490c0</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>David.Admin</sys_created_by>
+        <sys_created_on>2022-07-19 04:29:44</sys_created_on>
+        <sys_id>fe1679dd1b785d106a08a9b4bd4bcbcb</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope>
+        <sys_update_name>sp_instance_fe1679dd1b785d106a08a9b4bd4bcbcb</sys_update_name>
+        <sys_updated_by>David.Admin</sys_updated_by>
+        <sys_updated_on>2022-07-19 04:30:08</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"disableUIActions": {
+		"value": "",
+		"displayValue": ""
+	},
+	"showFormView": {
+		"value": "",
+		"displayValue": ""
+	},
+	"omitHeaderOptions": {
+		"value": "",
+		"displayValue": ""
+	}
+}]]></widget_parameters>
+    </sp_instance>
+    <sys_translated_text action="DELETE" query="documentkey=fe1679dd1b785d106a08a9b4bd4bcbcb"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</application>
+        <file_path/>
+        <instance_id>835dfff4db24b340387021c4059619f4</instance_id>
+        <instance_name>dev77946</instance_name>
+        <name>sp_instance_fe1679dd1b785d106a08a9b4bd4bcbcb</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_instance"&gt;&lt;sp_instance action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;class_name/&gt;&lt;color&gt;default&lt;/color&gt;&lt;css/&gt;&lt;glyph/&gt;&lt;id/&gt;&lt;order&gt;2&lt;/order&gt;&lt;roles/&gt;&lt;short_description/&gt;&lt;size&gt;md&lt;/size&gt;&lt;sp_column display_value="2"&gt;deee951d1b385d106a08a9b4bd4bcb07&lt;/sp_column&gt;&lt;sp_widget display_value="Form"&gt;fd1f4ec347730200ba13a5554ee490c0&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;David.Admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-07-19 04:29:44&lt;/sys_created_on&gt;&lt;sys_id&gt;fe1679dd1b785d106a08a9b4bd4bcbcb&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Working From Home (WFH)" source="x_852034_wfh"&gt;ca4c5dfd1ba811106a08a9b4bd4bcb1f&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Working From Home (WFH)"&gt;ca4c5dfd1ba811106a08a9b4bd4bcb1f&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_instance_fe1679dd1b785d106a08a9b4bd4bcbcb&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;David.Admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-07-19 04:30:08&lt;/sys_updated_on&gt;&lt;title/&gt;&lt;url/&gt;&lt;widget_parameters&gt;&lt;![CDATA[{
+	"disableUIActions": {
+		"value": "",
+		"displayValue": ""
+	},
+	"showFormView": {
+		"value": "",
+		"displayValue": ""
+	},
+	"omitHeaderOptions": {
+		"value": "",
+		"displayValue": ""
+	}
+}]]&gt;&lt;/widget_parameters&gt;&lt;/sp_instance&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=fe1679dd1b785d106a08a9b4bd4bcbcb"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1011431064</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>56ac0e171b6495106a08a9b4bd4bcbb7</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>David.Admin</sys_created_by>
+        <sys_created_on>2022-07-19 04:30:08</sys_created_on>
+        <sys_id>3c3635d11bb85d106a08a9b4bd4bcb44</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18214b874270000001</sys_recorded_at>
+        <sys_updated_by>David.Admin</sys_updated_by>
+        <sys_updated_on>2022-07-19 04:30:08</sys_updated_on>
+        <type>Instance</type>
+        <update_guid>343635d1cab85d10ba38b50fcb20d244</update_guid>
+        <update_guid_history>343635d1cab85d10ba38b50fcb20d244:1011431064,3a1679ddc8785d100b867f415d8a34cd:2139321934</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">1d7879551bb85d106a08a9b4bd4bcb26</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>David.Admin</sys_created_by>
+        <sys_created_on>2022-07-19 04:40:00</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance">sp_instance</sys_db_object>
+        <sys_id>bd179aea7ee3455c916f82bdf27afb49</sys_id>
+        <sys_metadata>fe1679dd1b785d106a08a9b4bd4bcbcb</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope>
+        <sys_scope_delete display_value="">4c6c017a72da4588a43d0b2e3ce46da4</sys_scope_delete>
+        <sys_update_name>sp_instance_fe1679dd1b785d106a08a9b4bd4bcbcb</sys_update_name>
+        <sys_update_version display_value="sp_instance_fe1679dd1b785d106a08a9b4bd4bcbcb">3c3635d11bb85d106a08a9b4bd4bcb44</sys_update_version>
+        <sys_updated_by>David.Admin</sys_updated_by>
+        <sys_updated_on>2022-07-19 04:40:00</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

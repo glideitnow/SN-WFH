@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="DELETE">
+        <catalog_item display_value="WFH Record Producer">c76245111bf45d106a08a9b4bd4bcb57</catalog_item>
+        <catalog_variable>IO:dcf28d111bf45d106a08a9b4bd4bcbb1</catalog_variable>
+        <cleared>true</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <mandatory>ignore</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>David.Admin</sys_created_by>
+        <sys_created_on>2022-07-19 01:28:29</sys_created_on>
+        <sys_id>169cc9d91bf45d106a08a9b4bd4bcb59</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>u_end_date</sys_name>
+        <sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_169cc9d91bf45d106a08a9b4bd4bcb59</sys_update_name>
+        <sys_updated_by>David.Admin</sys_updated_by>
+        <sys_updated_on>2022-07-19 01:28:29</sys_updated_on>
+        <table/>
+        <ui_policy display_value="End Date Checker">1ffb49591bf45d106a08a9b4bd4bcb9d</ui_policy>
+        <variable>u_end_date</variable>
+        <variable_set/>
+        <visible>ignore</visible>
+    </catalog_ui_policy_action>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</application>
+        <file_path/>
+        <instance_id>835dfff4db24b340387021c4059619f4</instance_id>
+        <instance_name>dev77946</instance_name>
+        <name>catalog_ui_policy_action_169cc9d91bf45d106a08a9b4bd4bcb59</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action"><catalog_ui_policy_action action="INSERT_OR_UPDATE"><catalog_item display_value="WFH Record Producer">c76245111bf45d106a08a9b4bd4bcb57</catalog_item><catalog_variable>IO:dcf28d111bf45d106a08a9b4bd4bcbb1</catalog_variable><cleared>true</cleared><disabled>ignore</disabled><field/><mandatory>ignore</mandatory><order>100</order><sys_class_name>catalog_ui_policy_action</sys_class_name><sys_created_by>David.Admin</sys_created_by><sys_created_on>2022-07-19 01:28:29</sys_created_on><sys_id>169cc9d91bf45d106a08a9b4bd4bcb59</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_end_date</sys_name><sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package><sys_policy/><sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope><sys_update_name>catalog_ui_policy_action_169cc9d91bf45d106a08a9b4bd4bcb59</sys_update_name><sys_updated_by>David.Admin</sys_updated_by><sys_updated_on>2022-07-19 01:28:29</sys_updated_on><table/><ui_policy display_value="End Date Checker">1ffb49591bf45d106a08a9b4bd4bcb9d</ui_policy><variable>u_end_date</variable><variable_set/><visible>ignore</visible></catalog_ui_policy_action></record_update>]]></payload>
+        <payload_hash>1999237602</payload_hash>
+        <record_name>u_end_date</record_name>
+        <reverted_from/>
+        <source>56ac0e171b6495106a08a9b4bd4bcbb7</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>David.Admin</sys_created_by>
+        <sys_created_on>2022-07-19 01:28:29</sys_created_on>
+        <sys_id>339cc9d91bf45d106a08a9b4bd4bcbf3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>182141225d20000001</sys_recorded_at>
+        <sys_updated_by>David.Admin</sys_updated_by>
+        <sys_updated_on>2022-07-19 01:28:29</sys_updated_on>
+        <type>Catalog UI Policy Action</type>
+        <update_guid>7b9cc9d9d0f45d10917b6b68820f90f2</update_guid>
+        <update_guid_history>7b9cc9d9d0f45d10917b6b68820f90f2:1999237602</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="u_end_date">fb3299511b385d106a08a9b4bd4bcb5b</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2022-07-19 01:53:04</sys_created_on>
+        <sys_db_object display_value="" name="catalog_ui_policy_action">catalog_ui_policy_action</sys_db_object>
+        <sys_id>565b75c511ed4814afcbcfbc6f880e90</sys_id>
+        <sys_metadata>169cc9d91bf45d106a08a9b4bd4bcb59</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>u_end_date</sys_name>
+        <sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope>
+        <sys_scope_delete display_value="">4c6c017a72da4588a43d0b2e3ce46da4</sys_scope_delete>
+        <sys_update_name>catalog_ui_policy_action_169cc9d91bf45d106a08a9b4bd4bcb59</sys_update_name>
+        <sys_update_version display_value="catalog_ui_policy_action_169cc9d91bf45d106a08a9b4bd4bcb59">339cc9d91bf45d106a08a9b4bd4bcbf3</sys_update_version>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2022-07-19 01:53:04</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

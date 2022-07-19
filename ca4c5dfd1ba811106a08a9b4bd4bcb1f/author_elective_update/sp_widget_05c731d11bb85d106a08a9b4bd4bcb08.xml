@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="DELETE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller = function ($scope, $q, spScUtil, $location) {
+    var c = this;
+ 
+    /**
+     * INITIALISATION
+     */
+ 
+    // Capture the GlideForm event emitted by spModel, which we will use
+    // to save changes made to the variable editor.
+ 
+    var gForm;
+ 
+    $scope.$on('spModel.gForm.initialized', function (e, gFormInstance) {
+        gForm = gFormInstance;
+    });
+ 
+    /**
+     * FORM ACTIONS
+     */
+ 
+    // Because both saveVariables() and saveRecordProducer() return a promise,
+    // we can use "chaining" to register a function to be executed after the
+    // save operation has happened.
+ 
+    c.save = function () {
+        saveForm().then(function () {
+            // put the sysID in the URL if its not already there, triggering a refresh
+            // and thus swapping from the record producer form to the variable editor.
+            $location.search('sys_id', c.data.sysId);
+        });
+    }
+ 
+    // In the case of submit, after the save operation has happened we will want to
+    // move the record from draft state, to submitted state.
+ 
+    c.submit = function () {
+        saveForm().then(function () {
+ 
+            // mark the record as submitted
+            c.server.get({
+                action: 'submit',
+                sysId: c.data.sysId
+            }).then(function () {
+ 
+                // redirect to a "submission successful" page
+                $location.search({
+                    sys_id: c.data.sysId,
+                    table: c.data.tableName,
+                    id: 'form' // Ideally a page stating submission was successful, but for now just "form".
+                });
+            })
+ 
+        });
+    };
+ 
+    /**
+     * HELPER FUNCTIONS
+     */
+ 
+    // Depending on whether this is a new record, either save the record
+    // producer, or save the variable editor.
+    function saveForm() {
+        return c.data.isNewRecord ? saveRecordProducer() : saveVariables();
+    }
+ 
+    // This function uses the $q service to allow it to operate asynchonously.
+    // That is, the function returns a promise, allowing chaining on the result
+    // e.g. saveVariables().then( /** do stuff */ );
+ 
+    function saveVariables() {
+        return $q(function (resolve) {
+            gForm.$private.events.on('onSubmitted', resolve);
+            gForm.submit();
+        })
+    }
+ 
+    // spScUtil.submitProducer() already returns a promise, so there's no need to use
+    // $q here. This function is an almost exact copy of the functionality from the 
+    //out-of-box SC Catalog Item widget. 
+ 
+    function saveRecordProducer() {
+        return spScUtil.submitProducer(
+            c.data.recordProducerForm.sys_id,
+            (function (fields) {
+                var reqData = {};
+                for (var obj in fields)
+                    reqData[fields[obj].name] = fields[obj].value;
+                return reqData;
+            })(c.data.recordProducerForm._fields),
+            c.data.sysId,
+            {});
+    }
+ 
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.panel-footer {
+    display: none;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id/>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>Copy of WFH Record Producer - Save as Dr</name>
+        <option_schema/>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[(function() {
+ 
+    // hard-coded variables. Widget could be improved so that these could be defined
+    // via configuration, URL parameters, or through a config table.
+    var recordProducerSysId = 'c76245111bf45d106a08a9b4bd4bcb57';
+    data.tableName = 'x_852034_wfh_requests';
+	 console.log(input);
+ 
+    // Allow the client script to mark a record as "submitted"
+    if (input && input.action === 'submit') {
+        var gr = new GlideRecord(data.tableName);
+        gr.get(input.sysId);
+        gr.setValue('u_state', '2');
+        gr.update();
+ 
+    } else {
+ 
+        // Check the URL for the sys_id parameter (which means an existing record)
+        data.sysId = $sp.getParameter('sys_id');
+ 				console.log("SYS ID is " + data.sysId );
+        // If the URL parameter is not set, we know we want to create a new record
+        data.isNewRecord = !data.sysId;
+ 
+        // Get the record producer form model
+        data.recordProducerForm = $sp.getCatalogItem(recordProducerSysId);
+ 
+        if (data.isNewRecord) {
+ 
+            // if it's a new record, generate a Sys ID
+            // which is needed to submit the record producer
+            data.sysId = gs.generateGUID();
+ 
+        } else {
+ 
+            // If it's an existing record, get the variable editor widget
+            data.varWidget = $sp.getWidget('sp-variable-editor', {
+                sys_id: data.sysId,
+                table: data.tableName,
+                hide_container: true // don't show the border
+            });
+        }
+ 
+    } 
+	console.log(date);
+ 
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>David.Admin</sys_created_by>
+        <sys_created_on>2022-07-19 04:37:00</sys_created_on>
+        <sys_id>05c731d11bb85d106a08a9b4bd4bcb08</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Copy of WFH Record Producer - Save as Dr</sys_name>
+        <sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope>
+        <sys_update_name>sp_widget_05c731d11bb85d106a08a9b4bd4bcb08</sys_update_name>
+        <sys_updated_by>David.Admin</sys_updated_by>
+        <sys_updated_on>2022-07-19 04:37:00</sys_updated_on>
+        <template><![CDATA[<h1>{{::c.data.recordProducerForm.short_description}}</h1>
+<div ng-bind-html="::c.data.recordProducerForm.description"></div>
+<div ng-switch="::c.data.isNewRecord">
+  <div ng-switch-when="true">
+    <sp-model form-model="c.data.recordProducerForm" mandatory="true"></sp-model>
+  </div>
+  <div ng-switch-when="false">
+    <sp-widget widget="c.data.varWidget"></sp-widget>
+  </div>
+  <div>
+    <button ng-click="c.save();">${Save as Draft}</button>
+    <button ng-click="c.submit();">${Submit}</button>
+  </div>
+</div>]]></template>
+    </sp_widget>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</application>
+        <file_path/>
+        <instance_id>835dfff4db24b340387021c4059619f4</instance_id>
+        <instance_name>dev77946</instance_name>
+        <name>sp_widget_05c731d11bb85d106a08a9b4bd4bcb08</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[api.controller = function ($scope, $q, spScUtil, $location) {
+    var c = this;
+ 
+    /**
+     * INITIALISATION
+     */
+ 
+    // Capture the GlideForm event emitted by spModel, which we will use
+    // to save changes made to the variable editor.
+ 
+    var gForm;
+ 
+    $scope.$on('spModel.gForm.initialized', function (e, gFormInstance) {
+        gForm = gFormInstance;
+    });
+ 
+    /**
+     * FORM ACTIONS
+     */
+ 
+    // Because both saveVariables() and saveRecordProducer() return a promise,
+    // we can use "chaining" to register a function to be executed after the
+    // save operation has happened.
+ 
+    c.save = function () {
+        saveForm().then(function () {
+            // put the sysID in the URL if its not already there, triggering a refresh
+            // and thus swapping from the record producer form to the variable editor.
+            $location.search('sys_id', c.data.sysId);
+        });
+    }
+ 
+    // In the case of submit, after the save operation has happened we will want to
+    // move the record from draft state, to submitted state.
+ 
+    c.submit = function () {
+        saveForm().then(function () {
+ 
+            // mark the record as submitted
+            c.server.get({
+                action: 'submit',
+                sysId: c.data.sysId
+            }).then(function () {
+ 
+                // redirect to a "submission successful" page
+                $location.search({
+                    sys_id: c.data.sysId,
+                    table: c.data.tableName,
+                    id: 'form' // Ideally a page stating submission was successful, but for now just "form".
+                });
+            })
+ 
+        });
+    };
+ 
+    /**
+     * HELPER FUNCTIONS
+     */
+ 
+    // Depending on whether this is a new record, either save the record
+    // producer, or save the variable editor.
+    function saveForm() {
+        return c.data.isNewRecord ? saveRecordProducer() : saveVariables();
+    }
+ 
+    // This function uses the $q service to allow it to operate asynchonously.
+    // That is, the function returns a promise, allowing chaining on the result
+    // e.g. saveVariables().then( /** do stuff */ );
+ 
+    function saveVariables() {
+        return $q(function (resolve) {
+            gForm.$private.events.on('onSubmitted', resolve);
+            gForm.submit();
+        })
+    }
+ 
+    // spScUtil.submitProducer() already returns a promise, so there's no need to use
+    // $q here. This function is an almost exact copy of the functionality from the 
+    //out-of-box SC Catalog Item widget. 
+ 
+    function saveRecordProducer() {
+        return spScUtil.submitProducer(
+            c.data.recordProducerForm.sys_id,
+            (function (fields) {
+                var reqData = {};
+                for (var obj in fields)
+                    reqData[fields[obj].name] = fields[obj].value;
+                return reqData;
+            })(c.data.recordProducerForm._fields),
+            c.data.sysId,
+            {});
+    }
+ 
+};]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.panel-footer {
+    display: none;
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;true&lt;/has_preview&gt;&lt;id/&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function link(scope, element, attrs, controller) {  }]]&gt;&lt;/link&gt;&lt;name&gt;Copy of WFH Record Producer - Save as Dr&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;true&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+ 
+    // hard-coded variables. Widget could be improved so that these could be defined
+    // via configuration, URL parameters, or through a config table.
+    var recordProducerSysId = 'c76245111bf45d106a08a9b4bd4bcb57';
+    data.tableName = 'x_852034_wfh_requests';
+	 console.log(input);
+ 
+    // Allow the client script to mark a record as "submitted"
+    if (input &amp;&amp; input.action === 'submit') {
+        var gr = new GlideRecord(data.tableName);
+        gr.get(input.sysId);
+        gr.setValue('u_state', '2');
+        gr.update();
+ 
+    } else {
+ 
+        // Check the URL for the sys_id parameter (which means an existing record)
+        data.sysId = $sp.getParameter('sys_id');
+ 				console.log("SYS ID is " + data.sysId );
+        // If the URL parameter is not set, we know we want to create a new record
+        data.isNewRecord = !data.sysId;
+ 
+        // Get the record producer form model
+        data.recordProducerForm = $sp.getCatalogItem(recordProducerSysId);
+ 
+        if (data.isNewRecord) {
+ 
+            // if it's a new record, generate a Sys ID
+            // which is needed to submit the record producer
+            data.sysId = gs.generateGUID();
+ 
+        } else {
+ 
+            // If it's an existing record, get the variable editor widget
+            data.varWidget = $sp.getWidget('sp-variable-editor', {
+                sys_id: data.sysId,
+                table: data.tableName,
+                hide_container: true // don't show the border
+            });
+        }
+ 
+    } 
+	console.log(date);
+ 
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;David.Admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-07-19 04:37:00&lt;/sys_created_on&gt;&lt;sys_id&gt;05c731d11bb85d106a08a9b4bd4bcb08&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Copy of WFH Record Producer - Save as Dr&lt;/sys_name&gt;&lt;sys_package display_value="Working From Home (WFH)" source="x_852034_wfh"&gt;ca4c5dfd1ba811106a08a9b4bd4bcb1f&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Working From Home (WFH)"&gt;ca4c5dfd1ba811106a08a9b4bd4bcb1f&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_05c731d11bb85d106a08a9b4bd4bcb08&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;David.Admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-07-19 04:37:00&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;h1&gt;{{::c.data.recordProducerForm.short_description}}&lt;/h1&gt;
+&lt;div ng-bind-html="::c.data.recordProducerForm.description"&gt;&lt;/div&gt;
+&lt;div ng-switch="::c.data.isNewRecord"&gt;
+  &lt;div ng-switch-when="true"&gt;
+    &lt;sp-model form-model="c.data.recordProducerForm" mandatory="true"&gt;&lt;/sp-model&gt;
+  &lt;/div&gt;
+  &lt;div ng-switch-when="false"&gt;
+    &lt;sp-widget widget="c.data.varWidget"&gt;&lt;/sp-widget&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    &lt;button ng-click="c.save();"&gt;${Save as Draft}&lt;/button&gt;
+    &lt;button ng-click="c.submit();"&gt;${Submit}&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-336353136</payload_hash>
+        <record_name>Copy of WFH Record Producer - Save as Dr</record_name>
+        <reverted_from/>
+        <source>56ac0e171b6495106a08a9b4bd4bcbb7</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>David.Admin</sys_created_by>
+        <sys_created_on>2022-07-19 04:37:00</sys_created_on>
+        <sys_id>d1c7bd151bb85d106a08a9b4bd4bcbcb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18214bebab50000001</sys_recorded_at>
+        <sys_updated_by>David.Admin</sys_updated_by>
+        <sys_updated_on>2022-07-19 04:37:00</sys_updated_on>
+        <type>Widget</type>
+        <update_guid>1dc7bd15f1b85d10eed9a511b0b1b2ca</update_guid>
+        <update_guid_history>1dc7bd15f1b85d10eed9a511b0b1b2ca:-336353136</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Copy of WFH Record Producer - Save as Dr">c2d7fd151bb85d106a08a9b4bd4bcbfe</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>David.Admin</sys_created_by>
+        <sys_created_on>2022-07-19 04:37:19</sys_created_on>
+        <sys_db_object display_value="" name="sp_widget">sp_widget</sys_db_object>
+        <sys_id>0a1b6fc7487b49b8b30ed423249fd524</sys_id>
+        <sys_metadata>05c731d11bb85d106a08a9b4bd4bcb08</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Copy of WFH Record Producer - Save as Dr</sys_name>
+        <sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope>
+        <sys_scope_delete display_value="">4c6c017a72da4588a43d0b2e3ce46da4</sys_scope_delete>
+        <sys_update_name>sp_widget_05c731d11bb85d106a08a9b4bd4bcb08</sys_update_name>
+        <sys_update_version display_value="sp_widget_05c731d11bb85d106a08a9b4bd4bcb08">d1c7bd151bb85d106a08a9b4bd4bcbcb</sys_update_version>
+        <sys_updated_by>David.Admin</sys_updated_by>
+        <sys_updated_on>2022-07-19 04:37:19</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

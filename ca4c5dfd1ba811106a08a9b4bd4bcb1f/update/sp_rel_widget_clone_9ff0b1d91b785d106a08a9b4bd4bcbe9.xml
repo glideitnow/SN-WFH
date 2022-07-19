@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_rel_widget_clone">
+    <sp_rel_widget_clone action="INSERT_OR_UPDATE">
+        <child display_value="sp-variable-editor-wfh">9ff0b1d91b785d106a08a9b4bd4bcbe6</child>
+        <cloned>2022-07-19 04:07:23</cloned>
+        <last_validated>2022-07-19 04:07:23</last_validated>
+        <parent display_value="sp-variable-editor">1ceb35505b3022000d7ec7ad31f91a81</parent>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;sp_widget&gt;&lt;category&gt;sc&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function($scope, $document, $rootScope, i18n, spScUtil) {
+  /* widget controller */
+  var c = this;
+	c.isSaved = false;
+	var parent_g_form = $scope.page.g_form;
+	var origActionName;
+
+	if (!parent_g_form)
+		c.showSave = true;
+	
+	c.getItemId = function () {
+		return $scope.data.sc_cat_item ? $scope.data.sc_cat_item.sys_id : -1;
+	};
+
+	var g_form;
+	$scope.$on('spModel.gForm.initialized', function(e, gFormInstance){
+		if (gFormInstance.getSysId() != -1 &amp;&amp; gFormInstance.getSysId() != c.getItemId())
+			return;
+
+		if (parent_g_form)
+			addSaveHandler();
+
+		g_form = gFormInstance;
+		g_form.$private.events.on('submitted', function() {
+				if (!c.showSave) {
+					c.server.update().then(function() {
+						parent_g_form.submit(origActionName);
+						c.isSaved = true;
+					});
+				}
+				else {
+				c.server.update().then(function() {
+				g_form.addInfoMessage(i18n.getMessage('Variable saved'));
+				if (c.options.isServiceWorkspace == true) { //Workspace handler
+					if (window.parent === window) {
+						console.warn("Parent is missing. Is this called inside an iFrame?");
+						return;
+					}
+					window.parent.postMessage({
+							messageType: 'IFRAME_MODAL_MESSAGE_TYPE',
+							modalAction: 'IFRAME_MODAL_ACTION_CONFIRMED',
+							modalId: 'sn-modal-iframe-singleton'
+					}, location.origin)
+				}
+				if (c.data.table == "sc_cart_item")
+					$rootScope.$broadcast("$sp.service_catalog.cart.update");
+				});
+			}
+		})
+	});
+
+	// Used when embedded as a formatter
+	function addSaveHandler() {
+		parent_g_form.$private.events.on("submit", function() {
+			var actionName = parent_g_form.getActionName();
+			// If actionName is none, form has already been re-submitted.
+			// No need to submit it the third time.
+			if (actionName === 'none') { return false; }
+
+			origActionName = actionName;
+			if (c.isSaved) return true;
+
+			if (!spScUtil.isServerValidationDone($scope.data.sc_cat_item._fields)) {
+				$scope.validating = true;
+				return false;
+			}
+
+			if (g_form)
+				return g_form.submit();
+			return true;
+		});
+		parent_g_form.$private.events.on("submitted", function() {
+			c.isSaved = false;
+		});
+	}
+
+	c.save = function() {
+		var activeElement = $document.activeElement;
+		if (activeElement)
+			activeElement.blur();
+		if (!spScUtil.isServerValidationDone($scope.data.sc_cat_item._fields))
+			$scope.validating = true;
+
+		else if (g_form)
+			g_form.submit();		
+	};
+	c.hasVariables = function(fields) {
+		if (!fields) 
+			return false;
+		
+		return Object.keys(fields).length &gt; 0;
+	}
+
+	var validationComplete = $rootScope.$on('$sp.service_catalog.form_validation_complete', function() { $scope.validating = false; });
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.workspace-variables {
+  	margin-left: -5px;
+  	margin-right: -5px;
+  	.variables {
+  			min-height: 75vh;
+    }
+}
+
+.variable-editor {
+	padding-top: 10px;
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;sp-variable-editor&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;sp-variable-editor&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;true&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+	data.table = options.table || $sp.getParameter("table");
+	data.sys_id = options.sys_id || $sp.getParameter("sys_id") || $sp.getParameter("sl_sys_id");
+	data.msg = gs.getMessage('There are no variables associated');
+	data.hide_container = options.hide_container;
+	if (input) {
+		var vars = [];
+		var fields = input.sc_cat_item._fields;
+		data.sys_id = input.sys_id;
+		data.table = input.table;
+		if (!data.table || !data.sys_id)
+			return;
+
+		var values = getValues(data.table, data.sys_id);
+		for (var v in fields) {
+			// 12: Break, 19: Container Start, 20: Container End, 24: Container Split
+			if (values[f].type == 12 || values[f].type == 19 || values[f].type == 20 || values[f].type == 24)
+					continue;
+			vars.push(fields[v]);
+		}
+
+		if (data.table == "sc_cart_item")
+			SPCart.updateItem(input.sys_id, vars);
+		else
+			$sp.saveVariables(input.table, input.sys_id, vars);
+		return;
+	}
+	
+	if (!data.table || !data.sys_id) {
+		return;
+	}
+
+	var gr = $sp.getRecord(data.table, data.sys_id);
+	if (gr.isValid() &amp;&amp; gr.canRead()) {
+		var targetTable = data.table;
+		if (targetTable == "sc_cart_item")
+			targetTable = "sc_cat_item";
+		var req_id = "";
+		var task_id = "";
+		var sys_id = "";
+		var table_id = "";
+		var opened_by= "";
+		if(data.table == 'sc_task') {
+			req_id = gr.request_item.getValue();
+			task_id = data.sys_id;
+			sys_id = gr.request_item.cat_item.getValue();
+			opened_by = gr.opened_by.getValue();
+		} else if(data.table == 'sc_req_item') {
+			req_id = data.sys_id;
+			sys_id = gr.cat_item.getValue();
+			opened_by = gr.opened_by.getValue();
+		} else if(data.table == 'sc_cart_item') {
+			sys_id = gr.cat_item.getValue();
+			req_id = gr.getUniqueValue();
+		} else if (gr.instanceOf("task")) {
+			targetTable = data.table;
+			table_id = data.sys_id;
+			opened_by = gr.opened_by.getValue();
+			var catItemProducedGr = new GlideRecord("sc_item_produced_record");
+			catItemProducedGr.addQuery("record_key", data.sys_id);
+			catItemProducedGr.query();
+			if (catItemProducedGr.next())
+				sys_id = catItemProducedGr.getValue("producer");
+		} else {
+			sys_id = gr.request_item.cat_item.getValue();
+		}
+		var filter = {
+			sys_id : String(sys_id),
+			request_id : String(req_id),
+			task_id : String(task_id),
+			table: String(targetTable),
+			table_id: String(table_id),
+			opened_by : String(opened_by)
+		};
+		data.sc_cat_item = $sp.getCatalogItem(filter);
+		
+		if (options.showItemTitle)
+			data.itemTitle = data.sc_cat_item.short_description;
+		var values = {};
+		if (data.table == 'sc_task' || data.table == 'sc_req_item' || data.table == 'sc_cart_item') {
+			values = getValues(data.table, req_id, task_id, opened_by);
+		} else {
+			// Other task extensions
+			values = getValuesForProducer(data.table, data.sys_id, opened_by);
+		}
+		data.values = values;
+		var isQuestionReadOnly = ((options.readonly_variable_editor == 'true') || ((gs.getProperty('glide.sc.evaluate.variables.write.access', true) == 'true') ? !gr.variables.canWrite() : !gr.canWrite()));
+
+		for(var f in data.sc_cat_item._fields) {
+			if (isQuestionReadOnly)
+				data.sc_cat_item._fields[f].sys_readonly = true;
+			
+			//	Adding table_name for attachment variables
+			if (data.sc_cat_item._fields[f].type == 'sc_attachment') {
+				data.sc_cat_item._fields[f].recordTableName = data.table;
+				data.sc_cat_item._fields[f].recordSysId = data.sys_id;
+			}
+			
+			// Put the values into the cat item fields
+			if (typeof values[f] != "undefined") {
+				if (values[f].type == 12 || values[f].type == 19 || values[f].type == 20 || values[f].type == 24)
+					continue;
+				if (typeof values[f].value != "undefined") {
+					if (values[f].type == 9 || values[f].type == 10)
+						data.sc_cat_item._fields[f].value = values[f].displayValue;
+					else if (values[f].type == 25 &amp;&amp; data.sc_cat_item._fields[f].catalog_view_masked)
+						data.sc_cat_item._fields[f].value = values[f].decrypted_value;
+					else
+						data.sc_cat_item._fields[f].value = values[f].value;
+					data.sc_cat_item._fields[f].displayValue = values[f].displayValue;
+					data.sc_cat_item._fields[f].display_value_list = values[f].display_value_list;
+				}
+			}
+		}
+	} else
+		data.msg = gs.getMessage('You are either not authorized or record is not valid');
+	
+	function getValues(table, sys_id, task_id, opened_by) {
+		var qs = new GlideappVariablePoolQuestionSet();
+		if (table == "sc_cart_item")
+			qs.setCartID(sys_id);
+		else if(table == "sc_task") {
+			qs.setRequestID(sys_id);
+			qs.setTaskID(task_id);
+		} else {
+			qs.setRequestID(sys_id);
+		}
+		
+		qs.load();
+		var values = {};
+		var questions = qs.getFlatQuestions().toArray();
+		for (var i = 0; i &lt; questions.length; i++) {
+			var q = questions[i];
+			var o = {value: q.getValue(), displayValue: q.getDisplayValue(), type: q.getType()};
+			//handling List Collector (21) and Masked (25) variables.
+			if (o.type == 21)
+				o.display_value_list = q.getDisplayValues().toArray();
+			if (o.type == 25 &amp;&amp; q.canDecrypt(opened_by, table))
+				o.decrypted_value = q.decrypt(o.value);
+			var qKey = q.getName();
+			if (typeof qKey == 'undefined' || qKey == '')
+				qKey = "IO:" + q.getId();
+			values[qKey] = o;
+		}
+		return values;
+	}
+	
+	function getValuesForProducer(table, sys_id, opened_by) {
+		var qs = new GlideappSequencedQuestionSet();
+		qs.setTableName(table);
+		qs.setTableSysID(sys_id);
+		
+		qs.load();
+		var values = {};
+		var questions = qs.getFlatQuestions().toArray();
+		for (var i = 0; i &lt; questions.length; i++) {
+			var q = questions[i];
+			var o = {value: q.getValue(), displayValue: q.getDisplayValue(), type: q.getType()};
+			//handling List Collector (21) and Masked (25) variables.
+			if (o.type == 21)
+				o.display_value_list = q.getDisplayValues().toArray();
+			if (o.type == 25 &amp;&amp; q.canDecrypt(opened_by, table))
+				o.decrypted_value = q.decrypt(o.value);
+			var qKey = q.getName();
+			if (typeof qKey == 'undefined' || qKey == '')
+				qKey = "IO:" + q.getId();
+			values[qKey] = o;
+		}
+		return values;
+	}
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;true&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-11-06 10:02:47&lt;/sys_created_on&gt;&lt;sys_id&gt;1ceb35505b3022000d7ec7ad31f91a81&lt;/sys_id&gt;&lt;sys_mod_count&gt;178&lt;/sys_mod_count&gt;&lt;sys_name&gt;sp-variable-editor&lt;/sys_name&gt;&lt;sys_package display_value="Service Portal - Service Catalog (do not activate...see plugin description)" source="com.glide.service-portal.service-catalog"&gt;605a083121d20110a866589604c20d55&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_1ceb35505b3022000d7ec7ad31f91a81&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-10-10 14:21:47&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div ng-class="{'panel panel-default': !data.hide_container}" ng-if="::c.hasVariables(data.sc_cat_item._fields) &amp;&amp; !c.options.isServiceWorkspace"&gt;
+  &lt;div class="panel-heading" ng-if="!data.hide_container"&gt;
+    &lt;h3 ng-if="data.itemTitle" class="panel-title"&gt;{{data.itemTitle}}&lt;/h3&gt;
+    &lt;h3 ng-if="!data.itemTitle" class="panel-title"&gt;${Variables}&lt;/h3&gt;
+  &lt;/div&gt;
+  &lt;div ng-class="{'panel-body': !data.hide_container, 'variable-editor': data.hide_container}"&gt;
+    &lt;sp-model form-model="::data.sc_cat_item" mandatory="[]"&gt;&lt;/sp-model&gt;
+  &lt;/div&gt;
+  &lt;div ng-if="c.showSave &amp;&amp; c.options.readonly_variable_editor != 'true'" class="panel-footer"&gt;
+    &lt;button class="btn btn-primary pull-right" name="save" ng-click="c.save()"&gt;${Save}&lt;/button&gt;
+    &lt;span ng-if="validating" style="padding-left:4px"&gt;${Validating...}&lt;/span&gt;
+	  &lt;div style="clear: both;"&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="workspace-variables" ng-if="::c.hasVariables(data.sc_cat_item._fields) &amp;&amp; c.options.isServiceWorkspace"&gt;
+  &lt;div class="variables"&gt;
+    &lt;sp-model form-model="::data.sc_cat_item" mandatory="[]"&gt;&lt;/sp-model&gt;
+  &lt;/div&gt;
+  &lt;div ng-if="c.showSave &amp;&amp; c.options.readonly_variable_editor != 'true'"&gt;
+    &lt;button class="btn btn-primary pull-right" name="save" ng-click="c.save()"&gt;${Save}&lt;/button&gt;
+    &lt;span ng-if="validating" style="padding-left:4px"&gt;${Validating...}&lt;/span&gt;
+	  &lt;div style="clear: both;"&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div ng-if="::!c.hasVariables(data.sc_cat_item._fields)"&gt;
+  &lt;h4 class="text-a-c"&gt;
+    {{::c.data.msg}}
+  &lt;/h4&gt;
+&lt;/div&gt;
+&lt;now-message key="Variable saved" value="${Variable saved}"/&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;</payload>
+        <sys_class_name>sp_rel_widget_clone</sys_class_name>
+        <sys_created_by>David.Admin</sys_created_by>
+        <sys_created_on>2022-07-19 04:07:23</sys_created_on>
+        <sys_id>9ff0b1d91b785d106a08a9b4bd4bcbe9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>9ff0b1d91b785d106a08a9b4bd4bcbe6</sys_name>
+        <sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope>
+        <sys_update_name>sp_rel_widget_clone_9ff0b1d91b785d106a08a9b4bd4bcbe9</sys_update_name>
+        <sys_updated_by>David.Admin</sys_updated_by>
+        <sys_updated_on>2022-07-19 04:07:23</sys_updated_on>
+    </sp_rel_widget_clone>
+</record_update>
