@@ -10,23 +10,32 @@
         <roles/>
         <short_description/>
         <size>md</size>
-        <sp_column display_value="1">deee951d1b385d106a08a9b4bd4bcb07</sp_column>
-        <sp_widget display_value="WFH Record Producer">e023829d1bb85d106a08a9b4bd4bcbb9</sp_widget>
+        <sp_column display_value="2">96ee555d1b385d106a08a9b4bd4bcb19</sp_column>
+        <sp_widget display_value="Cool Clock">3a36b30b6f3631005be8583e6b3ee490</sp_widget>
         <sys_class_name>sp_instance</sys_class_name>
         <sys_created_by>David.Admin</sys_created_by>
-        <sys_created_on>2022-07-19 05:29:08</sys_created_on>
-        <sys_id>85b38a5d1bb85d106a08a9b4bd4bcbef</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_created_on>2022-07-19 11:56:01</sys_created_on>
+        <sys_id>0c4cdb551b309d106a08a9b4bd4bcbd1</sys_id>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package>
         <sys_policy/>
         <sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope>
-        <sys_update_name>sp_instance_85b38a5d1bb85d106a08a9b4bd4bcbef</sys_update_name>
+        <sys_update_name>sp_instance_0c4cdb551b309d106a08a9b4bd4bcbd1</sys_update_name>
         <sys_updated_by>David.Admin</sys_updated_by>
-        <sys_updated_on>2022-07-19 05:29:08</sys_updated_on>
+        <sys_updated_on>2022-07-19 11:56:23</sys_updated_on>
         <title/>
         <url/>
-        <widget_parameters/>
+        <widget_parameters><![CDATA[{
+	"zone": {
+		"value": "Australia/Darwin",
+		"displayValue": "Australia/Darwin"
+	},
+	"c_color": {
+		"value": "",
+		"displayValue": ""
+	}
+}]]></widget_parameters>
     </sp_instance>
-    <sys_translated_text action="delete_multiple" query="documentkey=85b38a5d1bb85d106a08a9b4bd4bcbef"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=0c4cdb551b309d106a08a9b4bd4bcbd1"/>
 </record_update>

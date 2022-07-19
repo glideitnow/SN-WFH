@@ -2,43 +2,40 @@
     <sp_instance action="INSERT_OR_UPDATE">
         <active>true</active>
         <class_name/>
-        <color>danger</color>
+        <color>default</color>
         <css/>
-        <glyph>cog</glyph>
+        <glyph/>
         <id/>
-        <order>2</order>
-        <roles>x_852034_wfh.wfh.approvers</roles>
+        <order>1</order>
+        <roles/>
         <short_description/>
-        <size>sm</size>
-        <sp_column display_value="2">b21d8a591bf85d106a08a9b4bd4bcba2</sp_column>
+        <size>md</size>
+        <sp_column display_value="3">c65a97d11b309d106a08a9b4bd4bcb82</sp_column>
         <sp_widget display_value="link-button">abc50de6d702120023c84f80de61036a</sp_widget>
         <sys_class_name>sp_instance</sys_class_name>
         <sys_created_by>David.Admin</sys_created_by>
-        <sys_created_on>2022-07-19 09:31:35</sys_created_on>
-        <sys_id>a83bfa551bbc5d106a08a9b4bd4bcb35</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_created_on>2022-07-19 11:45:38</sys_created_on>
+        <sys_id>08e997d11b309d106a08a9b4bd4bcbe4</sys_id>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name/>
         <sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package>
         <sys_policy/>
         <sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope>
-        <sys_update_name>sp_instance_a83bfa551bbc5d106a08a9b4bd4bcb35</sys_update_name>
+        <sys_update_name>sp_instance_08e997d11b309d106a08a9b4bd4bcbe4</sys_update_name>
         <sys_updated_by>David.Admin</sys_updated_by>
-        <sys_updated_on>2022-07-19 12:26:52</sys_updated_on>
+        <sys_updated_on>2022-07-19 11:47:47</sys_updated_on>
         <title/>
         <url/>
         <widget_parameters><![CDATA[{
 	"href": {
-		"value": "https://dev77946.service-now.com/x/852034/wfh-workspace/home",
-		"displayValue": "https://dev77946.service-now.com/x/852034/wfh-workspace/home"
+		"value": "https://dev77946.service-now.com/wfh/?id=wfh_landing",
+		"displayValue": "https://dev77946.service-now.com/wfh/?id=wfh_landing"
 	},
-		"target":{
-			"value": "_blank"
-		},
 	"button_text": {
-		"value": "Manage Requests",
-		"displayValue": "Manage Requests"
+		"value": "Back to Portal",
+		"displayValue": "Back to Portal"
 	}
 }]]></widget_parameters>
     </sp_instance>
-    <sys_translated_text action="delete_multiple" query="documentkey=a83bfa551bbc5d106a08a9b4bd4bcb35"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=08e997d11b309d106a08a9b4bd4bcbe4"/>
 </record_update>

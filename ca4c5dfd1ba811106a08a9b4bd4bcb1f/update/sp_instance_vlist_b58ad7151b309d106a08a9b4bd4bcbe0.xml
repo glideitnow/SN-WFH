@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance_vlist">
+    <sp_instance_vlist action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <display_field>number</display_field>
+        <field_list/>
+        <filter table="x_852034_wfh_requests">u_state=3^u_userDYNAMIC90d1921e5f510100a9ad2572f2b477fe^u_end_date&gt;javascript:gs.endOfToday()^ORDERBYu_start_date<item display_value="Approved" endquery="false" field="u_state" goto="false" newquery="false" operator="=" or="false" value="3"/>
+            <item endquery="false" field="u_user" goto="false" newquery="false" operator="DYNAMIC" or="false" value="90d1921e5f510100a9ad2572f2b477fe"/>
+            <item endquery="false" field="u_end_date" goto="false" newquery="false" operator="&gt;" or="false" value="javascript:gs.endOfToday()"/>
+            <item endquery="false" field="" goto="false" newquery="false" operator="ORDERBY" or="false" value="u_start_date"/>
+        </filter>
+        <glyph>check</glyph>
+        <id/>
+        <maximum_entries>5</maximum_entries>
+        <order>2</order>
+        <order_by/>
+        <order_direction>asc</order_direction>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="2">96ee555d1b385d106a08a9b4bd4bcb19</sp_column>
+        <sp_page display_value="wfh_landing">24e0fcdd1b745d106a08a9b4bd4bcbd6</sp_page>
+        <sp_widget display_value="Simple List">5b255672cb03020000f8d856634c9c28</sp_widget>
+        <sys_class_name>sp_instance_vlist</sys_class_name>
+        <sys_created_by>David.Admin</sys_created_by>
+        <sys_created_on>2022-07-19 11:48:29</sys_created_on>
+        <sys_id>b58ad7151b309d106a08a9b4bd4bcbe0</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Your Upcoming and Approved Requests</sys_name>
+        <sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope>
+        <sys_update_name>sp_instance_vlist_b58ad7151b309d106a08a9b4bd4bcbe0</sys_update_name>
+        <sys_updated_by>David.Admin</sys_updated_by>
+        <sys_updated_on>2022-07-19 11:56:05</sys_updated_on>
+        <table>x_852034_wfh_requests</table>
+        <title>Your Upcoming and Approved Requests</title>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"always_show": {
+		"value": "",
+		"displayValue": ""
+	},
+	"panel_body_height": {
+		"value": "",
+		"displayValue": ""
+	},
+	"image_field": {
+		"value": "",
+		"displayValue": ""
+	},
+	"secondary_fields": {
+		"value": "u_start_date,u_end_date,u_reason",
+		"displayValue": "u_start_date,u_end_date,u_reason"
+	},
+	"rounded_images": {
+		"value": "",
+		"displayValue": ""
+	},
+	"list_page": {
+		"value": "",
+		"displayValue": ""
+	},
+	"hide_footer": {
+		"value": "",
+		"displayValue": ""
+	},
+	"view": {
+		"value": "0eea19cb1be055106a08a9b4bd4bcb06",
+		"displayValue": "WFH Request"
+	},
+	"disable_record_watcher": {
+		"value": "",
+		"displayValue": ""
+	},
+	"filter_acls": {
+		"value": "false",
+		"displayValue": "false"
+	}
+}]]></widget_parameters>
+    </sp_instance_vlist>
+    <sys_translated_text action="delete_multiple" query="documentkey=b58ad7151b309d106a08a9b4bd4bcbe0"/>
+</record_update>

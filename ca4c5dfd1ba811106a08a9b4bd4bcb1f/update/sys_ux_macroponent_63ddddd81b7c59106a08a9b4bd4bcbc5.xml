@@ -156,12 +156,76 @@
               "styles" : {
                 "align-self" : "center"
               }
+            }, {
+              "elementId" : "text_link_1",
+              "elementLabel" : "Text link 1",
+              "propertyValues" : {
+                "label" : {
+                  "type" : "TRANSLATION_LITERAL",
+                  "value" : {
+                    "code" : null,
+                    "message" : "Back to Portal",
+                    "comment" : ""
+                  }
+                },
+                "variant" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "primary"
+                },
+                "href" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "wfh/?id=wfh_landing"
+                },
+                "underlined" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : true
+                },
+                "opensWindow" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "download" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "configAria" : {
+                  "type" : "MAP_CONTAINER",
+                  "container" : {
+                    "aria-label" : {
+                      "type" : "TRANSLATION_LITERAL",
+                      "value" : {
+                        "code" : null,
+                        "message" : "Accessible Label",
+                        "comment" : ""
+                      }
+                    }
+                  }
+                }
+              },
+              "eventMappings" : [ ],
+              "slot" : null,
+              "definition" : {
+                "id" : "abe7db0526ec8705a0eff03521febfa3",
+                "type" : "MACROPONENT"
+              },
+              "overrides" : null,
+              "isHidden" : {
+                "type" : "JSON_LITERAL",
+                "value" : null
+              },
+              "isHero" : false,
+              "isNonDestructive" : false,
+              "styles" : {
+                "width" : "75%",
+                "align-self" : "center",
+                "text-align" : "right"
+              }
             } ],
             "layout" : {
               "default" : {
                 "children" : null,
                 "isInline" : null,
-                "items" : [{"element_id":"heading_1","styles":{}}],
+                "items" : [{"element_id":"heading_1","styles":{}},{"element_id":"text_link_1","styles":{}}],
                 "root" : null,
                 "rules" : null,
                 "styles" : {"flex-direction":"column","padding":"var(--now-static-space--xl)"},
@@ -203,8 +267,8 @@
       "isNonDestructive" : false,
       "styles" : {
         "width" : "100%",
-        "height" : "200px",
-        "background" : "rgb(var(--now-color--primary-0))"
+        "background" : "rgb(var(--now-color--primary-0))",
+        "border-top" : "5px #b00000 solid"
       }
     }, {
       "elementId" : "container_6",
@@ -249,6 +313,9 @@
             "availableTimezones" : {
               "type" : "JSON_LITERAL",
               "value" : [ {
+                "name" : "Australia/Darwin",
+                "label" : "Australia/Darwin"
+              }, {
                 "name" : "GMT",
                 "label" : "GMT"
               } ]
@@ -587,7 +654,7 @@
                   "animation" : false
                 },
                 "TIMELINE_WEEK" : {
-                  "eventHeight" : 30,
+                  "eventHeight" : 20,
                   "xStep" : 1,
                   "xSize" : 7,
                   "xStart" : 0,
@@ -600,9 +667,71 @@
                   "eventMinWidthMS" : 86400000,
                   "animation" : false,
                   "snapGranularity" : 480,
-                  "splitRow" : 0,
+                  "splitRow" : 1,
                   "numberOfDays" : 14,
-                  "viewLabel" : "Week"
+                  "viewLabel" : "Week",
+                  "templates" : {
+                    "timeScaleGrid" : {
+                      "type" : "",
+                      "value" : ""
+                    },
+                    "mainGrid" : {
+                      "type" : "",
+                      "value" : ""
+                    },
+                    "sectionHeadTitle" : {
+                      "type" : "",
+                      "value" : ""
+                    },
+                    "sectionHeadBody" : {
+                      "type" : "",
+                      "value" : ""
+                    },
+                    "rowTitle" : {
+                      "type" : "",
+                      "value" : ""
+                    },
+                    "rowBody" : {
+                      "type" : "",
+                      "value" : ""
+                    },
+                    "eventBody" : {
+                      "type" : "",
+                      "value" : ""
+                    },
+                    "timestampBody" : {
+                      "type" : "component",
+                      "value" : "sn-now-calendar-timestamp-view"
+                    }
+                  },
+                  "trackConfig" : {
+                    "normal" : {
+                      "style" : { },
+                      "paddingTop" : 2,
+                      "paddingBottom" : 2,
+                      "eventHeight" : 20
+                    },
+                    "priority" : {
+                      "style" : { },
+                      "paddingTop" : 2,
+                      "paddingBottom" : 2,
+                      "eventHeight" : 20
+                    }
+                  },
+                  "isReadonly" : false,
+                  "rowHeightBottomPaddingInLines" : 1,
+                  "sectionHeaderHeight" : 40,
+                  "minimumEventSpan" : 1,
+                  "eventAreaClientHeight" : 971,
+                  "eventAreaScrollHeight" : 971,
+                  "eventAreaClientWidth" : 1255,
+                  "scrollbarWidth" : 17,
+                  "scrollbarHeight" : 17.15625,
+                  "layoutVersion" : 5,
+                  "left" : 0,
+                  "top" : 0,
+                  "offsetX" : 0,
+                  "offsetY" : 0
                 }
               }
             },
@@ -795,6 +924,15 @@
         <name>Start</name>
         <props>[ ]</props>
         <required_translations>[ {
+  "message" : "Accessible Label",
+  "comment" : ""
+}, {
+  "message" : "Australia/Darwin",
+  "comment" : ""
+}, {
+  "message" : "Back to Portal",
+  "comment" : ""
+}, {
   "message" : "Day",
   "comment" : ""
 }, {
@@ -831,13 +969,13 @@
         <sys_created_by>David.Admin</sys_created_by>
         <sys_created_on>2022-07-16 00:09:55</sys_created_on>
         <sys_id>63ddddd81b7c59106a08a9b4bd4bcbc5</sys_id>
-        <sys_mod_count>41</sys_mod_count>
+        <sys_mod_count>49</sys_mod_count>
         <sys_name>Start</sys_name>
         <sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package>
         <sys_policy/>
         <sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope>
         <sys_update_name>sys_ux_macroponent_63ddddd81b7c59106a08a9b4bd4bcbc5</sys_update_name>
         <sys_updated_by>David.Admin</sys_updated_by>
-        <sys_updated_on>2022-07-19 06:45:49</sys_updated_on>
+        <sys_updated_on>2022-07-19 13:18:40</sys_updated_on>
     </sys_ux_macroponent>
 </record_update>

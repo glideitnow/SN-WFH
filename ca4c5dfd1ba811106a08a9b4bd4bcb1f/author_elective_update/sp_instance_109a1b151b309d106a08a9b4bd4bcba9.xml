@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="2">d89853911b309d106a08a9b4bd4bcb70</sp_column>
+        <sp_widget display_value="Session List">b5f2df45531f3300628eddeeff7b128a</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>David.Admin</sys_created_by>
+        <sys_created_on>2022-07-19 11:48:39</sys_created_on>
+        <sys_id>109a1b151b309d106a08a9b4bd4bcba9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope>
+        <sys_update_name>sp_instance_109a1b151b309d106a08a9b4bd4bcba9</sys_update_name>
+        <sys_updated_by>David.Admin</sys_updated_by>
+        <sys_updated_on>2022-07-19 11:48:39</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters/>
+    </sp_instance>
+    <sys_translated_text action="DELETE" query="documentkey=109a1b151b309d106a08a9b4bd4bcba9"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</application>
+        <file_path/>
+        <instance_id>835dfff4db24b340387021c4059619f4</instance_id>
+        <instance_name>dev77946</instance_name>
+        <name>sp_instance_109a1b151b309d106a08a9b4bd4bcba9</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance"><sp_instance action="INSERT_OR_UPDATE"><active>true</active><class_name/><color>default</color><css/><glyph/><id/><order>1</order><roles/><short_description/><size>md</size><sp_column display_value="2">d89853911b309d106a08a9b4bd4bcb70</sp_column><sp_widget display_value="Session List">b5f2df45531f3300628eddeeff7b128a</sp_widget><sys_class_name>sp_instance</sys_class_name><sys_created_by>David.Admin</sys_created_by><sys_created_on>2022-07-19 11:48:39</sys_created_on><sys_id>109a1b151b309d106a08a9b4bd4bcba9</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package><sys_policy/><sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope><sys_update_name>sp_instance_109a1b151b309d106a08a9b4bd4bcba9</sys_update_name><sys_updated_by>David.Admin</sys_updated_by><sys_updated_on>2022-07-19 11:48:39</sys_updated_on><title/><url/><widget_parameters/></sp_instance><sys_translated_text action="delete_multiple" query="documentkey=109a1b151b309d106a08a9b4bd4bcba9"/></record_update>]]></payload>
+        <payload_hash>-1108465433</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>56ac0e171b6495106a08a9b4bd4bcbb7</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>David.Admin</sys_created_by>
+        <sys_created_on>2022-07-19 11:48:40</sys_created_on>
+        <sys_id>dc9a1b151b309d106a08a9b4bd4bcbaa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1821649edcc0000001</sys_recorded_at>
+        <sys_updated_by>David.Admin</sys_updated_by>
+        <sys_updated_on>2022-07-19 11:48:40</sys_updated_on>
+        <type>Instance</type>
+        <update_guid>189a1b1520309d10e5d66ea553e8c8aa</update_guid>
+        <update_guid_history>189a1b1520309d10e5d66ea553e8c8aa:-1108465433</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">359a5b151b309d106a08a9b4bd4bcb18</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>David.Admin</sys_created_by>
+        <sys_created_on>2022-07-19 11:48:45</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance">sp_instance</sys_db_object>
+        <sys_id>1d599374ebd948e284a4f28e4ab73d51</sys_id>
+        <sys_metadata>109a1b151b309d106a08a9b4bd4bcba9</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope>
+        <sys_scope_delete display_value="">4c6c017a72da4588a43d0b2e3ce46da4</sys_scope_delete>
+        <sys_update_name>sp_instance_109a1b151b309d106a08a9b4bd4bcba9</sys_update_name>
+        <sys_update_version display_value="sp_instance_109a1b151b309d106a08a9b4bd4bcba9">dc9a1b151b309d106a08a9b4bd4bcbaa</sys_update_version>
+        <sys_updated_by>David.Admin</sys_updated_by>
+        <sys_updated_on>2022-07-19 11:48:45</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
