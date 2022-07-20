@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_applicability_m2m_list">
+    <sys_ux_applicability_m2m_list action="DELETE">
+        <active>true</active>
+        <applicability/>
+        <list/>
+        <order>100</order>
+        <sys_class_name>sys_ux_applicability_m2m_list</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-12 04:47:16</sys_created_on>
+        <sys_id>d3f63d871b6455106a08a9b4bd4bcbfa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope>
+        <sys_update_name>sys_ux_applicability_m2m_list_d3f63d871b6455106a08a9b4bd4bcbfa</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-12 04:47:16</sys_updated_on>
+    </sys_ux_applicability_m2m_list>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</application>
+        <file_path/>
+        <instance_id>835dfff4db24b340387021c4059619f4</instance_id>
+        <instance_name>dev77946</instance_name>
+        <name>sys_ux_applicability_m2m_list_d3f63d871b6455106a08a9b4bd4bcbfa</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_applicability_m2m_list"><sys_ux_applicability_m2m_list action="INSERT_OR_UPDATE"><active>true</active><applicability/><list/><order>100</order><sys_class_name>sys_ux_applicability_m2m_list</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-07-12 04:47:16</sys_created_on><sys_id>d3f63d871b6455106a08a9b4bd4bcbfa</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package><sys_policy/><sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope><sys_update_name>sys_ux_applicability_m2m_list_d3f63d871b6455106a08a9b4bd4bcbfa</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-07-12 04:47:16</sys_updated_on></sys_ux_applicability_m2m_list></record_update>]]></payload>
+        <payload_hash>128040148</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>7c7da7e91bfc9d106a08a9b4bd4bcbfb</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>David.Admin</sys_created_by>
+        <sys_created_on>2022-07-20 10:31:00</sys_created_on>
+        <sys_id>e4625cbd1b70dd106a08a9b4bd4bcbc9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1821b2931290000001</sys_recorded_at>
+        <sys_updated_by>David.Admin</sys_updated_by>
+        <sys_updated_on>2022-07-20 10:31:00</sys_updated_on>
+        <type>List Applicability</type>
+        <update_guid>24625cbdd370dd10b5b4fa4915d994c9</update_guid>
+        <update_guid_history>24625cbdd370dd10b5b4fa4915d994c9:0,2ed1587d7970dd1038d1e404fe7b1f91:0,9ff63d87386455106b07223afee937fb:1054487889</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>David.Admin</sys_created_by>
+        <sys_created_on>2022-07-20 10:53:30</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_applicability_m2m_list">sys_ux_applicability_m2m_list</sys_db_object>
+        <sys_id>0d33d45379884f5083732d5b76715900</sys_id>
+        <sys_metadata>d3f63d871b6455106a08a9b4bd4bcbfa</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope>
+        <sys_scope_delete display_value="">4c6c017a72da4588a43d0b2e3ce46da4</sys_scope_delete>
+        <sys_update_name>sys_ux_applicability_m2m_list_d3f63d871b6455106a08a9b4bd4bcbfa</sys_update_name>
+        <sys_update_version display_value="sys_ux_applicability_m2m_list_d3f63d871b6455106a08a9b4bd4bcbfa">e4625cbd1b70dd106a08a9b4bd4bcbc9</sys_update_version>
+        <sys_updated_by>David.Admin</sys_updated_by>
+        <sys_updated_on>2022-07-20 10:53:30</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
