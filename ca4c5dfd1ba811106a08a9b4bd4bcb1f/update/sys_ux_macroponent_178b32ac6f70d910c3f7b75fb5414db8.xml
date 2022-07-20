@@ -1810,7 +1810,7 @@
                       "type" : "LIST_CONTAINER",
                       "container" : [ {
                         "type" : "JSON_LITERAL",
-                        "value" : "active=true^u_state=2^u_managerDYNAMICbdcb83a85f220100a9ad2572f2b4773d"
+                        "value" : "active=true^u_state=2^u_managerDYNAMIC90d1921e5f510100a9ad2572f2b477fe"
                       } ]
                     },
                     "operator" : "CONCAT"
@@ -2707,13 +2707,13 @@
         <sys_created_by>David.Admin</sys_created_by>
         <sys_created_on>2022-07-17 01:37:44</sys_created_on>
         <sys_id>178b32ac6f70d910c3f7b75fb5414db8</sys_id>
-        <sys_mod_count>17</sys_mod_count>
+        <sys_mod_count>19</sys_mod_count>
         <sys_name>Home</sys_name>
         <sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package>
         <sys_policy/>
         <sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope>
         <sys_update_name>sys_ux_macroponent_178b32ac6f70d910c3f7b75fb5414db8</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-07-20 06:28:33</sys_updated_on>
+        <sys_updated_by>David.Admin</sys_updated_by>
+        <sys_updated_on>2022-07-20 12:09:10</sys_updated_on>
     </sys_ux_macroponent>
 </record_update>
