@@ -546,8 +546,12 @@
               }
             },
             "firstDayOfWeek" : {
-              "type" : "JSON_LITERAL",
-              "value" : 0
+              "type" : "CLIENT_TRANSFORM_SCRIPT",
+              "script" : {
+                "apiVersion" : "2.0.0",
+                "inlineScript" : null,
+                "scriptSysId" : "9a244ffd1bf8dd106a08a9b4bd4bcbf0"
+              }
             },
             "hotkeys" : {
               "type" : "LIST_CONTAINER",
@@ -559,7 +563,16 @@
             },
             "markSpans" : {
               "type" : "JSON_LITERAL",
-              "value" : [ ]
+              "value" : [ {
+                "occurrenceDays" : [ 0, 6 ],
+                "zones" : [ {
+                  "startTime" : "00:00:00",
+                  "endTime" : "23:59:59"
+                } ],
+                "bgColor" : "#eeeeee",
+                "timezone" : "GMT",
+                "$$mid" : 0
+              } ]
             },
             "popoverContentState" : {
               "type" : "JSON_LITERAL",
@@ -666,16 +679,20 @@
                   "noScrolling" : false,
                   "eventMinWidthMS" : 86400000,
                   "animation" : false,
-                  "snapGranularity" : 480,
+                  "snapGranularity" : 200,
                   "splitRow" : 1,
                   "numberOfDays" : 14,
                   "viewLabel" : "Week",
                   "templates" : {
-                    "timeScaleGrid" : {
+                    "timestampBody" : {
+                      "type" : "component",
+                      "value" : "sn-now-calendar-timestamp-view"
+                    },
+                    "mainGrid" : {
                       "type" : "",
                       "value" : ""
                     },
-                    "mainGrid" : {
+                    "timeScaleGrid" : {
                       "type" : "",
                       "value" : ""
                     },
@@ -698,10 +715,6 @@
                     "eventBody" : {
                       "type" : "",
                       "value" : ""
-                    },
-                    "timestampBody" : {
-                      "type" : "component",
-                      "value" : "sn-now-calendar-timestamp-view"
                     }
                   },
                   "trackConfig" : {
@@ -722,9 +735,9 @@
                   "rowHeightBottomPaddingInLines" : 1,
                   "sectionHeaderHeight" : 40,
                   "minimumEventSpan" : 1,
-                  "eventAreaClientHeight" : 971,
-                  "eventAreaScrollHeight" : 971,
-                  "eventAreaClientWidth" : 1255,
+                  "eventAreaClientHeight" : 678,
+                  "eventAreaScrollHeight" : 678,
+                  "eventAreaClientWidth" : 632,
                   "scrollbarWidth" : 17,
                   "scrollbarHeight" : 17.15625,
                   "layoutVersion" : 3,
@@ -969,13 +982,13 @@
         <sys_created_by>David.Admin</sys_created_by>
         <sys_created_on>2022-07-16 00:09:55</sys_created_on>
         <sys_id>63ddddd81b7c59106a08a9b4bd4bcbc5</sys_id>
-        <sys_mod_count>50</sys_mod_count>
+        <sys_mod_count>60</sys_mod_count>
         <sys_name>Start</sys_name>
         <sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package>
         <sys_policy/>
         <sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope>
         <sys_update_name>sys_ux_macroponent_63ddddd81b7c59106a08a9b4bd4bcbc5</sys_update_name>
         <sys_updated_by>David.Admin</sys_updated_by>
-        <sys_updated_on>2022-07-20 11:43:33</sys_updated_on>
+        <sys_updated_on>2022-07-21 00:02:16</sys_updated_on>
     </sys_ux_macroponent>
 </record_update>

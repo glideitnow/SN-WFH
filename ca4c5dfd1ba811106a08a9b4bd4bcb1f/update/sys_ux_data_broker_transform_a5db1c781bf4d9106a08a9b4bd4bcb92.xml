@@ -34,7 +34,7 @@
 		var myObj = {};
 		myObj.title = records[i].u_user.displayValue;
 		myObj.id = records[i]._row_data.uniqueValue;
-		myObj.description = records[i].u_state.displayValue;
+		myObj.description = records[i].u_reason.displayValue;
 		myObj.group = records[i].u_user.displayValue;
 		
 		var startUTC = new GlideDateTime(records[i].u_start_date.value);
@@ -52,14 +52,14 @@
         <sys_created_by>David.Admin</sys_created_by>
         <sys_created_on>2022-07-17 08:39:01</sys_created_on>
         <sys_id>a5db1c781bf4d9106a08a9b4bd4bcb92</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>WFH calendariser</sys_name>
         <sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package>
         <sys_policy/>
         <sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope>
         <sys_update_name>sys_ux_data_broker_transform_a5db1c781bf4d9106a08a9b4bd4bcb92</sys_update_name>
         <sys_updated_by>David.Admin</sys_updated_by>
-        <sys_updated_on>2022-07-19 06:38:03</sys_updated_on>
+        <sys_updated_on>2022-07-21 00:09:20</sys_updated_on>
     </sys_ux_data_broker_transform>
     <sys_translated_text action="delete_multiple" query="documentkey=a5db1c781bf4d9106a08a9b4bd4bcb92"/>
 </record_update>
