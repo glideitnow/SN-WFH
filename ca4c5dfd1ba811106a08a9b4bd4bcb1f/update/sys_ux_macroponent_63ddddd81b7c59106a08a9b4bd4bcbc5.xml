@@ -313,11 +313,11 @@
             "availableTimezones" : {
               "type" : "JSON_LITERAL",
               "value" : [ {
-                "name" : "Australia/Darwin",
-                "label" : "Australia/Darwin"
-              }, {
                 "name" : "GMT",
                 "label" : "GMT"
+              }, {
+                "name" : "Australia/Darwin",
+                "label" : "Australia/Darwin"
               } ]
             },
             "availableViews" : {
@@ -676,47 +676,13 @@
                   "viewName" : "TIMELINE_WEEK",
                   "groupBy" : "group",
                   "scrollDebounceTime" : 100,
-                  "noScrolling" : false,
+                  "noScrolling" : true,
                   "eventMinWidthMS" : 86400000,
-                  "animation" : false,
+                  "animation" : true,
                   "snapGranularity" : 200,
                   "splitRow" : 1,
-                  "numberOfDays" : 14,
+                  "numberOfDays" : 7,
                   "viewLabel" : "Week",
-                  "templates" : {
-                    "timestampBody" : {
-                      "type" : "component",
-                      "value" : "sn-now-calendar-timestamp-view"
-                    },
-                    "mainGrid" : {
-                      "type" : "",
-                      "value" : ""
-                    },
-                    "timeScaleGrid" : {
-                      "type" : "",
-                      "value" : ""
-                    },
-                    "sectionHeadTitle" : {
-                      "type" : "",
-                      "value" : ""
-                    },
-                    "sectionHeadBody" : {
-                      "type" : "",
-                      "value" : ""
-                    },
-                    "rowTitle" : {
-                      "type" : "",
-                      "value" : ""
-                    },
-                    "rowBody" : {
-                      "type" : "",
-                      "value" : ""
-                    },
-                    "eventBody" : {
-                      "type" : "",
-                      "value" : ""
-                    }
-                  },
                   "trackConfig" : {
                     "normal" : {
                       "style" : { },
@@ -735,12 +701,12 @@
                   "rowHeightBottomPaddingInLines" : 1,
                   "sectionHeaderHeight" : 40,
                   "minimumEventSpan" : 1,
-                  "eventAreaClientHeight" : 678,
-                  "eventAreaScrollHeight" : 678,
-                  "eventAreaClientWidth" : 632,
+                  "eventAreaClientHeight" : 971,
+                  "eventAreaScrollHeight" : 971,
+                  "eventAreaClientWidth" : 1255,
                   "scrollbarWidth" : 17,
                   "scrollbarHeight" : 17.15625,
-                  "layoutVersion" : 3,
+                  "layoutVersion" : 2,
                   "left" : 0,
                   "top" : 0,
                   "offsetX" : 0,
@@ -982,13 +948,13 @@
         <sys_created_by>David.Admin</sys_created_by>
         <sys_created_on>2022-07-16 00:09:55</sys_created_on>
         <sys_id>63ddddd81b7c59106a08a9b4bd4bcbc5</sys_id>
-        <sys_mod_count>60</sys_mod_count>
+        <sys_mod_count>64</sys_mod_count>
         <sys_name>Start</sys_name>
         <sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package>
         <sys_policy/>
         <sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope>
         <sys_update_name>sys_ux_macroponent_63ddddd81b7c59106a08a9b4bd4bcbc5</sys_update_name>
         <sys_updated_by>David.Admin</sys_updated_by>
-        <sys_updated_on>2022-07-21 00:02:16</sys_updated_on>
+        <sys_updated_on>2022-07-21 08:06:17</sys_updated_on>
     </sys_ux_macroponent>
 </record_update>
