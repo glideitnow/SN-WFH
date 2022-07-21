@@ -1858,7 +1858,7 @@
                 },
                 "hideLastRefreshedText" : {
                   "type" : "JSON_LITERAL",
-                  "value" : true
+                  "value" : false
                 },
                 "hideLinks" : {
                   "type" : "JSON_LITERAL",
@@ -2560,7 +2560,86 @@
                   "value" : ""
                 }
               },
-              "eventMappings" : [ ],
+              "eventMappings" : [ {
+                "eventMappingId" : "clffuctffszaabbiieeddffhhddggtzbwisb",
+                "isConfiguration" : false,
+                "offRowStorageId" : null,
+                "sourceEventApiName" : "sn_record_list_con.NOW_RECORD_LIST_CONNECTED#ROW_CLICKED",
+                "sourceEventCorrelationId" : null,
+                "sourceEventDefinition" : {
+                  "apiName" : "sn_record_list_con.NOW_RECORD_LIST_CONNECTED#ROW_CLICKED",
+                  "id" : null,
+                  "type" : "UXEVENT"
+                },
+                "sourceEventSysId" : null,
+                "targets" : [ {
+                  "broker" : null,
+                  "clientScript" : null,
+                  "conditional" : null,
+                  "declarativeAction" : null,
+                  "event" : {
+                    "apiName" : "x_852034_wfh.NAV_ITEM_SELECTED_RELAY_178b32ac6f70d910c3f7b75fb5414db8",
+                    "payload" : {
+                      "type" : "MAP_CONTAINER",
+                      "container" : {
+                        "route" : {
+                          "type" : "JSON_LITERAL",
+                          "value" : "record"
+                        },
+                        "fields" : {
+                          "type" : "MAP_CONTAINER",
+                          "container" : {
+                            "table" : {
+                              "type" : "EVENT_PAYLOAD_BINDING",
+                              "binding" : {
+                                "address" : [ "table" ]
+                              }
+                            },
+                            "sysId" : {
+                              "type" : "EVENT_PAYLOAD_BINDING",
+                              "binding" : {
+                                "address" : [ "sys_id" ]
+                              }
+                            }
+                          }
+                        },
+                        "params" : {
+                          "type" : "JSON_LITERAL",
+                          "value" : null
+                        },
+                        "redirect" : {
+                          "type" : "JSON_LITERAL",
+                          "value" : null
+                        },
+                        "passiveNavigation" : {
+                          "type" : "JSON_LITERAL",
+                          "value" : null
+                        },
+                        "title" : {
+                          "type" : "JSON_LITERAL",
+                          "value" : null
+                        },
+                        "multiInstField" : {
+                          "type" : "JSON_LITERAL",
+                          "value" : null
+                        },
+                        "targetRoute" : {
+                          "type" : "JSON_LITERAL",
+                          "value" : null
+                        },
+                        "external" : {
+                          "type" : "JSON_LITERAL",
+                          "value" : null
+                        }
+                      }
+                    },
+                    "sysId" : "578b32aca070d9106561a87002fe50b8"
+                  },
+                  "operation" : null,
+                  "targetId" : "clffuctffszaabbiiffddffhhddnueewzffek",
+                  "type" : "EVENT"
+                } ]
+              } ],
               "slot" : null,
               "definition" : {
                 "id" : "2b1c080881e05dc63b917044290b233f",
@@ -2707,13 +2786,13 @@
         <sys_created_by>David.Admin</sys_created_by>
         <sys_created_on>2022-07-17 01:37:44</sys_created_on>
         <sys_id>178b32ac6f70d910c3f7b75fb5414db8</sys_id>
-        <sys_mod_count>19</sys_mod_count>
+        <sys_mod_count>21</sys_mod_count>
         <sys_name>Home</sys_name>
         <sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package>
         <sys_policy/>
         <sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope>
         <sys_update_name>sys_ux_macroponent_178b32ac6f70d910c3f7b75fb5414db8</sys_update_name>
         <sys_updated_by>David.Admin</sys_updated_by>
-        <sys_updated_on>2022-07-20 12:09:10</sys_updated_on>
+        <sys_updated_on>2022-07-21 01:28:35</sys_updated_on>
     </sys_ux_macroponent>
 </record_update>
