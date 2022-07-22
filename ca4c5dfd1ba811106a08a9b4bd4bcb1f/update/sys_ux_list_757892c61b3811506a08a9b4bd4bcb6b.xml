@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_list">
     <sys_ux_list action="INSERT_OR_UPDATE">
         <active>true</active>
-        <category display_value="Managers">dc9b72ac1b70d9106a08a9b4bd4bcb42</category>
-        <columns>number,u_user,u_manager,u_start_date,u_end_date,u_reason</columns>
-        <condition table="x_852034_wfh_requests">u_state=2^u_start_dateONTomorrow@javascript:gs.beginningOfTomorrow()@javascript:gs.endOfTomorrow()^EQ^ORDERBYu_start_date<item display_value="Pending Approval" endquery="false" field="u_state" goto="false" newquery="false" operator="=" or="false" value="2"/>
-            <item endquery="false" field="u_start_date" goto="false" newquery="false" operator="ON" or="false" value="Tomorrow@javascript:gs.beginningOfTomorrow()@javascript:gs.endOfTomorrow()"/>
+        <category display_value="Employees">5968d6c61b3811506a08a9b4bd4bcb5f</category>
+        <columns/>
+        <condition table="x_852034_wfh_requests">u_userDYNAMIC90d1921e5f510100a9ad2572f2b477fe^u_state=2^EQ<item endquery="false" field="u_user" goto="false" newquery="false" operator="DYNAMIC" or="false" value="90d1921e5f510100a9ad2572f2b477fe"/>
+            <item display_value="Pending Approval" endquery="false" field="u_state" goto="false" newquery="false" operator="=" or="false" value="2"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
-            <item endquery="false" field="" goto="false" newquery="false" operator="ORDERBY" or="false" value="u_start_date"/>
         </condition>
         <configuration display_value="Working From Home (WFH) Workspace_menu_config">5c9b72ac1b70d9106a08a9b4bd4bcb40</configuration>
         <group_by_column/>
@@ -55,27 +54,27 @@
         <highlight_content_pattern/>
         <list_attributes/>
         <max_characters>4000</max_characters>
-        <order>150</order>
+        <order>100</order>
         <override_word_wrap_user_pref>false</override_word_wrap_user_pref>
         <roles/>
         <sys_class_name>sys_ux_list</sys_class_name>
-        <sys_created_by>David.Admin</sys_created_by>
-        <sys_created_on>2022-07-20 11:02:34</sys_created_on>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-21 14:56:23</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>1af8d4351bb0dd106a08a9b4bd4bcb6b</sys_id>
-        <sys_mod_count>5</sys_mod_count>
-        <sys_name>Due Today</sys_name>
+        <sys_id>757892c61b3811506a08a9b4bd4bcb6b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Pending Approvals</sys_name>
         <sys_overrides/>
         <sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package>
         <sys_policy/>
         <sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope>
-        <sys_update_name>sys_ux_list_1af8d4351bb0dd106a08a9b4bd4bcb6b</sys_update_name>
+        <sys_update_name>sys_ux_list_757892c61b3811506a08a9b4bd4bcb6b</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-07-21 14:50:06</sys_updated_on>
+        <sys_updated_on>2022-07-21 14:56:23</sys_updated_on>
         <table>x_852034_wfh_requests</table>
-        <title>Due Today</title>
-        <view/>
+        <title>Pending Approvals</title>
+        <view display_value="Default view" name="NULL">Default view</view>
         <word_wrap>false</word_wrap>
     </sys_ux_list>
 </record_update>

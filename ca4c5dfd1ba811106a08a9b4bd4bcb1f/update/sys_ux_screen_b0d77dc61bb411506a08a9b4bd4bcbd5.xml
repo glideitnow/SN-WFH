@@ -4,85 +4,13 @@
         <app_config display_value="Working From Home (WFH) Workspace Config">9f8b32ac0470d9103448288fc16445b9</app_config>
         <description/>
         <event_mappings>[ {
-  "eventMappingId" : "clffveejjbbvfaaiffoddffhhffjjrvcmdggu",
+  "eventMappingId" : "clffvbbddvwlaabdxddffhhffcchkjjfffur",
   "isConfiguration" : false,
   "offRowStorageId" : null,
-  "sourceEventApiName" : "x_852034_wfh.MODAL_SELECTED_RELAY_178b32ac6f70d910c3f7b75fb5414db8",
+  "sourceEventApiName" : "x_852034_wfh.NAV_ITEM_SELECTED_RELAY_78d77dc61bb411506a08a9b4bd4bcbd2",
   "sourceEventCorrelationId" : null,
   "sourceEventDefinition" : {
-    "apiName" : "x_852034_wfh.MODAL_SELECTED_RELAY_178b32ac6f70d910c3f7b75fb5414db8",
-    "id" : null,
-    "type" : "UXEVENT"
-  },
-  "sourceEventSysId" : null,
-  "targets" : [ {
-    "broker" : null,
-    "clientScript" : null,
-    "conditional" : null,
-    "declarativeAction" : null,
-    "event" : {
-      "apiName" : "sn_canvas_core.MODAL_SELECTED",
-      "payload" : {
-        "type" : "MAP_CONTAINER",
-        "container" : {
-          "modalId" : {
-            "type" : "EVENT_PAYLOAD_BINDING",
-            "binding" : {
-              "address" : [ "modalId" ]
-            }
-          },
-          "showModal" : {
-            "type" : "EVENT_PAYLOAD_BINDING",
-            "binding" : {
-              "address" : [ "showModal" ]
-            }
-          },
-          "displayOptions" : {
-            "type" : "EVENT_PAYLOAD_BINDING",
-            "binding" : {
-              "address" : [ "displayOptions" ]
-            }
-          },
-          "bare" : {
-            "type" : "EVENT_PAYLOAD_BINDING",
-            "binding" : {
-              "address" : [ "bare" ]
-            }
-          },
-          "viewportElementId" : {
-            "type" : "EVENT_PAYLOAD_BINDING",
-            "binding" : {
-              "address" : [ "viewportElementId" ]
-            }
-          },
-          "viewportRoute" : {
-            "type" : "EVENT_PAYLOAD_BINDING",
-            "binding" : {
-              "address" : [ "viewportRoute" ]
-            }
-          },
-          "viewportFields" : {
-            "type" : "EVENT_PAYLOAD_BINDING",
-            "binding" : {
-              "address" : [ "viewportFields" ]
-            }
-          }
-        }
-      },
-      "sysId" : "882eed4091382d3a41f1bb3f382ae089"
-    },
-    "operation" : null,
-    "targetId" : "clffveejjbbvfaaiffnddffhhfffggggqdjjffgg",
-    "type" : "EVENT"
-  } ]
-}, {
-  "eventMappingId" : "ckhffjjisfyaaaabboddhhhmwraaxeeaft",
-  "isConfiguration" : false,
-  "offRowStorageId" : null,
-  "sourceEventApiName" : "x_852034_wfh.NAV_ITEM_SELECTED_RELAY_178b32ac6f70d910c3f7b75fb5414db8",
-  "sourceEventCorrelationId" : null,
-  "sourceEventDefinition" : {
-    "apiName" : "x_852034_wfh.NAV_ITEM_SELECTED_RELAY_178b32ac6f70d910c3f7b75fb5414db8",
+    "apiName" : "x_852034_wfh.NAV_ITEM_SELECTED_RELAY_78d77dc61bb411506a08a9b4bd4bcbd2",
     "id" : null,
     "type" : "UXEVENT"
   },
@@ -156,11 +84,11 @@
       "sysId" : "8b82bf18e5276c8e423b6e4e0889b463"
     },
     "operation" : null,
-    "targetId" : "ckhffjjisfyaaaabbnddhhhmsoffggkjjsjj",
+    "targetId" : "clffvbbddvwlaabdwddffhhffehhmrpffkv",
     "type" : "EVENT"
   } ]
 } ]</event_mappings>
-        <macroponent display_value="Home">178b32ac6f70d910c3f7b75fb5414db8</macroponent>
+        <macroponent display_value="Calendar">78d77dc61bb411506a08a9b4bd4bcbd2</macroponent>
         <macroponent_config>{
   "label" : {
     "type" : "TRANSLATION_LITERAL",
@@ -195,28 +123,28 @@
     "value" : false
   }
 }</macroponent_config>
-        <name>Home default</name>
+        <name>Calendar default</name>
         <order>0</order>
         <parent_macroponent display_value="Agent Workspace App Shell">c276387cc331101080d6d3658940ddd2</parent_macroponent>
         <required_translations>[ ]</required_translations>
         <rollback_screen/>
         <screen_condition/>
-        <screen_type display_value="Home">1f8b32ac1e70d91027c9cc0b8e0071b9</screen_type>
+        <screen_type display_value="Calendar">bcd739c61bb411506a08a9b4bd4bcb81</screen_type>
         <sys_class_name>sys_ux_screen</sys_class_name>
-        <sys_created_by>David.Admin</sys_created_by>
-        <sys_created_on>2022-07-17 01:37:43</sys_created_on>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-21 12:32:42</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>d38b32ac5970d910eed69f027ddd5bb7</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_name>Home default</sys_name>
+        <sys_id>b0d77dc61bb411506a08a9b4bd4bcbd5</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Calendar default</sys_name>
         <sys_overrides/>
         <sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package>
         <sys_policy/>
         <sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope>
-        <sys_update_name>sys_ux_screen_d38b32ac5970d910eed69f027ddd5bb7</sys_update_name>
+        <sys_update_name>sys_ux_screen_b0d77dc61bb411506a08a9b4bd4bcbd5</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-07-21 14:15:51</sys_updated_on>
+        <sys_updated_on>2022-07-21 12:47:50</sys_updated_on>
     </sys_ux_screen>
-    <sys_translated_text action="delete_multiple" query="documentkey=d38b32ac5970d910eed69f027ddd5bb7"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=b0d77dc61bb411506a08a9b4bd4bcbd5"/>
 </record_update>

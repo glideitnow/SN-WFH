@@ -4,7 +4,7 @@
         <class_name/>
         <color>warning</color>
         <css/>
-        <glyph>folder-open-o</glyph>
+        <glyph>file-text-o</glyph>
         <id/>
         <kb_article/>
         <kb_category/>
@@ -22,14 +22,14 @@
         <sys_created_by>David.Admin</sys_created_by>
         <sys_created_on>2022-07-19 08:28:11</sys_created_on>
         <sys_id>a7ac66591b7c5d106a08a9b4bd4bcb8f</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>My Requests</sys_name>
         <sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package>
         <sys_policy/>
         <sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope>
         <sys_update_name>sp_instance_link_a7ac66591b7c5d106a08a9b4bd4bcb8f</sys_update_name>
-        <sys_updated_by>David.Admin</sys_updated_by>
-        <sys_updated_on>2022-07-19 12:40:31</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-21 07:45:36</sys_updated_on>
         <title>My Requests</title>
         <type>url</type>
         <url>?id=list&amp;table=x_852034_wfh_requests&amp;filter=u_active%3Dtrue%5Eu_userDYNAMIC90d1921e5f510100a9ad2572f2b477fe%5EORsys_created_by%3Djavascript:gs.getUserDisplayName()%5EORDERBYDESCsys_updated_on</url>

@@ -20,7 +20,7 @@
     });
 }]]></client_script_v2>
         <comments/>
-        <condition>current.u_state == "2"</condition>
+        <condition>current.u_state == "2"&amp;&amp;current.u_manager==gs.getUserID();</condition>
         <form_action>true</form_action>
         <form_button>true</form_button>
         <form_button_v2>true</form_button_v2>
@@ -42,7 +42,7 @@
         <messages/>
         <name>Reject Request</name>
         <onclick>rejectRequest()</onclick>
-        <order>100</order>
+        <order>400</order>
         <script><![CDATA[//Ali Usman - Set the value to 'Rejected', and display mandatory fields
 function rejectRequest() {
     g_form.setValue('u_state', 4);
@@ -68,15 +68,15 @@ function serverReject() {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>11cf958c1bbc19106a08a9b4bd4bcb8e</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_name>Reject Request</sys_name>
         <sys_overrides/>
         <sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package>
         <sys_policy/>
         <sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope>
         <sys_update_name>sys_ui_action_11cf958c1bbc19106a08a9b4bd4bcb8e</sys_update_name>
-        <sys_updated_by>David.Admin</sys_updated_by>
-        <sys_updated_on>2022-07-19 10:03:33</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-21 11:45:05</sys_updated_on>
         <table>x_852034_wfh_requests</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

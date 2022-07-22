@@ -10,6 +10,12 @@
 }, {
   "message" : "List",
   "comment" : ""
+}, {
+  "message" : "Request WFH",
+  "comment" : ""
+}, {
+  "message" : "WFH Calendar",
+  "comment" : ""
 } ]</required_translations>
         <route/>
         <suffix/>
@@ -19,66 +25,17 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>global</sys_domain_path>
         <sys_id>9b8b32ac8d70d910daa88c545f725cb7</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>chrome_toolbar</sys_name>
         <sys_package display_value="Working From Home (WFH)" source="x_852034_wfh">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_package>
         <sys_policy/>
         <sys_scope display_value="Working From Home (WFH)">ca4c5dfd1ba811106a08a9b4bd4bcb1f</sys_scope>
         <sys_update_name>sys_ux_page_property_9b8b32ac8d70d910daa88c545f725cb7</sys_update_name>
-        <sys_updated_by>David.Admin</sys_updated_by>
-        <sys_updated_on>2022-07-17 02:00:38</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-21 15:46:04</sys_updated_on>
         <type>json</type>
         <unique_name>x_852034_wfh.538b32ac2370d9104c58e1ccf4c894ba.root.chrome_toolbar</unique_name>
-        <value>[
-   {
-      "id":"home",
-      "label": {
-              "message": "Home",
-               "translatable": true
-        },
-      "icon":"home-outline",
-      "viewportInfo":{
-         
-      },
-      "routeInfo":{
-         "route":"home"
-      },
-      "group":"top",
-      "badge":{
-         
-      },
-      "presence":{
-         
-      },
-      "availability":{
-         
-      }
-   },
-   {
-      "id":"list",
-      "label": {
-              "message": "List",
-               "translatable": true
-        },
-      "icon":"list-outline",
-      "viewportInfo":{
-         
-      },
-      "routeInfo":{
-         "route":"list"
-      },
-      "group":"top",
-      "badge":{
-         
-      },
-      "presence":{
-         
-      },
-      "availability":{
-         
-      }
-   }
-]</value>
+        <value>[{"id":"home","label":{"message":"Home","translatable":true},"icon":"home-outline","viewportInfo":{},"routeInfo":{"route":"home"},"group":"top","badge":{},"presence":{},"availability":{},"order":100},{"id":"list","label":{"message":"List","translatable":true},"icon":"list-outline","viewportInfo":{},"routeInfo":{"route":"list"},"group":"top","badge":{},"presence":{},"availability":{},"order":200},{"id":"calendar","label":{"translatable":true,"message":"WFH Calendar"},"order":300,"icon":"calendar-fill","routeInfo":{"route":"calendar"},"group":"top","badge":{},"presence":{},"availability":{}},{"id":"record","label":{"translatable":true,"message":"Request WFH"},"order":400,"icon":"circle-plus-fill","routeInfo":{"route":"record"},"group":"bottom","badge":{},"presence":{},"availability":{}}]</value>
     </sys_ux_page_property>
     <sys_translated_text action="delete_multiple" query="documentkey=9b8b32ac8d70d910daa88c545f725cb7"/>
 </record_update>

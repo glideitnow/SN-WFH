@@ -2,7 +2,7 @@
     <sys_ux_applicability_m2m_list action="INSERT_OR_UPDATE">
         <active>true</active>
         <applicability display_value="Audience for appWorking From Home (WFH) Workspace">889b72ac1b70d9106a08a9b4bd4bcb2c</applicability>
-        <list display_value="Other Pending Approval">1af8d4351bb0dd106a08a9b4bd4bcb6b</list>
+        <list display_value="Due Today">1af8d4351bb0dd106a08a9b4bd4bcb6b</list>
         <order>100</order>
         <sys_class_name>sys_ux_applicability_m2m_list</sys_class_name>
         <sys_created_by>David.Admin</sys_created_by>
